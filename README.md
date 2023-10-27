@@ -5,7 +5,6 @@
 - aparelho -> navegador -> servidor -> arquivos HTML -> navegador ↩
 * website
 
--> conteúdo (HTML)
--> design (CSS)
--> programação / interação (JS)
-
+-> conteúdo (HTML) <br>
+-> design (CSS) <br>
+-> programação / interação (JS) <br>
