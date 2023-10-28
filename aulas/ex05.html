@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+            background-color: #1F1D24;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(255, 255, 255); 
+            margin: 10px;
+
+        }
+
+        input {
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>teste de entrada de texto</h1>
+    <p>Digite seu nome: </p>
+    <script>
+        var input = document.createElement('input')
+        input.type = 'text'
+        document.body.appendChild(input)
+        // Crie um elemento de botão
+        var button = document.createElement('button');
+        // Defina o nome do botão
+        button.innerHTML = 'Confirmar';
+        // Adicione o botão ao corpo do documento
+        document.body.appendChild(button);
+        // Crie um elemento para exibir o nome inserido pelo usuário
+        var nameDisplay = document.createElement('p');
+        // Adicione o elemento ao corpo do documento
+        document.body.appendChild(nameDisplay);
+        // Adicione um ouvinte de evento ao botão para exibir o nome inserido pelo usuário na tela
+        button.addEventListener('click', function() {
+        nameDisplay.innerHTML = `Olá, ${input.value}! é um prazer te conhecer! <br>`;
+        });
+    </script>
+</body>
+</html>
