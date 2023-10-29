@@ -1,18 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiros passos com DOM</title>
     <style>
         body {
-            background-color: rgb(36, 36, 36);
+            background-color: #0B0E14;
+            color: white;
+            font: normal 20px Arial, sans-serif;
+        }
+
+        .subtitulo {
+            color: #CC1F4D
         }
     </style>
 </head>
 <body>
-    <h1>Iniciando estudos DOM</h1>
+    <h1 class="subtitulo">Iniciando estudos DOM</h1>
     <p>Aqui vai o resultado</p>
-    <div>Clique em mim</div>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <div name="div2">Segunda DIV</div>
+    <div class="divs">Terceira DIV</div>
+    <h2 class="subtitulo">Que bagulho massa</h2>
+    <script>
+        //selecionador de elementos dentro do site//
+        // -> Document Object Model <- //
+        var p1 = window.document.getElementsByTagName('p')[1]
+        document.write('Está escrito: ' + p1.innerText)
+
+        var pid = document.getElementById('msg')
+        pid.style.background = 'red'
+
+        var nome = document.getElementsByName('div2')[0]
+        nome.style.background = 'blue'
+
+        var classe = document.getElementsByClassName('divs')[0]
+        classe.innerText = 'Modifificando por meio da classe'
+        classe.style.background = 'green'
+
+        var seletor = document.querySelector('h2.subtitulo')
+        seletor.style.color = '#417E87'
+    </script>
 </body>
 </html>
