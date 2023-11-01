@@ -4,13 +4,26 @@ function contar() {
     var passo = document.getElementById('txtpass')
     var msg = document.getElementById('res')
     passo = Number(passo.value)
+    inicio = Number(inicio.value)
+    fim = Number(fim.value)
 
     if (passo === 0) {
         window.alert('O passo não pode ser 0. Considerando passo como 1')
         passo = 1
     } 
 
-    for (inicio; passo; fim) {
-        
+    if (inicio < fim) {
+        var resultado = ''
+        for (inicio; inicio <= fim; inicio += passo) {
+            resultado += `${inicio} 👉 `
+        }
+    } else if (inicio > fim) {
+        var resultado = ''
+        for (inicio; inicio >= fim; inicio -= passo) {
+            resultado += `${inicio} 👉 `
+        }
     }
+
+    resultado += '🏁'
+    msg.innerHTML = resultado
 }
