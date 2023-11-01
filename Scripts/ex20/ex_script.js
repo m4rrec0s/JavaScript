@@ -15,19 +15,18 @@ function contar() {
 
     if (!inicio || !fim || isNaN(inicio) || isNaN(fim)) {
         resultado = 'Impossível contar!'
+    
     } else if (inicio < fim) {
         for (inicio; inicio <= fim; inicio += passo) {
             resultado += `${inicio} 👉 `
-        resultado += '🏁'
         }
+        resultado += '🏁'
     } else if (inicio > fim) {
-        var resultado = ''
         for (inicio; inicio >= fim; inicio -= passo) {
             resultado += `${inicio} 👉 `
-        resultado += '🏁'
         }
+        resultado += '🏁'
     }
-
     
     msg.innerHTML = resultado
 }
