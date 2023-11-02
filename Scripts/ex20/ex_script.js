@@ -12,8 +12,7 @@ function contar() {
         window.alert('O passo não pode ser 0. Considerando passo como 1')
         passo = 1
     } 
-
-    if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
+    if (!inicio || !fim || isNaN(inicio) || isNaN(fim)) {
         resultado = 'Impossível contar!'
     
     } else if (inicio < fim) {
