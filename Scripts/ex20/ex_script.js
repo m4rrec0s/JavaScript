@@ -13,7 +13,7 @@ function contar() {
         passo = 1
     } 
 
-    if (!inicio || !fim || isNaN(inicio) || isNaN(fim)) {
+    if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
         resultado = 'Impossível contar!'
     
     } else if (inicio < fim) {
