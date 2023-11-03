@@ -130,7 +130,8 @@ console.log(numeros.length) //imprime 2
 Também tem como organizar os numeros em ordem crescente por meio do método <strong>.sort()</strong>
 
 ```javascript
-
+numeros.sort()
+console.log(numeros) // os numeros vão sair organizados
 ```
 Para percorrer os elementos de um array, você pode usar laços como for, for...of, for...in, while, etc. Você também pode usar métodos como forEach, map, filter, reduce, etc. Por exemplo:
 
