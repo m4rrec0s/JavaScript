@@ -148,3 +148,58 @@ frutas.forEach(function(fruta) { // método forEach
   console.log(fruta); // imprime cada elemento do array frutas
 });
 ```
+
+Tem como procurar elementos no array usando o <strong>`indexOf`</strong>:
+Se ouver o valor dentro do array ele retorona a posição em que ele está. Porém, se ele não existir dentro do array ele retornará o valor <strong>-1</strong>.
+
+```javascript
+numeros.indexOf(2) //imprime a posição '1'
+numeros.indexOf(8) //imprime o valor '-1', pois não existe 8 dentro do array
+```
+
+## Funções
+As funções em JavaScript são objetos que podem receber parâmetros e retornar um valor. Elas servem para encapsular um bloco de código que pode ser reutilizado em diferentes partes do programa. As funções também podem ter propriedades e métodos, como qualquer outro objeto em JavaScript.
+
+Para definir uma função, você pode usar uma das seguintes formas:
+
+- Declaração de função: usa a palavra-chave `function` seguida pelo nome da função, a lista de parâmetros entre parênteses e o corpo da função entre chaves. Por exemplo:
+
+```js
+function somar(a, b) {
+  return a + b;
+}
+```
+
+- Expressão de função: atribui uma função anônima ou nomeada a uma variável. Por exemplo:
+
+```js
+var somar = function(a, b) {
+  return a + b;
+};
+```
+
+- Arrow function: usa uma sintaxe mais concisa para criar uma função anônima. Por exemplo:
+
+```js
+var somar = (a, b) => a + b;
+```
+
+Para chamar uma função, você pode usar o nome da função seguido pelos argumentos entre parênteses. Por exemplo:
+
+```js
+var resultado = somar(2, 3); // resultado recebe o valor 5
+```
+
+Uma função recursiva é uma função que se chama a si mesma. A recursão é usada para resolver problemas que contêm subproblemas menores. Uma função recursiva deve ter um caso base, que é uma condição que termina a recursão, e um caso recursivo, que é uma condição que continua a recursão. Por exemplo, a função fatorial pode ser definida de forma recursiva da seguinte forma:
+
+```js
+function fatorial(n) {
+  if (n == 0) { // caso base
+    return 1;
+  } else { // caso recursivo
+    return n * fatorial(n - 1);
+  }
+}
+```
+
+A função fatorial recebe um número inteiro positivo n e retorna o produto de todos os números inteiros positivos menores ou iguais a n. Por exemplo, fatorial(5) retorna 120, que é o resultado de 5 * 4 * 3 * 2 * 1. A função usa a recursão para calcular o fatorial de n - 1 e multiplicar pelo n atual. A recursão termina quando n é igual a zero, que é o caso base.
