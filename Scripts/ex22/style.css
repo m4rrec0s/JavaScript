@@ -23,3 +23,7 @@ footer {
     text-align: center;
     font-style: italic;
 }
+
+#lista {
+    width: 200px;
+}
