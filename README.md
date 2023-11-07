@@ -203,3 +203,21 @@ function fatorial(n) {
 ```
 
 A função fatorial recebe um número inteiro positivo n e retorna o produto de todos os números inteiros positivos menores ou iguais a n. Por exemplo, fatorial(5) retorna 120, que é o resultado de 5 * 4 * 3 * 2 * 1. A função usa a recursão para calcular o fatorial de n - 1 e multiplicar pelo n atual. A recursão termina quando n é igual a zero, que é o caso base.
+
+## Funções (avançado)
+...
+
+## Objetos
+...
+
+## Modularização
+...
+
+## RegEx
+...
+
+## JSON
+...
+
+## AJAX
+...
