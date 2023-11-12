@@ -9,28 +9,28 @@
 <body>
     <div id="corpo">
         <h3>Calculadora</h3>
-        <div id="tela">429</div>
+        <div id="tela"></div>
         <div id="botoes">
-            <button>C</button>
-            <button>CE</button>
-            <button>DEL</button>
-            <button id="dividir">/</button>
-            <button class="numero" id="num_7">7</button>
-            <button class="numero" id="num_8">8</button>
-            <button class="numero" id="num_9">9</button>
-            <button>*</button>
-            <button class="numero" id="num_4">4</button>
-            <button class="numero" id="num_5">5</button>
-            <button class="numero" id="num_6">6</button>
-            <button>-</button>
-            <button class="numero" id="num_1">1</button>
-            <button class="numero" id="num_2">2</button>
-            <button class="numero" id="num_3">3</button>
-            <button>+</button>
+            <button onclick="operador()">C</button>
+            <button onclick="operador()">CE</button>
+            <button onclick="operador()">DEL</button>
+            <button id="dividir" onclick="operador()">/</button>
+            <button class="numero" id="num_7" onclick="atualizarTela(this)">7</button>
+            <button class="numero" id="num_8" onclick="atualizarTela(this)">8</button>
+            <button class="numero" id="num_9" onclick="atualizarTela(this)">9</button>
+            <button id="mult" onclick="operador()">*</button>
+            <button class="numero" id="num_4" onclick="atualizarTela(this)">4</button>
+            <button class="numero" id="num_5" onclick="atualizarTela(this)">5</button>
+            <button class="numero" id="num_6" onclick="atualizarTela(this)">6</button>
+            <button id="menos" onclick="operador()">-</button>
+            <button class="numero" id="num_1" onclick="atualizarTela(this)">1</button>
+            <button class="numero" id="num_2" onclick="atualizarTela(this)">2</button>
+            <button class="numero" id="num_3" onclick="atualizarTela(this)">3</button>
+            <button id="mais" onclick="operador()">+</button>
             <button class="numero"></button>
-            <button class="numero" id="num_0">0</button>
-            <button class="numero" id="virgula">,</button>
-            <button id="igual">=</button>
+            <button class="numero" id="num_0" onclick="atualizarTela(this)">0</button>
+            <button class="numero" id="virgula" onclick="atualizarTela(this)">,</button>
+            <button id="igual" onclick="resultado()">=</button>
         </div>
     </div>
 </body>
