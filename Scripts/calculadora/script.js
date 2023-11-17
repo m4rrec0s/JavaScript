@@ -15,6 +15,8 @@ var menos = document.getElementById('')
 var mult = document.getElementById('')
 var divs = document.getElementById('')
 //valores
+let primeiroNumero = null;
+let operacao = null;
 
 num_0 = 0
 num_1 = 1
@@ -63,7 +65,67 @@ function atualizarTela(botao) {
 }
 
 function operador(botao) {
-    if (botao.innerHTML.value === 'CE' || 'C' || 'DEL') {
-        return tela.innerHTML = ''
-    }
+  let tela = document.getElementById("tela");
+  let valor = botao.innerHTML;
+    
+  if (botao.innerHTML === 'CE' || 'C' || 'DEL') {
+      valor = '';
+      tela.innerHTML = valor;
+  }
+}
+
+function matematica(botao) {
+  let tela = document.getElementById("tela");
+  let valor = botao.innerHTML;
+
+  switch (valor) {
+    case "+":
+      operacao = "soma";
+      primeiroNumero = parseFloat(tela.innerHTML);
+      tela.innerHTML = "";
+      break;
+    case "-":
+      operacao = "subtracao";
+      primeiroNumero = parseFloat(tela.innerHTML);
+      tela.innerHTML = "";
+      break;
+    case "*":
+      operacao = "multiplicacao";
+      primeiroNumero = parseFloat(tela.innerHTML);
+      tela.innerHTML = "";
+      break;
+    case "/":
+      operacao = "divisao";
+      primeiroNumero = parseFloat(tela.innerHTML);
+      tela.innerHTML = "";
+      break;
+    case "=":
+      if (operacao && primeiroNumero !== null) {
+        
+        const segundoNumero = parseFloat(tela.innerHTML);
+        let resultado;
+
+        switch (operacao) {
+          case "soma":
+            resultado = primeiroNumero + segundoNumero;
+            break;
+          case "subtracao":
+            resultado = primeiroNumero - segundoNumero;
+            break;
+          case "multiplicacao":
+            resultado = primeiroNumero * segundoNumero;
+            break;
+          case "divisao":
+            resultado = primeiroNumero / segundoNumero;
+            break;
+        }
+        
+        tela.innerHTML = resultado;
+        primeiroNumero = resultado; // Atualize o primeiro número para o resultado
+        operacao = null;
+      }
+      break;
+    default:
+      tela.innerHTML += valor;
+  }
 }

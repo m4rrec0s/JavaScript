@@ -11,26 +11,26 @@
         <h3>Calculadora</h3>
         <div id="tela"></div>
         <div id="botoes">
-            <button onclick="operador()">C</button>
-            <button onclick="operador()">CE</button>
-            <button onclick="operador()">DEL</button>
-            <button id="dividir" onclick="operador()">/</button>
+            <button onclick="operador(this)">C</button>
+            <button onclick="operador(this)">CE</button>
+            <button onclick="operador(this)">DEL</button>
+            <button id="dividir" onclick="matematica(this)">/</button>
             <button class="numero" id="num_7" onclick="atualizarTela(this)">7</button>
             <button class="numero" id="num_8" onclick="atualizarTela(this)">8</button>
             <button class="numero" id="num_9" onclick="atualizarTela(this)">9</button>
-            <button id="mult" onclick="operador()">*</button>
+            <button id="mult" onclick="matematica(this)">*</button>
             <button class="numero" id="num_4" onclick="atualizarTela(this)">4</button>
             <button class="numero" id="num_5" onclick="atualizarTela(this)">5</button>
             <button class="numero" id="num_6" onclick="atualizarTela(this)">6</button>
-            <button id="menos" onclick="operador()">-</button>
+            <button id="menos" onclick="matematica(this)">-</button>
             <button class="numero" id="num_1" onclick="atualizarTela(this)">1</button>
             <button class="numero" id="num_2" onclick="atualizarTela(this)">2</button>
             <button class="numero" id="num_3" onclick="atualizarTela(this)">3</button>
-            <button id="mais" onclick="operador()">+</button>
+            <button id="mais" onclick="matematica(this)">+</button>
             <button class="numero"></button>
             <button class="numero" id="num_0" onclick="atualizarTela(this)">0</button>
             <button class="numero" id="virgula" onclick="atualizarTela(this)">,</button>
-            <button id="igual" onclick="resultado()">=</button>
+            <button id="igual" onclick="matematica(this)">=</button>
         </div>
     </div>
 </body>
