@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Age calculator app</title>
+</head>
+<body>
+
+  <div id="bloco">
+    <div id="caixa_inputs">
+        <form>
+            <div class="entrada">
+                <label for="dia">DAY</label>
+                <input type="text" id="dia" placeholder="DD" oninput="limitarCaracteres(this, 2)">
+            </div>
+
+            <div class="entrada">
+                <label for="mes">MONTH</label>
+                <input type="text" id="mes" placeholder="MM" oninput="limitarCaracteres(this, 2)">
+            </div>
+
+            <div class="entrada">
+                <label for="ano">YEAR</label>
+                <input type="text" id="ano" placeholder="YYYY" oninput="limitarCaracteres(this, 4)">
+            </div>
+
+            <button id="botao"><img src="assets/images/icon-arrow.svg" alt="icon-arrow"></button>
+        </form>
+    </div>
+  </div>
+    <div id="idade">
+      <p>-- years</p>
+      <p>-- months</p>
+      <p>-- days</p>
+    </div>
+  </div>
+
+</body>
+</html>
