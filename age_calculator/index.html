@@ -12,26 +12,30 @@
 
   <div id="bloco">
     <div id="caixa_inputs">
-        <form>
-            <div class="entrada">
-                <label for="dia">DAY</label>
-                <input type="text" id="dia" placeholder="DD" oninput="limitarCaracteres(this, 2)">
-            </div>
+      <form>
+        <div class="entrada">
+            <label for="dia">DAY</label>
+            <input type="text" id="dia" placeholder="DD" oninput="validarNumeros(this, 2)">
+        </div>
 
-            <div class="entrada">
-                <label for="mes">MONTH</label>
-                <input type="text" id="mes" placeholder="MM" oninput="limitarCaracteres(this, 2)">
-            </div>
+        <div class="entrada">
+            <label for="mes">MONTH</label>
+            <input type="text" id="mes" placeholder="MM" oninput="validarNumeros(this, 2)">
+        </div>
 
-            <div class="entrada">
-                <label for="ano">YEAR</label>
-                <input type="text" id="ano" placeholder="YYYY" oninput="limitarCaracteres(this, 4)">
-            </div>
-
-            <button id="botao"><img src="assets/images/icon-arrow.svg" alt="icon-arrow"></button>
-        </form>
+        <div class="entrada">
+            <label for="ano">YEAR</label>
+            <input type="text" id="ano" placeholder="YYYY" oninput="validarNumeros(this, 4)">
+        </div>
+      </form>
     </div>
-  </div>
+
+    <div id="bloco_botao">
+      <div class="botao">
+        <button onclick="mostrarNumeros()" id="botao"><img src="assets/images/icon-arrow.svg" alt="icon-arrow"></button>
+        <div id="linha"></div>
+      </div>
+    </div>
     <div id="idade">
       <p>-- years</p>
       <p>-- months</p>

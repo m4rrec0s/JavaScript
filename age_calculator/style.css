@@ -34,57 +34,117 @@ body {
     position: relative;
 }
 
+
 #bloco {
     background-color: var(--White);
-    width: 600px;
+    width: 650px;
     height: 450px;
     padding: 10px;
     border-radius: 20px 20px 200px 20px;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.168);
-}
-
-#caixa_inputs form {
-    display: flex;
-}
-
-#caixa_inputs form > label {
-    font-size: 12px;
-    font-weight: 700;
-    color: var(--Off-black);
-
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.081);
 }
 
 #caixa_inputs {
-    text-align: center;
-}
-
-form {
+    margin-left: 25px;
+    margin-top: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-label {
-    margin-bottom: 5px;
-}
-
-input {
-    padding: 5px;
-    margin-bottom: 15px;
 }
 
 .entrada {
-    display: flex;
-    justify-content: space-between;
-    width: 300px; /* Ajuste a largura conforme necessário */
-    margin-bottom: 15px;
+    display: inline-block;
+    text-align: left;
+    margin-right: 20px;
 }
 
-#botao {
+.entrada input {
+    display: block;
+    margin-top: 5px;
+    width: 150px;
+    height: 55px;
+    outline: none;
+    border: 1.5px solid var(--Light-grey); /* Substituí border-width e border-color por border */
+    border-radius: 8px;
+    padding: 10px 20px; /* Simplificado padding para top, right, bottom, left */
+    font-size: 32px;
+    font-weight: 700;
+    box-sizing: border-box; /* Garante que o tamanho inclua borda e preenchimento */
+    transition: border 0.3s ease-in-out;
+}
+
+.entrada input::placeholder {
+    color: var(--Smokey-grey);
+}
+
+.entrada input:focus {
+    border: 1.5px solid var(--Purple);
+}
+
+#bloco_botao {
+    display: flex;
+    justify-content: right;
+    position: relative; /* Adicionado para tornar a posição absoluta relativa ao bloco_botao */
+}
+
+#linha {
+    position: absolute;
+    width: 85%;
+    height: 2px;
+    background-color: var(--Light-grey);
+    bottom: 50%; /* Posição central na parte inferior do bloco_botao */
+    left: 4%;
+    transform: translateY(50%);
+    z-index: -1; /* Coloca a linha abaixo do bloco_botao */
+}
+
+.botao {
+    margin: 10px 25px;
+    z-index: 1; /* Coloca o botão acima da linha */
+}
+
+.botao button {
+    background-color: var(--Purple);
     border: none;
-    background-color: #3498db;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
+    
+    border-radius: 100%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.botao button:hover {
+    background-color: var(--Off-black);
+}
+
+.botao button > img {
+    padding: 20px;
+    width: 30px;
+}
+
+.entrada label {
+    font-size: 12px;
+    color: var(--Off-black);
+    letter-spacing: 0.2em;
+}
+
+#idade {
+    margin-left: 0px;
+    margin-top: 20px; /* Espaçamento acima da div#idade */
+    text-align: left;
+}
+
+#idade p {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.erro-label {
+    color: var(--Light-red);
+}
+
+.erro-input {
+    border-color: var(--Light-red);
+}
+
+.mensagem-erro {
+    color: var(--Light-red);
+    font-size: 10px;
+    margin-top: 5px;
 }
