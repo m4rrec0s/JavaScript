@@ -12,6 +12,7 @@
     /* Primary */
 
     --Purple: rgb(133, 77, 255);
+    --Many-red: rgb(255, 152, 152);
     --Light-red: rgb(255, 87, 87);
 
     /*Neutral*/
@@ -38,7 +39,7 @@ body {
 #bloco {
     background-color: var(--White);
     width: 650px;
-    height: 450px;
+    height: 100%;
     padding: 10px;
     border-radius: 20px 20px 200px 20px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.081);
@@ -47,6 +48,9 @@ body {
 #caixa_inputs {
     margin-left: 25px;
     margin-top: 20px;
+}
+
+form {
     display: flex;
 }
 
@@ -125,9 +129,10 @@ body {
 }
 
 #idade {
-    margin-left: 0px;
+    margin-left: 30px;
     margin-top: 20px; /* Espaçamento acima da div#idade */
     text-align: left;
+    padding-bottom: 20px;
 }
 
 #idade p {
@@ -136,11 +141,17 @@ body {
 }
 
 .erro-label {
-    color: var(--Light-red);
+    color: var(--Light-red) !important;
 }
 
 .erro-input {
-    border-color: var(--Light-red);
+    border: 1.5px solid var(--Many-red) !important;
+    box-sizing: border-box !important; /* Garante que o tamanho inclua borda e preenchimento */
+    transition: border-color 0.3s ease-in-out !important;
+}
+
+.erro-input:focus {
+    border: 2px solid var(--Light-red) !important;
 }
 
 .mensagem-erro {

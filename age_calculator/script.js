@@ -15,6 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
     var ano = document.getElementById('ano');
 
     function mostrarErro(input, mensagem) {
+        // Remove mensagens de erro existentes
+        var mensagensErroAntigas = input.parentNode.querySelectorAll('.mensagem-erro');
+        mensagensErroAntigas.forEach(function (element) {
+            element.parentNode.removeChild(element);
+        });
         // Adiciona mensagem de erro abaixo do input
         var mensagemErro = document.createElement('div');
         mensagemErro.className = 'mensagem-erro';
@@ -22,8 +27,11 @@ document.addEventListener("DOMContentLoaded", function () {
         input.parentNode.appendChild(mensagemErro);
 
         // Adiciona classe de erro ao label
-        input.previousElementSibling.classList.add('erro-label');
-
+        var label = input.labels[0]; // Seleciona o primeiro label associado ao input
+        if (label) {
+            label.classList.add('erro-label');
+        }
+    
         // Adiciona classe de erro ao input
         input.classList.add('erro-input');
     }
@@ -53,29 +61,41 @@ document.addEventListener("DOMContentLoaded", function () {
         var diaValor = parseInt(dia.value, 10) || 0;
         var mesValor = parseInt(mes.value, 10) || 0;
         var anoValor = parseInt(ano.value, 10) || 0;
+        // Verifica se o dia é válido para o mês
+        var ultimoDiaDoMes = new Date(anoValor, mesValor, 0).getDate();
+
+        // Limpa todos os erros antes de verificar novamente
+        limparErros();
 
         // Verificações adicionais
+
+        //Caso o usuário não colocar nenhum valor
+        if (diaValor == 0) {
+            mostrarErro(dia, 'Insira algum valor.');
+        }
+
+        if (mesValor == 0) {
+            mostrarErro(mes, 'Insira algum valor.');
+        }
+        
+        if (anoValor == 0) {
+            mostrarErro(ano, 'Insira algum valor.');
+        }
+
         if (diaValor < 1 || diaValor > 31) {
             mostrarErro(dia, 'O dia deve estar entre 1 e 31.');
-            return;
         }
 
         if (mesValor < 1 || mesValor > 12) {
-            alert('O mês deve estar entre 1 e 12.');
-            return;
+            mostrarErro(mes, 'O mês deve estar entre 1 e 12.');
         }
 
         if (anoValor >= new Date().getFullYear()) {
-            alert('O ano deve ser menor que o ano atual.');
-            return;
+            mostrarErro(ano, 'O ano deve ser menor que o ano atual.');
         }
-
-        // Verifica se o dia é válido para o mês
-        var ultimoDiaDoMes = new Date(anoValor, mesValor, 0).getDate();
         
         if (diaValor < 1 || diaValor > ultimoDiaDoMes) {
-            alert('O dia não é válido para o mês selecionado.');
-            return;
+            mostrarErro(dia, 'O dia não é válido para este mês.');
         }
 
         // Obtém a data atual
@@ -97,5 +117,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     var botao = document.getElementById('botao');
-    botao.addEventListener('click', mostrarNumeros);
+    botao.addEventListener('click', function () {
+        limparErros();  // Chama limparErros antes de mostrarNumeros
+        mostrarNumeros();
+    });
 });
