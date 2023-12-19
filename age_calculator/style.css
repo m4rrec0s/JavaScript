@@ -130,14 +130,13 @@ form {
 
 #idade {
     margin-left: 30px;
-    margin-top: 20px; /* Espaçamento acima da div#idade */
     text-align: left;
     padding-bottom: 20px;
 }
 
 #idade p {
+    margin-left: 5px;
     font-weight: 700;
-    font-size: 50px;
 }
 
 .erro-label {
@@ -159,3 +158,44 @@ form {
     font-size: 10px;
     margin-top: 5px;
 }
+
+.purple-text {
+    color: var(--Purple);
+}
+
+.years, .days, .months{
+    display: flex;
+    font-size: 50px;
+}
+
+.p_roxo {
+    color: var(--Purple);
+    font-size: 60px;
+}
+
+/*
+@keyframes confeteFall {
+    0% { transform: translateY(-100vh) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+}
+*/ 
+
+/*
+.celebracao::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #f00;  Cor do confete (pode ser ajustada) 
+    animation: confeteFall 5s linear infinite; Ajuste a duração conforme necessário
+}
+*
+.celebracao::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #f00; /* Cor do confete (pode ser ajustada) 
+    animation: confeteFall 5s linear infinite, confeteFall 5s linear infinite 2s;  Ajuste a duração conforme necessário 
+}
+*/

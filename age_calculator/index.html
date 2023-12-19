@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/date-fns@2.25.0"></script>
   <script src="script.js"></script>
   <title>Age calculator app</title>
 </head>
@@ -37,10 +38,16 @@
       </div>
     </div>
     <div id="idade">
-      <p>-- years</p>
-      <p>-- months</p>
-      <p>-- days</p>
-    </div>
+      <div class="years" id="anoYears">
+          <p class="p_roxo">--</p> <p>years</p>
+      </div>
+      <div class="months" id="anoMonths">
+          <p class="p_roxo">--</p> <p>months</p>
+      </div>
+      <div class="days" id="anoDays">
+          <p class="p_roxo">--</p> <p>days</p>
+      </div>
+  </div>
   </div>
 
 </body>

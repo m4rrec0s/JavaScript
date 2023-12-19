@@ -13,6 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
     var dia = document.getElementById('dia');
     var mes = document.getElementById('mes');
     var ano = document.getElementById('ano');
+    var idadeYears = document.getElementById('anoYears');
+    var idadeMonths = document.getElementById('anoMonths');
+    var idadeDays = document.getElementById('anoDays');
 
     function mostrarErro(input, mensagem) {
         // Remove mensagens de erro existentes
@@ -98,23 +101,106 @@ document.addEventListener("DOMContentLoaded", function () {
             mostrarErro(dia, 'O dia não é válido para este mês.');
         }
 
-        // Obtém a data atual
-        var hoje = new Date();
+        // Verifica se houve algum erro antes de mostrar o resultado
+        var houveErros = document.querySelectorAll('.erro-input').length > 0;
 
-        // Define a data de nascimento com base nos valores dos campos
-        var dataNascimento = new Date(anoValor, mesValor - 1, diaValor);
+        if (!houveErros) {
 
-        // Calcula a diferença em milissegundos entre as duas datas
-        var diferencaEmMilissegundos = hoje - dataNascimento;
+            // Obtém a data atual
+            var hoje = new Date();
 
-        // Calcula a diferença em anos, meses e dias
-        var diferencaEmAnos = Math.floor(diferencaEmMilissegundos / (365.25 * 24 * 60 * 60 * 1000));
-        var diferencaEmMeses = Math.floor((diferencaEmMilissegundos % (365.25 * 24 * 60 * 60 * 1000)) / (30.44 * 24 * 60 * 60 * 1000));
-        var diferencaEmDias = Math.floor((diferencaEmMilissegundos % (30.44 * 24 * 60 * 60 * 1000)) / (24 * 60 * 60 * 1000));
+            // Define a data de nascimento com base nos valores dos campos
+            var dataNascimento = new Date(anoValor, mesValor - 1, diaValor);
 
-        // Mostra o resultado no console
-        console.log(`Idade: ${diferencaEmAnos} anos, ${diferencaEmMeses} meses, ${diferencaEmDias} dias`);
+            // Calcula a diferença em anos, meses e dias
+            var diferencaEmAnos = hoje.getFullYear() - dataNascimento.getFullYear();
+            var mesAtual = hoje.getMonth();
+            var mesNascimento = dataNascimento.getMonth();
+
+            // Verifica se já fez aniversário este ano
+            if (mesNascimento > mesAtual || (mesNascimento === mesAtual && hoje.getDate() < dataNascimento.getDate())) {
+                diferencaEmAnos--;
+                mesNascimento = mesAtual + 12;
+            }
+
+            var diferencaEmMeses = mesNascimento - mesAtual;
+
+            if (hoje.getDate() < dataNascimento.getDate()) {
+                diferencaEmMeses--;
+            }
+
+            var ultimoDiaDoMesNascimento = new Date(anoValor, mesValor, 0).getDate();
+            var ultimoDiaDoMesAtual = new Date(hoje.getFullYear(), hoje.getMonth() + 1, 0).getDate();
+
+            var diferencaEmDias;
+
+            if (hoje.getDate() >= dataNascimento.getDate()) {
+                diferencaEmDias = hoje.getDate() - dataNascimento.getDate();
+            } else {
+                diferencaEmDias = ultimoDiaDoMesNascimento - dataNascimento.getDate() + hoje.getDate();
+            }
+
+            console.log(idadeDays.value, idadeMonths.value, idadeYears.value)
+
+            updateElementWithAnimation(idadeYears, diferencaEmAnos);
+            updateElementWithAnimation(idadeMonths, diferencaEmMeses);
+            updateElementWithAnimation(idadeDays, diferencaEmDias);
+
+            // Adiciona a classe .purple-text apenas aos '--' dentro dos elementos <p>
+            idadeYears.querySelector('p').classList.add('purple-text');
+            idadeMonths.querySelector('p').classList.add('purple-text');
+            idadeDays.querySelector('p').classList.add('purple-text');
+        }
     }
+
+    function updateElementWithAnimation(element, endValue) {
+        var start = 0;
+        var duration = 1500; // Tempo da animação em milissegundos
+        var range = endValue - start;
+        var current = start;
+        var increment = endValue > start ? 1 : -1;
+        var stepTime = Math.abs(Math.floor(duration / range));
+    
+        function updateNumber() {
+            current += increment;
+    
+            // Ajuste para lidar com valores negativos
+            var displayValue = current < 0 ? 0 : current;
+    
+            element.querySelector('p').innerText = displayValue;
+    
+            if ((increment > 0 && current < endValue) || (increment < 0 && current > endValue)) {
+                setTimeout(updateNumber, stepTime);
+            }
+        }
+    
+        updateNumber();
+    }
+/*
+    function celebrarAniversario() {
+        // Adicione a classe de animação de confete à div principal
+        document.getElementById('bloco').classList.add('celebracao');
+    
+        // Remova a classe de animação após um tempo para permitir que o confete caia
+        setTimeout(function () {
+            document.getElementById('bloco').classList.remove('celebracao');
+        }, 5000); // Ajuste o tempo conforme necessário
+    }
+
+    // Função para verificar e celebrar o aniversário
+    function verificarEcelebrarAniversario() {
+        var hoje = new Date();
+        var aniversario = new Date(hoje.getFullYear(), mesValor - 1, diaValor);
+
+        // Verifica se hoje é o aniversário
+        if (dateFns.isToday(aniversario)) {
+            celebrarAniversario();
+        }
+    }
+
+    // Chama a função de verificação e celebração ao carregar a página
+    verificarEcelebrarAniversario();
+*/
 
     var botao = document.getElementById('botao');
     botao.addEventListener('click', function () {
