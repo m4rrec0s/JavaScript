@@ -1,5 +1,16 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+@font-face {
+    font-family: 'Poppins';
+
+    src: url('assets/fonts/Poppins-Italic.ttf') format('truetype');
+    font-weight: 400;
+
+    src: url('assets/fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+
+    src: url('assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+}
 
 * {
     margin: 0;
@@ -70,7 +81,7 @@ form {
     border-radius: 8px;
     padding: 10px 20px; /* Simplificado padding para top, right, bottom, left */
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 600;
     box-sizing: border-box; /* Garante que o tamanho inclua borda e preenchimento */
     transition: border 0.3s ease-in-out;
 }
@@ -126,17 +137,19 @@ form {
     font-size: 12px;
     color: var(--Off-black);
     letter-spacing: 0.2em;
+    font-weight: 400;
 }
 
 #idade {
     margin-left: 30px;
     text-align: left;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
+    line-height: 4.5em;
 }
 
 #idade p {
-    margin-left: 5px;
-    font-weight: 700;
+    margin-left: 8px;
+    font-weight: 1000;
 }
 
 .erro-label {
@@ -165,12 +178,12 @@ form {
 
 .years, .days, .months{
     display: flex;
-    font-size: 50px;
+    font-size: 80px;
 }
 
 .p_roxo {
     color: var(--Purple);
-    font-size: 60px;
+    font-size: 90px;
 }
 
 #my-canvas {

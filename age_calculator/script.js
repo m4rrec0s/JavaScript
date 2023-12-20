@@ -168,7 +168,22 @@ document.addEventListener("DOMContentLoaded", function () {
             var confettiElement = document.getElementById('my-canvas');
             var confettiSettings = { target: confettiElement };
             var confetti = new ConfettiGenerator(confettiSettings);
+
+            // Adicione um identificador ao confetti gerado
+            confetti.identifier = 'celebration-confetti';
+
             confetti.render();
+        }
+
+        // Função para parar a celebração
+        function pararCelebracao() {
+            var confettiElement = document.getElementById('my-canvas');
+            var confetti = confettiElement.querySelector('.confetti-wrapper');
+
+            // Remove o confete se estiver em execução
+            if (confetti) {
+                confettiElement.innerHTML = ''; // Remove todos os elementos filhos do elemento do confete
+            }
         }
     
     
@@ -183,6 +198,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 hoje.getMonth() === aniversario.getMonth()
             ) {
                 celebrarAniversario();
+            } else {
+                pararCelebracao();
             }
         }
     
