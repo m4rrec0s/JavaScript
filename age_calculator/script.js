@@ -65,11 +65,10 @@ document.addEventListener("DOMContentLoaded", function () {
         var mesValor = parseInt(mes.value, 10) || 0;
         var anoValor = parseInt(ano.value, 10) || 0;
         // Verifica se o dia é válido para o mês
-        var ultimoDiaDoMes = new Date(anoValor, mesValor, 0).getDate();
+        var ultimoDiaDoMes = new Date(anoValor, mesValor, 0).getDate(); 
 
         // Limpa todos os erros antes de verificar novamente
         limparErros();
-
         // Verificações adicionais
 
         //Caso o usuário não colocar nenhum valor
@@ -105,102 +104,113 @@ document.addEventListener("DOMContentLoaded", function () {
         var houveErros = document.querySelectorAll('.erro-input').length > 0;
 
         if (!houveErros) {
-
-            // Obtém a data atual
             var hoje = new Date();
 
             // Define a data de nascimento com base nos valores dos campos
-            var dataNascimento = new Date(anoValor, mesValor - 1, diaValor);
 
+            var dataNascimento = new Date(anoValor, mesValor - 1, diaValor);
+        
             // Calcula a diferença em anos, meses e dias
             var diferencaEmAnos = hoje.getFullYear() - dataNascimento.getFullYear();
             var mesAtual = hoje.getMonth();
             var mesNascimento = dataNascimento.getMonth();
-
+        
             // Verifica se já fez aniversário este ano
             if (mesNascimento > mesAtual || (mesNascimento === mesAtual && hoje.getDate() < dataNascimento.getDate())) {
                 diferencaEmAnos--;
-                mesNascimento = mesAtual + 12;
             }
 
-            var diferencaEmMeses = mesNascimento - mesAtual;
+            var diferencaEmMeses = mesAtual - mesNascimento;
 
-            if (hoje.getDate() < dataNascimento.getDate()) {
-                diferencaEmMeses--;
+            // Ajuste para evitar meses negativos
+            if (diferencaEmMeses < 0) {
+                diferencaEmMeses = 12 + diferencaEmMeses;
             }
 
-            var ultimoDiaDoMesNascimento = new Date(anoValor, mesValor, 0).getDate();
-            var ultimoDiaDoMesAtual = new Date(hoje.getFullYear(), hoje.getMonth() + 1, 0).getDate();
+            // Ajuste para garantir que os meses estejam no intervalo de 0 a 11
+            diferencaEmMeses = diferencaEmMeses >= 0 ? diferencaEmMeses : 0;
 
             var diferencaEmDias;
-
+            
+            if (hoje.getDate() >= dataNascimento.getDate()) {
+                diferencaEmDias = hoje.getDate() - dataNascimento.getDate();
+            } else {
+                var ultimoDiaDoMesNascimento = new Date(anoValor, mesValor, 0).getDate();
+                diferencaEmDias = ultimoDiaDoMesNascimento - dataNascimento.getDate() + hoje.getDate();
+            }
+        
+            var ultimoDiaDoMesNascimento = new Date(anoValor, mesValor, 0).getDate();
+            var ultimoDiaDoMesAtual = new Date(hoje.getFullYear(), hoje.getMonth() + 1, 0).getDate();
+        
+            var diferencaEmDias;
+        
             if (hoje.getDate() >= dataNascimento.getDate()) {
                 diferencaEmDias = hoje.getDate() - dataNascimento.getDate();
             } else {
                 diferencaEmDias = ultimoDiaDoMesNascimento - dataNascimento.getDate() + hoje.getDate();
             }
-
-            console.log(idadeDays.value, idadeMonths.value, idadeYears.value)
-
+        
             updateElementWithAnimation(idadeYears, diferencaEmAnos);
             updateElementWithAnimation(idadeMonths, diferencaEmMeses);
             updateElementWithAnimation(idadeDays, diferencaEmDias);
 
+            // Chama a função de verificação e celebração ao carregar a página
+            verificarEcelebrarAniversario();
+        
             // Adiciona a classe .purple-text apenas aos '--' dentro dos elementos <p>
             idadeYears.querySelector('p').classList.add('purple-text');
             idadeMonths.querySelector('p').classList.add('purple-text');
             idadeDays.querySelector('p').classList.add('purple-text');
         }
-    }
 
-    function updateElementWithAnimation(element, endValue) {
-        var start = 0;
-        var duration = 1500; // Tempo da animação em milissegundos
-        var range = endValue - start;
-        var current = start;
-        var increment = endValue > start ? 1 : -1;
-        var stepTime = Math.abs(Math.floor(duration / range));
+        function celebrarAniversario() {
+            // Adicione a classe de animação de confete à div principal
+            var confettiElement = document.getElementById('my-canvas');
+            var confettiSettings = { target: confettiElement };
+            var confetti = new ConfettiGenerator(confettiSettings);
+            confetti.render();
+        }
     
-        function updateNumber() {
-            current += increment;
     
-            // Ajuste para lidar com valores negativos
-            var displayValue = current < 0 ? 0 : current;
-    
-            element.querySelector('p').innerText = displayValue;
-    
-            if ((increment > 0 && current < endValue) || (increment < 0 && current > endValue)) {
-                setTimeout(updateNumber, stepTime);
+        // Função para verificar e celebrar o aniversário
+        function verificarEcelebrarAniversario() {
+            var hoje = new Date();
+            var aniversario = new Date(hoje.getFullYear(), mesValor - 1, diaValor);
+        
+            // Verifica se hoje é o aniversário
+            if (
+                hoje.getDate() === aniversario.getDate() &&
+                hoje.getMonth() === aniversario.getMonth()
+            ) {
+                celebrarAniversario();
             }
         }
     
-        updateNumber();
-    }
-/*
-    function celebrarAniversario() {
-        // Adicione a classe de animação de confete à div principal
-        document.getElementById('bloco').classList.add('celebracao');
-    
-        // Remova a classe de animação após um tempo para permitir que o confete caia
-        setTimeout(function () {
-            document.getElementById('bloco').classList.remove('celebracao');
-        }, 5000); // Ajuste o tempo conforme necessário
-    }
 
-    // Função para verificar e celebrar o aniversário
-    function verificarEcelebrarAniversario() {
-        var hoje = new Date();
-        var aniversario = new Date(hoje.getFullYear(), mesValor - 1, diaValor);
+        function updateElementWithAnimation(element, endValue) {
+            var start = 0;
+            var duration = 1500; // Tempo da animação em milissegundos
+            var range = endValue - start;
+            var current = start;
+            var increment = endValue > start ? 1 : -1;
+            var stepTime = Math.abs(Math.floor(duration / range));
 
-        // Verifica se hoje é o aniversário
-        if (dateFns.isToday(aniversario)) {
-            celebrarAniversario();
-        }
-    }
+            function updateNumber() {
+                current += increment;
 
-    // Chama a função de verificação e celebração ao carregar a página
-    verificarEcelebrarAniversario();
-*/
+                // Ajuste para lidar com valores negativos
+                var displayValue = current < 0 ? 0 : current;
+
+                element.querySelector('p').innerText = displayValue;
+
+                if ((increment > 0 && current < endValue) || (increment < 0 && current > endValue)) {
+                    setTimeout(updateNumber, stepTime);
+                }
+            }
+
+            updateNumber();
+
+        }}
 
     var botao = document.getElementById('botao');
     botao.addEventListener('click', function () {

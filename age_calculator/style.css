@@ -173,29 +173,13 @@ form {
     font-size: 60px;
 }
 
-/*
-@keyframes confeteFall {
-    0% { transform: translateY(-100vh) rotate(0deg); }
-    100% { transform: translateY(100vh) rotate(360deg); }
+#my-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100000;
+    visibility: visible;
+    pointer-events: none;
 }
-*/ 
-
-/*
-.celebracao::after {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: #f00;  Cor do confete (pode ser ajustada) 
-    animation: confeteFall 5s linear infinite; Ajuste a duração conforme necessário
-}
-*
-.celebracao::before {
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: #f00; /* Cor do confete (pode ser ajustada) 
-    animation: confeteFall 5s linear infinite, confeteFall 5s linear infinite 2s;  Ajuste a duração conforme necessário 
-}
-*/
