@@ -53,8 +53,6 @@ class ArmaRecarregavel extends ArmaLancavel {
         this.chance = chance
         this.proj = proj
     }
-
-
 }
 
 const ak47 = new Arma('ak47', 30)
@@ -65,7 +63,7 @@ console.log(shuryken)
 
 /* 
 
-ArmaLancavel
+--> ArmaLancavel
 
 chanceDeAcerto: int
 randomGenerator: Random
@@ -77,7 +75,7 @@ setChanceDeAcerto(int): void
 getRandomGenerator(): Random
 setRandomGenerator(Random): void
 
-ArmaRecarregavel
+--> ArmaRecarregavel
 
 projeteis: int
 ArmaRecarregavel(String, int, int, int)
