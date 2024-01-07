@@ -1,8 +1,12 @@
 class Arma {
-    constructor (nome, dano) {
+    constructor (nome, dano) { //parametros//
         this.nome = nome
         this.dano = dano
     }
+
+    ///////////////////////
+    //      métodos     //
+    //////////////////////
 
     getNome () {
         return this.nome
@@ -23,107 +27,75 @@ class Arma {
 }
 
 class ArmaLancavel extends Arma {
-    constructor(nome, dano, chance) {
-        super(nome, dano);
-        this.chance = chance;
+    
+    constructor(nome, dano, chance) {   //parametros//
+        super(nome, dano)
+        this.chance = chance
     }
 
+    //////////////////////
+    //      métodos     //
+    //////////////////////
+
     chanceDeAcerto() {
-        return this.randomGenerator();
+        this.chance = this.randomGenerator()
     }
 
     randomGenerator() {
-        let chance = Math.floor(Math.random() * 101);
-        return chance;
+        return Math.floor(Math.random() * 101)
     }
 
     getChanceDeAcerto() {
-        return this.chance;
+        return this.chance
     }
 
-    setChanceDeAcerto(chance) {
-        this.chance = chance;
-        return this.chance;
+    setChanceDeAcerto(int) {
+         this.chance = int
     }
+
 }
 
 class ArmaRecarregavel extends ArmaLancavel {
-    constructor (nome, dano, chance, proj) {
-        super(nome, dano)
-        this.chance = chance
+    constructor (nome, dano, chance, proj) { //parametros//
+        super(nome, dano, chance)
         this.proj = proj
     }
+
+    //////////////////////
+    //      métodos     //
+    //////////////////////
+
+
+    setProjeteis(int) {
+        this.proj = int
+    }
+
+    getProjeteis() {
+        return this.proj
+    }
+
 }
 
-const ak47 = new Arma('ak47', 30)
-console.log(ak47)
+    //////////////////////
+    //       testes     //
+    //////////////////////
 
-const shuryken = new ArmaLancavel('shuryken', 10)
+const shuryken = new ArmaLancavel('shuryken', 10, 0)
+shuryken.chanceDeAcerto()
 console.log(shuryken)
 
-/* 
+const lança = new ArmaLancavel('Lança', 25, 0)
+lança.chanceDeAcerto()
+console.log(lança)
 
---> ArmaLancavel
+const pistola = new ArmaRecarregavel('pistola', 45, 0, 6)
+pistola.chanceDeAcerto()
+console.log(pistola)
 
-chanceDeAcerto: int
-randomGenerator: Random
+const ak47 = new ArmaRecarregavel('ak47', 30, 0, 20)
+ak47.chanceDeAcerto()
+console.log(ak47)
 
-ArmaLancavel(String, int, int)
-
-getChanceDeAcerto(): int
-setChanceDeAcerto(int): void
-getRandomGenerator(): Random
-setRandomGenerator(Random): void
-
---> ArmaRecarregavel
-
-projeteis: int
-ArmaRecarregavel(String, int, int, int)
-setProjeteis(int): void
-getProjeteis(): int
-
-
-class Animal {
-    //atributo
-    constructor(nome, cor) {
-        this.nome = nome;
-        this.cor = cor;
-    } 
-
-    getName() {
-       return this.nome; 
-    }
-
-    setName(value) {
-        this.nome = value
-    }
-
-    getSom() {
-        return "Auau"
-    }
-}
-
-const animal = new Animal("Cachorro", "Preto");
-
-animal.setName("Galinha")
-
-class Cachorro extends Animal {
-    
-}
-
-class Gato extends Animal{
-    constructor(amigo) {
-        this.amigo = amigo
-    }
-    getSom() {
-        console.log("miau")
-    }
-}
-
-const cachorro = new Cachorro()
-
-
-const gato = new Gato()
-const gato2 = new Gato(gato) 
-
-*/
+const P90 = new ArmaRecarregavel('P90', 35, 0, 30)
+P90.chanceDeAcerto()
+console.log(P90)
