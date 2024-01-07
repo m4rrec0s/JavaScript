@@ -76,9 +76,9 @@ class ArmaRecarregavel extends ArmaLancavel {
 
 }
 
-    //////////////////////
-    //       testes     //
-    //////////////////////
+//////////////////////
+//       testes     //
+//////////////////////
 
 const shuryken = new ArmaLancavel('shuryken', 10, 0)
 shuryken.chanceDeAcerto()
