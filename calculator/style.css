@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+    --calculator-color: #262626;
+    --back: #141414;
+    --actions: #F2F2F2;
+    --primary: #F5AA49;
+    --hover-color: #85591f;
+    --secundary: #4085FD;
+    --hover-color-sec: #234c92;
+    --font: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body {
+    background-color: var(--back);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculator-content {
+    margin-top: 30px;
+    background-color: var(--calculator-color);
+    max-width: 900px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.636);
+}
+
+.screen {
+    background-color: var(--actions);
+    opacity: 80%;
+    height: 100px;
+    width: 90%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-right: 10px;
+}
+
+.screen h1 {
+    font-size: 50px;
+    text-align: right;
+    color: var(--back);
+}
+
+.numbers-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.numbers-content button {
+    padding: 15px;
+    font-size: 30px;
+}
+
+.action {
+    background-color: var(--primary);
+    color: var(--actions);
+    transition: background-color 0.5s cubic-bezier(0, 0.55, 0.45, 1) 0s;
+}
+
+.action:hover {
+    background-color: var(--hover-color);
+}
+
+.action:active {
+    background-color: var(--primary);
+}
+
+.equal {
+    background-color: var(--secundary);
+    color: var(--actions);
+}
+
+.equal:hover {
+    background-color: var(--hover-color-sec);
+}
+
+.equal:active {
+    background-color: var(--secundary);
+}
