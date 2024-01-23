@@ -91,3 +91,7 @@ body {
 .equal:active {
     background-color: var(--secundary);
 }
+
+.del_button {
+    font-weight: 700;
+}
