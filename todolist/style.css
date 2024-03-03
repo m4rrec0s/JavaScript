@@ -66,6 +66,10 @@ body {
     font-size: 1.3em;
 }
 
+.checkbox {
+    background-color: var(--buttonColor);
+}
+
 .addTask {
     margin: 20px;
     text-align: right;
