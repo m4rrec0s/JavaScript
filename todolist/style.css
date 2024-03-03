@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Roboto:ital,wght@0,100;0,400;0,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --back: #BFBFB8;
+    --font: #232625;
+    --container: #A4A69C;
+    --task: #d4d6cd;
+    
+    --buttonColor: #4C594F;
+    --hover: #35403A;
+
+    --family-1: "Madimi One", sans-serif;
+    --family-2: "Roboto", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--back);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--family-1)
+}
+
+.container {
+    background: var(--container);
+    max-width: 800px;
+    height: 85%;
+    padding: 20px;
+    border-radius: 20px;
+    color: var(--font);
+    box-shadow: 2px 5px 10px #0000005e;
+}
+
+.containerTask {
+    margin-top: 10px;
+    display: grid;
+    align-items: start;
+    justify-items: start;
+    gap: 20px;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+.contentTask {
+    padding: 5px 10px;
+    background-color: var(--task);
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.top {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.top h3 {
+    font-size: 1.3em;
+}
+
+.addTask {
+    margin: 20px;
+    text-align: right;
+}
+
+.addTask > button {
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--buttonColor);
+    transition: background 0.3s ease-in-out;
+    color: var(--task);
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+.addTask > button:hover {
+    background-color: var(--hover);
+}
