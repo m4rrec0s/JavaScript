@@ -12,38 +12,6 @@
         <div class="containerTask">
             <div class="contentTask">
                 <div class="top">
-                    <input type="checkbox" placeholder="checkbox" class="checkbox" id="caixa_1">
-                    <h3>Title</h3>
-                    <p class="time">11:00 am</p>
-                </div>
-                <p class="taskTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi quo aperiam facere voluptas ex porro totam vel nam animi ab quibusdam, possimus sunt id cum atque ipsam repudiandae odit.</p>
-            </div>
-            <div class="contentTask">
-                <div class="top">
-                    <input type="checkbox" placeholder="checkbox" class="checkbox">
-                    <h3>Title</h3>
-                    <p class="time">11:00 am</p>
-                </div>
-                <p class="taskTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi quo aperiam facere voluptas ex porro totam vel nam animi ab quibusdam, possimus sunt id cum atque ipsam repudiandae odit.</p>
-            </div>
-            <div class="contentTask">
-                <div class="top">
-                    <input type="checkbox" placeholder="checkbox" class="checkbox">
-                    <h3>Title</h3>
-                    <p class="time">11:00 am</p>
-                </div>
-                <p class="taskTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi quo aperiam facere voluptas ex porro totam vel nam animi ab quibusdam, possimus sunt id cum atque ipsam repudiandae odit.</p>
-            </div>
-            <div class="contentTask">
-                <div class="top">
-                    <input type="checkbox" placeholder="checkbox" class="checkbox">
-                    <h3>Title</h3>
-                    <p class="time">11:00 am</p>
-                </div>
-                <p class="taskTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi quo aperiam facere voluptas ex porro totam vel nam animi ab quibusdam, possimus sunt id cum atque ipsam repudiandae odit.</p>
-            </div>
-            <div class="contentTask">
-                <div class="top">
                     <input type="checkbox" placeholder="checkbox" class="checkbox">
                     <h3>Title</h3>
                     <p class="time">11:00 am</p>
@@ -53,10 +21,36 @@
         </div>
 
         <div class="addTask">
-            <button type="button" id="addNewTask">
+            <button type="button" id="addNewTaskBtn">
                 +
             </button>
         </div>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <div class="top">
+                    <h2>Adicionar Nova Tarefa</h2>
+                    <span class="close" id="closeModal">&times;</span>
+                </div>
+                <form id="taskForm">
+                    <label for="taskName">Nome da Tarefa:</label>
+                    <input type="text" id="taskName" required>
+                    
+                    <label for="taskDescription">Descrição da Tarefa:</label>
+                    <textarea cols="10" id="taskDescription" required></textarea>
+                    
+                    <label for="taskTime">Hora da Tarefa:</label>
+                    <select id="taskTime" required>
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                    </select>
+                    
+                    <button type="submit">Add Task</button>
+                </form>
+            </div>
+        </div>
+
     </div>
 
     <script src="script.js"></script>
