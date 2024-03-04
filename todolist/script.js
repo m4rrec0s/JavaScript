@@ -3,19 +3,6 @@ var modal = document.getElementById("modal")
 var closeModal = document.getElementById("closeModal")
 var checkboxes = document.querySelectorAll(".checkbox")
 
-checkboxes.forEach(function(checkbox) {
-    checkbox.addEventListener("click", function() {
-        var parentDiv = this.closest(".contentTask")
-        if (this.checked) {
-            parentDiv.style.backgroundColor = "var(--buttonColor)"
-            parentDiv.style.color = "var(--back)"
-        } else {
-            parentDiv.style.backgroundColor = "var(--task)"
-            parentDiv.style.color = "var(--font)"
-        }
-    })
-})
-
 addNewTaskBtn.addEventListener("click", function() {
     modal.style.display = "block"
 })
@@ -76,3 +63,16 @@ taskForm.addEventListener("submit", function(event) {
     // Feche o modal após adicionar a tarefa
     modal.style.display = "none";
 });
+
+checkboxes.forEach(function(checkbox) {
+    checkbox.addEventListener("click", function() {
+        var parentDiv = this.closest(".contentTask")
+        if (this.checked) {
+            parentDiv.style.backgroundColor = "var(--buttonColor)"
+            parentDiv.style.color = "var(--back)"
+        } else {
+            parentDiv.style.backgroundColor = "var(--task)"
+            parentDiv.style.color = "var(--font)"
+        }
+    })
+})
