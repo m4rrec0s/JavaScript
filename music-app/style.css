@@ -1,0 +1,251 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --back: #000000;
+    --menu: #121212;
+    --font: #FFFFFF;
+    --font-not-select: #B3B3B3;
+    --highlights: #1ED760;
+    --songShortcut: #ffffff1f;
+    --songShortcutHover: #ffffff57;
+    --header-color: #20115C;
+    --playerNow: #1070B0;
+}
+
+body {
+    display: flex;
+    background-color: var(--back);
+    color: var(--font);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    margin-right: 10px;
+    margin-left: 10px;
+    justify-items: center;
+}
+
+nav > ul {
+    padding: 20px;
+    width: 100%;
+    background-color: var(--menu);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+nav > ul > li {
+    list-style-type: none;
+    font-size: 23px;
+    color: var(--font-not-select);
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+nav > ul > li:hover {
+    color: var(--font);
+}
+
+nav > ul > li > img {
+    width: 60px;
+    border-radius: 5px;
+}
+
+.top {
+    margin-top: 40px;
+    height: 160px;
+    margin-bottom: 10px;
+}
+
+.library {
+    height: 76vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.library::-webkit-scrollbar {
+    width: 3px;
+    z-index: 1;
+}
+
+#center {
+    margin-top: 40px;
+    width: 100%;
+    background-color: var(--menu);
+    border-radius: 10px;
+}
+
+header {
+    border-radius: 10px;
+    padding: 20px;
+    background: linear-gradient(to bottom, var(--header-color) 60%, var(--menu));
+}
+
+header > h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.navBar {
+    margin-bottom: 20px;
+}
+
+.navBar > ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.navBar > ul > li {
+    padding: 12px;
+    background-color: var(--back);
+    border-radius: 50%;
+}
+
+.navBar > ul > li:nth-child(2) {
+    opacity: 50%;
+}
+
+.songs-initial {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.song-shortcut {
+    background-color: var(--songShortcut);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+}
+
+.song-shortcut > i {
+    display: none;
+    position: absolute; /* Posição absoluta para o ícone */
+    top: 50%; /* Alinha o ícone verticalmente */
+    right: 10px; /* Ajusta a posição do ícone horizontalmente */
+    transform: translateY(-50%); /* Alinha o ícone verticalmente */
+}
+
+.song-shortcut:hover {
+    background-color: var(--songShortcutHover);
+}
+
+.song-shortcut:hover > i {
+    display: block;
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: var(--highlights);
+    color: var(--back);
+}
+
+
+.song-shortcut > div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.song-shortcut > div > img {
+    width: 55px;
+    border-radius: 5px;
+    height: 100%;
+}
+
+#player-now {
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 30%;
+    background-color: var(--playerNow);
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.topPlayer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#player-now > .topPlayer > h2 {
+    font-size: 1.1em;
+}
+
+#player-now > .topPlayer > i {
+    padding: 10px;
+    font-size: 20px;
+}
+
+#player-now img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.music_status {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.music_status > div > h3 {
+    font-size: 1.5em;
+}
+
+.music_status > div > p {
+    margin-top: 5px;
+    font-size: 1em;
+    opacity: 60%;
+}
+
+.music_status > .icons {
+    display: flex;
+    gap: 20px;
+}
+
+.music_status > .icons i.fa-circle-check {
+    color: var(--highlights);
+}
+
+.lyrics {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--songShortcut);
+    border-radius: 10px;
+}
+
+.lyrics > h3 {
+    font-size: 1em;
+}
+
+.lyrics > button {
+    background-color: transparent;
+    outline: none;
+    color: var(--font);
+    border: 1px solid var(--font);
+    padding: 10px;
+    border-radius: 20px;
+}
