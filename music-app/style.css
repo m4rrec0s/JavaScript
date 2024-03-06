@@ -22,7 +22,47 @@ body {
     background-color: var(--back);
     color: var(--font);
     height: 100vh;
+    width: 100vw;
     padding-bottom: 10px;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    background-color: var(--menu);
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.623);
+    z-index: 10;
+    font-size: 0.8em;
+
+
+
+    animation-name: popUp;
+    animation-duration: 0.5s;
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+@keyframes popUp {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 0.9;
+        transform: scale(1.22);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+i {
+    cursor: pointer;
 }
 
 nav {
@@ -85,6 +125,18 @@ nav > ul > li > img {
     background-color: var(--menu);
     border-radius: 10px;
     overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#center::-webkit-scrollbar {
+    right: 20px;
+    width: 2px;
+    padding: 10px 0;
+}
+
+#center::-webkit-scrollbar-thumb {
+    background-color: var(--songShortcutHover);
+    border-radius: 10px;
 }
 
 header {
@@ -137,10 +189,10 @@ header > h1 {
 
 .song-shortcut > i {
     display: none;
-    position: absolute; /* Posição absoluta para o ícone */
-    top: 50%; /* Alinha o ícone verticalmente */
-    right: 10px; /* Ajusta a posição do ícone horizontalmente */
-    transform: translateY(-50%); /* Alinha o ícone verticalmente */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%); 
 }
 
 .song-shortcut:hover {
@@ -169,26 +221,60 @@ header > h1 {
     height: 100%;
 }
 
+.geralScreen {
+    padding: 20px;
+}
+
+.geralScreen > h2 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.playlistContent {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.playlist {
+    background-color: var(--songShortcut);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.playlist > h3 {
+    
+}
+
+.playlist > img {
+    width: 180px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 4px rgba(0, 0, 0, 0.541);
+}
+
 #player-now {
     border-radius: 10px;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 40px;
     width: 100%;
-    max-width: 25%;
+    max-width: 21.7%;
     background-color: var(--playerNow);
     padding: 20px;
     overflow-y: auto;
 }
 
-/* Estilizando a barra de rolagem */
 #player-now::-webkit-scrollbar {
     right: 20px;
     width: 2px;
     padding: 10px 0;
 }
 
-/* Estilizando o polegar da barra de rolagem */
 #player-now::-webkit-scrollbar-thumb {
     background-color: var(--songShortcutHover);
     border-radius: 10px;
@@ -210,7 +296,7 @@ header > h1 {
     font-size: 20px;
 }
 
-#player-now img {
+#player-now > img {
     width: 100%;
     max-width: 100%;
     border-radius: 10px;
@@ -225,12 +311,22 @@ header > h1 {
 
 .music_status > div > h3 {
     font-size: 1.5em;
+    cursor: pointer;
+}
+
+.music_status > div > h3:hover {
+    text-decoration: underline;
 }
 
 .music_status > div > p {
     margin-top: 5px;
     font-size: 1em;
     opacity: 60%;
+    cursor: pointer;
+}
+
+.music_status > .icons > i:hover {
+    cursor: pointer;
 }
 
 .music_status > .icons {
@@ -303,8 +399,16 @@ header > h1 {
     margin-top: 8px
 }
 
-.description p {
+.description > h4:hover {
+    text-decoration: underline;
+}
+
+.description > p {
     font-size: 0.89em;
+}
+
+.description > p:hover {
+    text-decoration: none;
 }
 
 .listeners {
@@ -313,8 +417,12 @@ header > h1 {
     justify-content: space-between;
 }
 
-.listeners p {
+.listeners > p {
     font-size: 0.96em;
+}
+
+.listeners > p:hover {
+    text-decoration: none;
 }
 
 .listeners > button {
@@ -332,4 +440,78 @@ header > h1 {
 .listeners > button:hover {
     border: 1px groove var(--font);
     box-shadow: 0 0 5px var(--font);
+}
+
+.nextSongContent {
+    margin-top: 10px;
+    background-color: var(--songShortcut);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.topNext {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topNext > a {
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: var(--font-not-select);
+    /*transition: all 0.2s ease-in-out;*/
+}
+
+.topNext > a:hover {
+    color: var(--font);
+    text-decoration: underline;
+}
+
+.nextSong {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nextSong > i {
+    width: 10px;
+    margin-right: 5px;
+}
+
+.nextSong > .fa-play {
+    display: none;
+}
+
+.nextSong:hover > .fa-play {
+    display: block;
+}
+
+.nextSong:hover > .fa-music {
+    display: none;
+}
+
+.nextSong > img {
+    width: 60px;
+    border-radius: 10px;
+}
+
+.nextSong > div > h5 {
+    font-size: 1em;
+}
+
+.nextSong > div > p {
+    font-size: 0.87em;
+}
+
+.nextSong > div > h5:hover, p:hover {
+    text-decoration: underline;
+}
+
+.nextSong:hover {
+    background-color: var(--songShortcutHover);
 }

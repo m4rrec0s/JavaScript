@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/8334f11366.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Music App</title>
 </head>
 <body>
     <nav>
         <ul class="top">
-            <li><i class="fa-solid fa-house"></i></li>
-            <li><i class="fa-solid fa-search"></i></li>
-            <li><i class="fa-solid fa-cart-shopping"></i></li>
+            <li><i class="fa-solid fa-house" onmouseover="showPopup('Início', this, '20%', '0%', '0%', '100%')" onmouseout="hidePopup()"></i></li>
+            <li><i class="fa-solid fa-search" onmouseover="showPopup('Buscar', this)" onmouseout="hidePopup()"></i></li>
+            <li><i class="fa-solid fa-cart-shopping" onmouseover="showPopup('Marketplace', this)" onmouseout="hidePopup()"></i></li>
         </ul>
         <ul class="library">
-            <li><i class="fa-solid fa-list"></i></li>
+            <li><i class="fa-solid fa-list" onmouseover="showPopup('Lista', this)" onmouseout="hidePopup()"></i></li>
             <li><img src="images/Billie_Eilish.jpeg" alt="..."></li>
             <li><img src="images/noah_cyrus.jpeg" alt="..."></li>
             <li><img src="images/Billie_Eilish.jpeg" alt="..."></li>
@@ -29,12 +30,13 @@
         </ul>
     </nav>
 
+    
     <section id="center">
         <header>
             <div class="navBar">
                 <ul>
-                    <li><i class="fa-solid fa-angle-left"></i></li>
-                    <li><i class="fa-solid fa-angle-right"></i></li>
+                    <li><i class="fa-solid fa-angle-left" onmouseover="showPopup('Voltar', this)" onmouseout="hidePopup()"></i></li>
+                    <li><i class="fa-solid fa-angle-right" onmouseover="showPopup('Próximo', this)" onmouseout="hidePopup()"></i></li>
                 </ul>
             </div>
             <h1>Bom dia</h1>
@@ -44,48 +46,91 @@
                         <img src="images/misic-liked.jpg" alt="misic-liked">
                         <h3>Músicas Curtidas</h3>
                     </div>
-                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this, '50%', '50%', '50%', '50%')" onmouseout="hidePopup()"></i>
                 </div>
                 <div class="song-shortcut">
                     <div>
                         <img src="images/noah_cyrus.jpeg" alt="misic-liked">
                         <h3>Daily Mix 1</h3>
                     </div>
-                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
                 </div>
                 <div class="song-shortcut">
                     <div>
                         <img src="images/Billie_Eilish.jpeg" alt="misic-liked">
                         <h3>Daily Mix 2</h3>
                     </div>
-                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
                 </div>
                 <div class="song-shortcut">
                     <div>
                         <img src="images/noah_cyrus.jpeg" alt="misic-liked">
                         <h3>Daily Mix 3</h3>
                     </div>
-                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
                 </div>
                 <div class="song-shortcut">
                     <div>
                         <img src="images/Billie_Eilish.jpeg" alt="misic-liked">
                         <h3>Daily Mix 4</h3>
                     </div>
-                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
                 </div>
                 <div class="song-shortcut">
                     <div>
                         <img src="images/noah_cyrus.jpeg" alt="misic-liked">
                         <h3>Daily Mix 5</h3>
                     </div>
-                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
                 </div>
-        
+                
             </div>
         </header>
-    </section>
 
+        <div class="geralScreen">
+            <h2>Feito para User</h1>
+            <div class="playlistContent">
+
+                <div class="playlist">
+                    <img src="images/noah_cyrus.jpeg" alt="...">
+                    <h3>Daily Mix 1</h3>
+                    <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                </div>
+                
+                <div class="playlist">
+                    <img src="images/noah_cyrus.jpeg" alt="...">
+                    <h3>Daily Mix 1</h3>
+                    <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                </div>
+
+                <div class="playlist">
+                    <img src="images/noah_cyrus.jpeg" alt="...">
+                    <h3>Daily Mix 1</h3>
+                    <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                </div>
+
+                <div class="playlist">
+                    <img src="images/noah_cyrus.jpeg" alt="...">
+                    <h3>Daily Mix 1</h3>
+                    <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                </div>
+
+                <div class="playlist">
+                    <img src="images/noah_cyrus.jpeg" alt="...">
+                    <h3>Daily Mix 1</h3>
+                    <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                </div>
+                
+                <div class="playlist">
+                    <img src="images/noah_cyrus.jpeg" alt="...">
+                    <h3>Daily Mix 1</h3>
+                    <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
     <section id="player-now">
         <div class="topPlayer">
             <h2>Músicas Curtidas</h2>
@@ -94,21 +139,21 @@
         <img src="images/afection_BETWEEN_FRIENDS.jpeg" alt="...">
         <div class="music_status">
             <div>
-                <h3>affection</h3>
-                <p>BETWEEN FRIENDS</p>
+                <h3 onmouseover="showPopup('affection', this)" onmouseout="hidePopup()">affection</h3>
+                <p onmouseover="showPopup('affection', this)" onmouseout="hidePopup()">BETWEEN FRIENDS</p>
             </div>
-
+            
             <div class="icons">
-                <i class="fa-solid fa-circle-check"></i>
-                <i class="fa-solid fa-ellipsis"></i>
+                <i class="fa-solid fa-circle-check" onmouseover="showPopup('Adicionar à playlist', this, '0%', '700%', '0%', '100%')" onmouseout="hidePopup()"></i>
+                <i class="fa-solid fa-ellipsis" onmouseover="showPopup('Mais opções para BETWEEN FRIENDS', this, '0%', '1000%', '0%', '100%')" onmouseout="hidePopup()"></i>
             </div>
         </div>
-
+        
         <div class="lyrics">
             <h3>Letra</h3>
             <button type="button">Mostrar letra</button>
         </div>
-
+        
         <div class="about">
             <div class="picture">
                 <h3>Sobre o artista</h3>
@@ -124,6 +169,27 @@
                 </p>
             </div>
         </div>
+        
+        <div class="nextSongContent">
+            <div class="topNext">
+                <h4>A seguir</h4>
+                <a href="#">Abrir fila</a>
+            </div>
+            
+            <div class="nextSong">
+                <i class="fa-solid fa-music"></i>
+                <i class="fa-solid fa-play"></i>
+                <img src="images/july_noah_cyrus.jpeg" alt="...">
+                <div>
+                    <h5>Jully</h5>
+                    <p>Noah Cyrus</p>
+                </div>
+            </div>
+        </div>
     </section>
+    
+    <div id="popup" class="popup"></div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
