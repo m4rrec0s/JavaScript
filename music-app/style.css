@@ -23,7 +23,8 @@ body {
     color: var(--font);
     height: 100vh;
     width: 100vw;
-    padding-bottom: 10px;
+    padding: 20px 10px 100px 10px;
+    overflow: hidden;
 }
 
 .popup {
@@ -70,7 +71,6 @@ nav {
     flex-direction: column;
     width: 80px;
     margin-right: 10px;
-    margin-left: 10px;
     justify-items: center;
 }
 
@@ -87,11 +87,13 @@ nav > ul {
 
 nav > div {
     width: 100%;
+    height: 68.5vh;
     background-color: var(--menu);
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
+    padding: 10px 20px;
 }
 
 nav > ul > li {
@@ -126,23 +128,20 @@ nav > div > i:hover {
 
 nav > div > ul > li > img {
     width: 60px;
+    height: 60px;
     border-radius: 5px;
 }
 
 .top {
-    margin-top: 40px;
     height: 160px;
     margin-bottom: 10px;
 }
 
-.library {
-    height: 76vh;
-}
-
 .playlistNavContent {
+    padding-top: 5px;
+    height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 20px;
 }
 
 .playlistNavContent > li {
@@ -155,15 +154,15 @@ nav > div > ul > li > img {
 }
 
 .gradient {
-    position: absolute;
-    top: 30%;
+    position: fixed;
+    z-index: 10;
+    top: 28.5%;
     width: 80px;
-    height: 20px;
+    height: 10px;
     background: linear-gradient(to bottom, var(--menu), rgba(0, 0, 0, 0));
 }
 
 #center {
-    margin-top: 40px;
     width: 100%;
     background-color: var(--menu);
     border-radius: 10px;
@@ -185,24 +184,24 @@ nav > div > ul > li > img {
 #pageHeader {
     border-radius: 10px;
     padding: 20px;
-    background: linear-gradient(to bottom, var(--header-color) 60%, var(--menu));
+    background: linear-gradient(to bottom, var(--header-color) 40%, var(--menu));
     transition-property: background-color;
     transition-duration: 0.3s;
     transition-timing-function: cubic-bezier(0, 0.55, 0.45, 1);
 }
 
 #pageHeader.header-red {
-    background: linear-gradient(to bottom,#210055 60%, var(--menu));
+    background: linear-gradient(to bottom,#21005585 70%, var(--menu) );
 }
 
 /* Estilo do header para a cor verde */
 #pageHeader.header-green {
-    background: linear-gradient(to bottom,#74916a 60%, var(--menu));
+    background: linear-gradient(to bottom,#74916aa6 70%, var(--menu));
 }
 
 /* Estilo do header para a cor azul */
 #pageHeader.header-blue {
-    background: linear-gradient(to bottom,#BA8A63 60%, var(--menu));
+    background: linear-gradient(to bottom,#ba8a6377 70%, var(--menu));
 }
 
 #pageHeader > h1 {
@@ -229,6 +228,28 @@ nav > div > ul > li > img {
 
 .navBar > ul > li:nth-child(2) {
     opacity: 50%;
+}
+
+.topGeralScreen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.topGeralScreen > h2 {
+    font-size: 1.4rem;
+}
+
+.topGeralScreen > a {
+    text-decoration: none;
+    color: var(--font-not-select);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.topGeralScreen > a:hover {
+    text-decoration: underline;
 }
 
 .songs-initial {
@@ -259,8 +280,6 @@ nav > div > ul > li > img {
 .song-shortcut:hover {
     background-color: var(--songShortcutHover);
 }
-
-
 
 .song-shortcut:hover > i {
     display: block;
@@ -332,8 +351,10 @@ nav > div > ul > li > img {
 .waves {
     position: absolute;
     top: 12px;
-    left: 17.5px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
+    text-align: center;
 }
 
 .waves > img {
@@ -399,10 +420,8 @@ nav > div > ul > li > img {
 #player-now {
     border-radius: 10px;
     margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 40px;
     width: 100%;
-    max-width: 21.7%;
+    max-width: 413px;
     background-color: var(--playerNow);
     padding: 20px;
     overflow-y: auto;
@@ -656,4 +675,238 @@ nav > div > ul > li > img {
 
 .nextSong:hover {
     background-color: var(--songShortcutHover);
+}
+
+
+@media screen and (max-width: 1840px) {
+
+    .playlistContent {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .playlistContent div:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1740px) {
+    
+    .waves > img {
+        width: 151px;
+        border-radius: 10px;
+        opacity: 0.9;
+    }
+    
+    .playlist > div > h3 {
+        font-size: 0.9em;
+    }
+    
+    .playlist > div > p {
+        margin-top: 8px;
+        font-size: 0.8em;
+        padding-bottom: 5px;
+    }
+    
+    .playlist > img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 10px 10px 4px rgba(0, 0, 0, 0.541);
+    }
+
+
+}
+
+@media screen and (max-width: 1540px) {
+    #player-now {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .waves > img {
+        width: 75%; /* Porcentagem da largura do contêiner pai */
+        border-radius: 10px;
+        opacity: 0.9;
+    }
+    
+    .playlist > div > h3 {
+        font-size: 1em; /* Tamanho da fonte em 'em' */
+    }
+    
+    .playlist > div > p {
+        margin-top: 8px;
+        font-size: 1em; /* Tamanho da fonte em 'em' */
+        padding-bottom: 5px;
+    }
+    
+    .playlist > img {
+        width: 80%; /* Porcentagem da largura do contêiner pai */
+        height: auto; /* Altura automática */
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 10px 10px 4px rgba(0, 0, 0, 0.541);
+    }
+}
+
+@media screen and (max-width: 1570px) {
+
+    .waves > img {
+        width: 161px;
+        border-radius: 10px;
+        opacity: 0.9;
+    }
+    
+    .playlist > div > h3 {
+        font-size: 1em;
+    }
+    
+    .playlist > div > p {
+        margin-top: 8px;
+        font-size: 0.9em;
+        padding-bottom: 5px;
+    }
+    
+    .playlist > img {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 10px 10px 4px rgba(0, 0, 0, 0.541);
+    }    
+
+}
+
+@media screen and (max-width: 1490px) {
+
+    #player-now {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 1480px) {
+    .playlistContent {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .playlistContent > :nth-last-child(-n+2) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1430px) {
+
+    .playlistContent .waves > img {
+        width: 75%; /* Porcentagem da largura do contêiner pai */
+        border-radius: 10px;
+        opacity: 0.9;
+    }
+    
+    .playlistContent .playlist > div > h3 {
+        font-size: 1.2em;
+    }
+
+    .playlist > img {
+        width: 80%; /* Porcentagem da largura do contêiner pai */
+        height: auto; /* Altura automática */
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 10px 10px 4px rgba(0, 0, 0, 0.541);
+    }
+}
+
+@media screen and (max-width: 1344px) {
+    #player-now {
+        width: 100%;
+        max-width: 320px;
+        padding: 15px;
+    }
+
+    .waves > img {
+        width: 75%; /* Porcentagem da largura do contêiner pai */
+        border-radius: 10px;
+        opacity: 0.9;
+    }
+    
+    .playlist > div > h3 {
+        font-size: 1em; /* Tamanho da fonte em 'em' */
+    }
+    
+    .playlist > div > p {
+        margin-top: 8px;
+        font-size: 1em; /* Tamanho da fonte em 'em' */
+        padding-bottom: 5px;
+    }
+    
+    .playlist > img {
+        width: 80%; /* Porcentagem da largura do contêiner pai */
+        height: auto; /* Altura automática */
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 10px 10px 4px rgba(0, 0, 0, 0.541);
+    }
+
+    .song-shortcut > div > h3 {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 1088px) {
+    
+    .playlistContent {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .playlistContent .playlist:nth-last-child(-n+3) {
+        display: none;
+    }
+
+    .waves > img {
+        width: 100%; /* Porcentagem da largura do contêiner pai */
+        border-radius: 10px;
+        opacity: 0.9;
+    }
+    
+    .playlist > div > h3 {
+        font-size: 1em; /* Tamanho da fonte em 'em' */
+    }
+    
+    .playlist > div > p {
+        margin-top: 8px;
+        font-size: 0.9em; /* Tamanho da fonte em 'em' */
+        padding-bottom: 5px;
+    }
+    
+    .playlist > img {
+        width: 80%; /* Porcentagem da largura do contêiner pai */
+        height: 80%; /* Altura automática */
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 10px 10px 4px rgba(0, 0, 0, 0.541);
+    }
+
+    #player-now {
+        width: 100%;
+        max-width: 300px;
+        padding: 15px;
+    }
+
+    .picture {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .playlistContent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .playlistContent .playlist:nth-last-child(-n+4) {
+        display: none;
+    }
+
+    .song-shortcut > div > h3 {
+        font-size: 0.8rem;
+    }
 }
