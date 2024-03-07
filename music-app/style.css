@@ -51,8 +51,8 @@ body {
     }
 
     50% {
-        opacity: 0.9;
-        transform: scale(1.22);
+        opacity: 1;
+        transform: scale(1.05);
     }
 
     100% {
@@ -85,6 +85,15 @@ nav > ul {
     border-radius: 10px;
 }
 
+nav > div {
+    width: 100%;
+    background-color: var(--menu);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
 nav > ul > li {
     list-style-type: none;
     font-size: 23px;
@@ -93,11 +102,29 @@ nav > ul > li {
     cursor: pointer;
 }
 
-nav > ul > li:hover {
+nav > div > ul > li {
+    list-style-type: none;
+    font-size: 23px;
+    color: var(--font-not-select);
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+nav > div > i {
+    list-style-type: none;
+    font-size: 23px;
+    color: var(--font-not-select);
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+    padding: 20px 20px 20px 20px;
+}
+
+nav > ul > li:hover, 
+nav > div > i:hover {
     color: var(--font);
 }
 
-nav > ul > li > img {
+nav > div > ul > li > img {
     width: 60px;
     border-radius: 5px;
 }
@@ -110,13 +137,29 @@ nav > ul > li > img {
 
 .library {
     height: 76vh;
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 
-.library::-webkit-scrollbar {
+.playlistNavContent {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.playlistNavContent > li {
+    margin-bottom: 10px;
+}
+
+.playlistNavContent::-webkit-scrollbar {
     width: 3px;
     z-index: 1;
+}
+
+.gradient {
+    position: absolute;
+    top: 30%;
+    width: 80px;
+    height: 20px;
+    background: linear-gradient(to bottom, var(--menu), rgba(0, 0, 0, 0));
 }
 
 #center {
@@ -126,10 +169,10 @@ nav > ul > li > img {
     border-radius: 10px;
     overflow-y: auto;
     overflow-x: hidden;
+    padding-right: 3px;
 }
 
 #center::-webkit-scrollbar {
-    right: 20px;
     width: 2px;
     padding: 10px 0;
 }
@@ -139,15 +182,33 @@ nav > ul > li > img {
     border-radius: 10px;
 }
 
-header {
+#pageHeader {
     border-radius: 10px;
     padding: 20px;
     background: linear-gradient(to bottom, var(--header-color) 60%, var(--menu));
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0, 0.55, 0.45, 1);
 }
 
-header > h1 {
+#pageHeader.header-red {
+    background: linear-gradient(to bottom,#210055 60%, var(--menu));
+}
+
+/* Estilo do header para a cor verde */
+#pageHeader.header-green {
+    background: linear-gradient(to bottom,#74916a 60%, var(--menu));
+}
+
+/* Estilo do header para a cor azul */
+#pageHeader.header-blue {
+    background: linear-gradient(to bottom,#BA8A63 60%, var(--menu));
+}
+
+#pageHeader > h1 {
     font-size: 2em;
     margin-bottom: 10px;
+    cursor: context-menu;
 }
 
 .navBar {
@@ -199,6 +260,8 @@ header > h1 {
     background-color: var(--songShortcutHover);
 }
 
+
+
 .song-shortcut:hover > i {
     display: block;
     padding: 8px;
@@ -239,22 +302,98 @@ header > h1 {
 
 .playlist {
     background-color: var(--songShortcut);
-    padding: 10px;
+    padding: 12px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    cursor: pointer;
 }
 
-.playlist > h3 {
-    
+.playlist > i {
+    display: none;
+    position: absolute;
+    top: 55%;
+    right: 22px;
+    transform: translateY(-50%); 
+}
+
+.playlist:hover > i {
+    display: block;
+    padding: 11px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: var(--highlights);
+    color: var(--back);
+    box-shadow: 0 0 5px;
+}
+
+.waves {
+    position: absolute;
+    top: 12px;
+    left: 17.5px;
+    width: 100%;
+}
+
+.waves > img {
+    width: 181px;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.playlist > div > h3 {
+    font-size: 1em;
+}
+
+.playlist > div > p {
+    margin-top: 8px;
+    font-size: 0.8em;
+    padding-bottom: 5px;
 }
 
 .playlist > img {
     width: 180px;
+    height: 180px;
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 10px 10px 4px rgba(0, 0, 0, 0.541);
+}
+
+/*
+#light-rose {
+    filter: saturate(3) brightness(3) sepia(1) hue-rotate(-140deg);
+}
+
+#green {
+    filter: saturate(2) brightness(2.2) sepia(0) hue-rotate(-160deg);
+}
+
+#blue {
+    filter: saturate(3) brightness(2.2) sepia(6) hue-rotate(-180deg);
+}
+
+#yellow {
+    filter: saturate(4) brightness(5) sepia(1) hue-rotate(-350deg);
+}
+
+#gold {
+    filter: saturate(1) brightness(1) sepia(1) hue-rotate(310deg);
+}
+*/
+
+.playlist:hover > img {
+    transform: scale(1.02);
+    filter: brightness(0.7);
+}
+
+.playlist:hover > .waves > img {
+    transform: scale(1.02);
+    filter: brightness(0.7);
+}
+
+.playlist > div > p:hover {
+    text-decoration: none;
 }
 
 #player-now {
@@ -300,6 +439,8 @@ header > h1 {
     width: 100%;
     max-width: 100%;
     border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.315);
 }
 
 .music_status {
@@ -350,6 +491,7 @@ header > h1 {
 
 .lyrics > h3 {
     font-size: 1em;
+    cursor: context-menu;
 }
 
 .lyrics > button {
@@ -419,6 +561,7 @@ header > h1 {
 
 .listeners > p {
     font-size: 0.96em;
+    cursor: context-menu;
 }
 
 .listeners > p:hover {
@@ -460,7 +603,6 @@ header > h1 {
     font-size: 0.9em;
     font-weight: bold;
     color: var(--font-not-select);
-    /*transition: all 0.2s ease-in-out;*/
 }
 
 .topNext > a:hover {

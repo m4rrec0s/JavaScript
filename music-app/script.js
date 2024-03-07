@@ -30,3 +30,14 @@ function hidePopup() {
     var popup = document.getElementById("popup");
     popup.style.display = "none";
 }
+
+function changeHeaderColor(color) {
+    var header = document.getElementById("pageHeader");
+    header.classList.remove("header-red", "header-green", "header-blue"); // Remove todas as classes de cor anteriores
+    header.classList.add(`header-${color}`); // Adiciona a classe de cor correspondente
+}
+
+function resetHeaderColor() {
+    var header = document.getElementById("pageHeader");
+    header.classList.remove("header-red", "header-green", "header-blue"); // Remove todas as classes de cor anteriores
+}

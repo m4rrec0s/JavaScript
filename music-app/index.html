@@ -12,27 +12,29 @@
     <nav>
         <ul class="top">
             <li><i class="fa-solid fa-house" onmouseover="showPopup('Início', this, '20%', '0%', '0%', '100%')" onmouseout="hidePopup()"></i></li>
-            <li><i class="fa-solid fa-search" onmouseover="showPopup('Buscar', this)" onmouseout="hidePopup()"></i></li>
-            <li><i class="fa-solid fa-cart-shopping" onmouseover="showPopup('Marketplace', this)" onmouseout="hidePopup()"></i></li>
+            <li><i class="fa-solid fa-search" onmouseover="showPopup('Buscar', this, '20%', '0%', '10%', '0%')" onmouseout="hidePopup()"></i></li>
+            <li><i class="fa-solid fa-cart-shopping" onmouseover="showPopup('Marketplace', this, '20%', '0%', '10%', '0%')" onmouseout="hidePopup()"></i></li>
         </ul>
-        <ul class="library">
-            <li><i class="fa-solid fa-list" onmouseover="showPopup('Lista', this)" onmouseout="hidePopup()"></i></li>
-            <li><img src="images/Billie_Eilish.jpeg" alt="..."></li>
-            <li><img src="images/noah_cyrus.jpeg" alt="..."></li>
-            <li><img src="images/Billie_Eilish.jpeg" alt="..."></li>
-            <li><img src="images/noah_cyrus.jpeg" alt="..."></li>
-            <li><img src="images/Billie_Eilish.jpeg" alt="..."></li>
-            <li><img src="images/noah_cyrus.jpeg" alt="..."></li>
-            <li><img src="images/Billie_Eilish.jpeg" alt="..."></li>
-            <li><img src="images/noah_cyrus.jpeg" alt="..."></li>
-            <li><img src="images/Billie_Eilish.jpeg" alt="..."></li>
-            <li><img src="images/noah_cyrus.jpeg" alt="..."></li>
-        </ul>
+        <div class="library">
+            <i class="fa-solid fa-list" onmouseover="showPopup('Lista', this, '20%', '0%', '10%', '0%')" onmouseout="hidePopup()"></i>
+            <div class="gradient"></div>
+            <ul class="playlistNavContent">
+                <li><img src="images/misic-liked.jpg" alt="..."></li>
+                <li><img src="images/svgs/episodes-logo.svg" alt="..."></li>
+                <li><img src="images/Billie_Eilish.jpeg" alt="..."></li>
+                <li><img src="images/noah_cyrus-spotify.jpg" alt="..."></li>
+                <li><img src="images/july_noah_cyrus.jpeg" alt="..."></li>
+                <li><img src="images/noah_cyrus.jpeg" alt="..."></li>
+                <li><img src="images/Billie_Eilish.jpeg" alt="..."></li>
+                <li><img src="images/noah_cyrus.jpeg" alt="..."></li>
+                <li><img src="images/Billie_Eilish.jpeg" alt="..."></li>
+                <li><img src="images/noah_cyrus.jpeg" alt="..."></li>
+            </ul>
+        </div>
     </nav>
-
     
     <section id="center">
-        <header>
+        <header id="pageHeader">
             <div class="navBar">
                 <ul>
                     <li><i class="fa-solid fa-angle-left" onmouseover="showPopup('Voltar', this)" onmouseout="hidePopup()"></i></li>
@@ -41,42 +43,42 @@
             </div>
             <h1>Bom dia</h1>
             <div class="songs-initial">
-                <div class="song-shortcut">
+                <div class="song-shortcut" onmouseover="changeHeaderColor('red')" onmouseout="resetHeaderColor()">
                     <div>
                         <img src="images/misic-liked.jpg" alt="misic-liked">
                         <h3>Músicas Curtidas</h3>
                     </div>
-                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this, '50%', '50%', '50%', '50%')" onmouseout="hidePopup()"></i>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this, '40%', '0%', '0%', '0%')" onmouseout="hidePopup()"></i>
                 </div>
-                <div class="song-shortcut">
+                <div class="song-shortcut" onmouseover="changeHeaderColor('green')" onmouseout="resetHeaderColor()">
                     <div>
                         <img src="images/noah_cyrus.jpeg" alt="misic-liked">
                         <h3>Daily Mix 1</h3>
                     </div>
                     <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
                 </div>
-                <div class="song-shortcut">
+                <div class="song-shortcut" onmouseover="changeHeaderColor('blue')" onmouseout="resetHeaderColor()">
                     <div>
                         <img src="images/Billie_Eilish.jpeg" alt="misic-liked">
                         <h3>Daily Mix 2</h3>
                     </div>
                     <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
                 </div>
-                <div class="song-shortcut">
+                <div class="song-shortcut" onmouseover="changeHeaderColor('green')" onmouseout="resetHeaderColor()">
                     <div>
                         <img src="images/noah_cyrus.jpeg" alt="misic-liked">
                         <h3>Daily Mix 3</h3>
                     </div>
                     <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
                 </div>
-                <div class="song-shortcut">
+                <div class="song-shortcut" onmouseover="changeHeaderColor('blue')" onmouseout="resetHeaderColor()">
                     <div>
                         <img src="images/Billie_Eilish.jpeg" alt="misic-liked">
                         <h3>Daily Mix 4</h3>
                     </div>
                     <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
                 </div>
-                <div class="song-shortcut">
+                <div class="song-shortcut" onmouseover="changeHeaderColor('green')" onmouseout="resetHeaderColor()">
                     <div>
                         <img src="images/noah_cyrus.jpeg" alt="misic-liked">
                         <h3>Daily Mix 5</h3>
@@ -88,53 +90,327 @@
         </header>
 
         <div class="geralScreen">
-            <h2>Feito para User</h1>
+            <h2>Feito para Marcos</h1>
             <div class="playlistContent">
 
                 <div class="playlist">
-                    <img src="images/noah_cyrus.jpeg" alt="...">
-                    <h3>Daily Mix 1</h3>
-                    <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    <img src="images/noah_cyrus-spotify.jpg" alt="...">
+                    <div class="waves">
+                        <img src="images/svgs/waves-spotify-rose.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 1</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
                 </div>
                 
                 <div class="playlist">
                     <img src="images/noah_cyrus.jpeg" alt="...">
-                    <h3>Daily Mix 1</h3>
-                    <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                     <div class="waves">
+                        <img src="images/svgs/waves-spotify-green.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 2</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
                 </div>
 
                 <div class="playlist">
                     <img src="images/noah_cyrus.jpeg" alt="...">
-                    <h3>Daily Mix 1</h3>
-                    <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    <div class="waves">
+                        <img src="images/svgs/waves-spotify-purple.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 3</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
                 </div>
 
                 <div class="playlist">
                     <img src="images/noah_cyrus.jpeg" alt="...">
-                    <h3>Daily Mix 1</h3>
-                    <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    <div class="waves">
+                        <img src="images/svgs/waves-spotify-yellow.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 4</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
                 </div>
 
                 <div class="playlist">
                     <img src="images/noah_cyrus.jpeg" alt="...">
-                    <h3>Daily Mix 1</h3>
-                    <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    <div class="waves">
+                        <img src="images/svgs/waves-spotify-gold.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 5</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
                 </div>
                 
                 <div class="playlist">
                     <img src="images/noah_cyrus.jpeg" alt="...">
-                    <h3>Daily Mix 1</h3>
-                    <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    <div class="waves">
+                        <img src="images/svgs/waves-spotify-saumon.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 6</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
                 </div>
-                
+
             </div>
         </div>
+
+        <div class="geralScreen">
+            <h2>Feito para Marcos</h1>
+            <div class="playlistContent">
+
+                <div class="playlist">
+                    <img src="images/noah_cyrus-spotify.jpg" alt="...">
+                    <div class="waves">
+                        <img src="images/svgs/waves-spotify-rose.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 1</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
+                </div>
+                
+                <div class="playlist">
+                    <img src="images/noah_cyrus.jpeg" alt="...">
+                     <div class="waves">
+                        <img src="images/svgs/waves-spotify-green.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 2</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
+                </div>
+
+                <div class="playlist">
+                    <img src="images/noah_cyrus.jpeg" alt="...">
+                    <div class="waves">
+                        <img src="images/svgs/waves-spotify-purple.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 3</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
+                </div>
+
+                <div class="playlist">
+                    <img src="images/noah_cyrus.jpeg" alt="...">
+                    <div class="waves">
+                        <img src="images/svgs/waves-spotify-yellow.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 4</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
+                </div>
+
+                <div class="playlist">
+                    <img src="images/noah_cyrus.jpeg" alt="...">
+                    <div class="waves">
+                        <img src="images/svgs/waves-spotify-gold.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 5</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
+                </div>
+                
+                <div class="playlist">
+                    <img src="images/noah_cyrus.jpeg" alt="...">
+                    <div class="waves">
+                        <img src="images/svgs/waves-spotify-saumon.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 6</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="geralScreen">
+            <h2>Feito para Marcos</h1>
+            <div class="playlistContent">
+
+                <div class="playlist">
+                    <img src="images/noah_cyrus-spotify.jpg" alt="...">
+                    <div class="waves">
+                        <img src="images/svgs/waves-spotify-rose.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 1</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
+                </div>
+                
+                <div class="playlist">
+                    <img src="images/noah_cyrus.jpeg" alt="...">
+                     <div class="waves">
+                        <img src="images/svgs/waves-spotify-green.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 2</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
+                </div>
+
+                <div class="playlist">
+                    <img src="images/noah_cyrus.jpeg" alt="...">
+                    <div class="waves">
+                        <img src="images/svgs/waves-spotify-purple.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 3</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
+                </div>
+
+                <div class="playlist">
+                    <img src="images/noah_cyrus.jpeg" alt="...">
+                    <div class="waves">
+                        <img src="images/svgs/waves-spotify-yellow.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 4</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
+                </div>
+
+                <div class="playlist">
+                    <img src="images/noah_cyrus.jpeg" alt="...">
+                    <div class="waves">
+                        <img src="images/svgs/waves-spotify-gold.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 5</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
+                </div>
+                
+                <div class="playlist">
+                    <img src="images/noah_cyrus.jpeg" alt="...">
+                    <div class="waves">
+                        <img src="images/svgs/waves-spotify-saumon.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 6</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="geralScreen">
+            <h2>Feito para Marcos</h1>
+            <div class="playlistContent">
+
+                <div class="playlist">
+                    <img src="images/noah_cyrus-spotify.jpg" alt="...">
+                    <div class="waves">
+                        <img src="images/svgs/waves-spotify-rose.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 1</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
+                </div>
+                
+                <div class="playlist">
+                    <img src="images/noah_cyrus.jpeg" alt="...">
+                     <div class="waves">
+                        <img src="images/svgs/waves-spotify-green.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 2</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
+                </div>
+
+                <div class="playlist">
+                    <img src="images/noah_cyrus.jpeg" alt="...">
+                    <div class="waves">
+                        <img src="images/svgs/waves-spotify-purple.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 3</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
+                </div>
+
+                <div class="playlist">
+                    <img src="images/noah_cyrus.jpeg" alt="...">
+                    <div class="waves">
+                        <img src="images/svgs/waves-spotify-yellow.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 4</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
+                </div>
+
+                <div class="playlist">
+                    <img src="images/noah_cyrus.jpeg" alt="...">
+                    <div class="waves">
+                        <img src="images/svgs/waves-spotify-gold.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 5</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
+                </div>
+                
+                <div class="playlist">
+                    <img src="images/noah_cyrus.jpeg" alt="...">
+                    <div class="waves">
+                        <img src="images/svgs/waves-spotify-saumon.svg" alt="...">
+                    </div>
+                    <div>
+                        <h3>Daily Mix 6</h3>
+                        <p>Noah Cyrus, BUNT., Chelsea Cutler e mais</p>
+                    </div>
+                    <i class="fa-solid fa-play" onmouseover="showPopup('Reproduzir', this)" onmouseout="hidePopup()"></i>
+                </div>
+
+            </div>
+        </div>
+        
     </section>
     
     <section id="player-now">
         <div class="topPlayer">
             <h2>Músicas Curtidas</h2>
-            <i class="fa-solid fa-xmark"></i>
+            <i class="fa-solid fa-xmark" onmouseover="showPopup('Fechar', this, '0%', '200%', '100%', '0%')" onmouseout="hidePopup()"></i>
         </div>
         <img src="images/afection_BETWEEN_FRIENDS.jpeg" alt="...">
         <div class="music_status">
@@ -144,8 +420,8 @@
             </div>
             
             <div class="icons">
-                <i class="fa-solid fa-circle-check" onmouseover="showPopup('Adicionar à playlist', this, '0%', '700%', '0%', '100%')" onmouseout="hidePopup()"></i>
-                <i class="fa-solid fa-ellipsis" onmouseover="showPopup('Mais opções para BETWEEN FRIENDS', this, '0%', '1000%', '0%', '100%')" onmouseout="hidePopup()"></i>
+                <i class="fa-solid fa-circle-check" onmouseover="showPopup('Adicionar à playlist', this, '0%', '900%', '10%', '0%')" onmouseout="hidePopup()"></i>
+                <i class="fa-solid fa-ellipsis" onmouseover="showPopup('Mais opções para BETWEEN FRIENDS', this, '0%', '1900%', '100%', '0%')" onmouseout="hidePopup()"></i>
             </div>
         </div>
         
