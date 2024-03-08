@@ -41,3 +41,16 @@ function resetHeaderColor() {
     var header = document.getElementById("pageHeader");
     header.classList.remove("header-red", "header-green", "header-blue"); // Remove todas as classes de cor anteriores
 }
+
+var button1 = document.getElementById('plus')
+var button2 = document.getElementById('check')
+
+function addInPlaylist() {
+    button1.style.display = "none"
+    button2.style.display = "block"
+}
+
+function removePlaylist() {
+    button1.style.display = "block"
+    button2.style.display = "none"
+}

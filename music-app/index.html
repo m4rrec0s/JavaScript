@@ -15,22 +15,19 @@
             <li><i class="fa-solid fa-search" onmouseover="showPopup('Buscar', this, '20%', '0%', '10%', '0%')" onmouseout="hidePopup()"></i></li>
             <li><i class="fa-solid fa-cart-shopping" onmouseover="showPopup('Marketplace', this, '20%', '0%', '10%', '0%')" onmouseout="hidePopup()"></i></li>
         </ul>
-        <div class="library">
-            <i class="fa-solid fa-list" onmouseover="showPopup('Lista', this, '20%', '0%', '10%', '0%')" onmouseout="hidePopup()"></i>
-            <div class="gradient"></div>
-            <ul class="playlistNavContent">
-                <li><img src="images/misic-liked.jpg" alt="..."></li>
-                <li><img src="images/svgs/episodes-logo.svg" alt="..."></li>
-                <li><img src="images/Billie_Eilish.jpeg" alt="..."></li>
-                <li><img src="images/noah_cyrus-spotify.jpg" alt="..."></li>
-                <li><img src="images/july_noah_cyrus.jpeg" alt="..."></li>
-                <li><img src="images/noah_cyrus.jpeg" alt="..."></li>
-                <li><img src="images/Billie_Eilish.jpeg" alt="..."></li>
-                <li><img src="images/noah_cyrus.jpeg" alt="..."></li>
-                <li><img src="images/Billie_Eilish.jpeg" alt="..."></li>
-                <li><img src="images/noah_cyrus.jpeg" alt="..."></li>
-            </ul>
-        </div>
+        <ul class="playlistNavContent">
+            <li id="icon-lybrary"><i class="fa-solid fa-list" onmouseover="showPopup('Lista', this, '5%', '0%', '0%', '0%')" onmouseout="hidePopup()"></i></li>
+            <li><img src="images/misic-liked.jpg" alt="..."></li>
+            <li><img src="images/svgs/episodes-logo.svg" alt="..."></li>
+            <li><img src="images/Billie_Eilish.jpeg" alt="..."></li>
+            <li><img src="images/noah_cyrus-spotify.jpg" alt="..."></li>
+            <li><img src="images/july_noah_cyrus.jpeg" alt="..."></li>
+            <li><img src="images/noah_cyrus.jpeg" alt="..."></li>
+            <li><img src="images/Billie_Eilish.jpeg" alt="..."></li>
+            <li><img src="images/noah_cyrus.jpeg" alt="..."></li>
+            <li><img src="images/Billie_Eilish.jpeg" alt="..."></li>
+            <li><img src="images/noah_cyrus.jpeg" alt="..."></li>
+        </ul>
     </nav>
     
     <section id="center">
@@ -473,6 +470,41 @@
                     <p>Noah Cyrus</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="player_song">
+        <div class="song_description_content">
+            <img src="images/afection_BETWEEN_FRIENDS.jpeg" alt="...">
+            <div>
+                <h3>affection</h3>
+                <p>BETWEEN FRIENDS</p>
+            </div>
+            <i class="fa-solid fa-plus" id="plus" onmouseover="showPopup('Adicionar à Músicas Curtidas', this, '0%', '0%', '200%', '0%')" onmouseout="hidePopup()" onclick="addInPlaylist()"></i>
+            <i class="fa-solid fa-circle-check" id="check" onmouseover="showPopup('Remover da playlist', this, '0%', '0%', '200%', '0%')" onmouseout="hidePopup()" onclick="removePlaylist()"></i>
+        </div>
+
+        <div class="player-controls">
+            <div class="controls-bar">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-solid fa-circle-pause" id="pause"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-repeat"></i>
+            </div>
+            <div class="playback-bar">
+                <p>0:00</p>
+                <div class="progress-bar">
+                </div>
+                <p>0:00</p>
+            </div>
+        </div>
+
+        <div class="adjusts-bar">
+            <i class="fa-solid fa-play"></i>
+            <i class="fa-solid fa-layer-group"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <i class="fa-solid fa-laptop"></i>
         </div>
     </section>
     
