@@ -1,3 +1,65 @@
+// Carregar a biblioteca de músicas
+fetch('music_library.json')
+  .then(response => response.json())
+  .then(data => {
+    // Armazenar as músicas em uma variável global para acesso posterior
+    window.musicLibrary = data.songs;
+    // Inicializar a reprodução da primeira música
+    playSong(0);
+  });
+
+// Função para reproduzir uma música específica pelo índice
+function playSong(index) {
+    var song = window.musicLibrary[index];
+    //player-now
+        //player-bar
+    document.getElementById('player-now-title').textContent = song.title;
+    document.getElementById('player-now-artist').textContent = song.artist;
+    document.getElementById('player-now-image').src = song.cover_image;
+    document.getElementById('player-now-lyrics').textContent = song.lyrics;
+    document.getElementById('player-now-about-artist-name').textContent = song.about_artist.name;
+    document.getElementById('player-now-about-artist').textContent = song.about_artist.description;
+    document.getElementById('player-now-monthly-listeners').textContent = song.about_artist.monthly_listeners;
+    document.getElementById('player-now-next-song-name').textContent = song.next_song.title;
+    document.getElementById('player-now-next-song-artist').textContent = song.next_song.artist;
+    document.getElementById('player-now-next-song-image').src = song.next_song.image;
+
+    // Atualizar a cor de fundo e a cor do texto do player
+    document.documentElement.style.setProperty('--playerNow', song.background);
+    document.querySelector('.picture').style.backgroundImage = `url(${song.picture})`;
+}
+
+// Carregar a biblioteca de músicas
+fetch('music_library.json')
+  .then(response => response.json())
+  .then(data => {
+    // Armazenar as músicas em uma variável global para acesso posterior
+    window.musicLibrary = data.songs;
+    // Inicializar a reprodução da primeira música
+    playSong(0);
+  });
+
+// Função para avançar para a próxima música
+function nextSong() {
+  // Obtém o índice da música atualmente tocando
+  var currentIndex = window.musicLibrary.findIndex(song => song.title === document.getElementById('player-now-title').textContent);
+  // Calcula o próximo índice
+  var nextIndex = (currentIndex + 1) % window.musicLibrary.length;
+  // Reproduz a próxima música
+  playSong(nextIndex);
+}
+
+// Função para voltar para a música anterior
+function previousSong() {
+  // Obtém o índice da música atualmente tocando
+  var currentIndex = window.musicLibrary.findIndex(song => song.title === document.getElementById('player-now-title').textContent);
+  // Calcula o índice da música anterior
+  var previousIndex = (currentIndex - 1 + window.musicLibrary.length) % window.musicLibrary.length;
+  // Reproduz a música anterior
+  playSong(previousIndex);
+}
+
+
 function showPopup(message, icon, right = "0%", left = "0%", top = "0%", bottom = "0%") {
     var popup = document.getElementById("popup");
     popup.innerText = message;
@@ -54,3 +116,13 @@ function removePlaylist() {
     button1.style.display = "block"
     button2.style.display = "none"
 }
+
+var progressBar = document.querySelector('.progress-inner');
+var timeOfMusicStart = document.querySelector('#start')
+var timeOfMusicEnd = document.querySelector('#end')
+
+timeOfMusicStart.innerHTML = '0:00';
+timeOfMusicEnd.innerHTML = '3:00'
+
+
+progressBar.style.width = '1%';
