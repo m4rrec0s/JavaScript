@@ -459,13 +459,13 @@
             </div>
         </div>
         
-        <div class="nextSongContent" onclick="nextSong()">
+        <div class="nextSongContent">
             <div class="topNext">
                 <h4>A seguir</h4>
                 <a href="#">Abrir fila</a>
             </div>
             
-            <div class="nextSong">
+            <div class="nextSong" onclick="nextSong()">
                 <i class="fa-solid fa-music"></i>
                 <i class="fa-solid fa-play"></i>
                 <img alt="..." id="img-next-song">
@@ -480,6 +480,10 @@
     <section id="player_song">
         <div class="song_description_content">
             <img class="player-now-image" alt="...">
+            <div class="select-status-player-now">
+                <i class="fa-solid fa-angle-up" onmouseover="showPopup('Expandir', this, '0%', '0%', '200%', '0%')" onmouseout="hidePopup()" onclick="addInPlaylist()"></i>
+                <i class="fa-solid fa-angle-down" onmouseover="showPopup('Retrair', this, '0%', '0%', '200%', '0%')" onmouseout="hidePopup()" onclick="addInPlaylist()"></i>
+            </div>
             <div>
                 <h3 class="player-now-title"></h3>
                 <p class="player-now-artist"></p>
@@ -507,10 +511,16 @@
         </div>
 
         <div class="adjusts-bar">
-            <i class="fa-solid fa-play"></i>
+            <i class="fa-solid fa-play" id="showPlayerNow"></i>
             <i class="fa-solid fa-layer-group"></i>
-            <i class="fa-solid fa-volume-high"></i>
             <i class="fa-solid fa-laptop"></i>
+            <div>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="volume-porcentage">
+                    <div class="progress-inner-volume"></div>
+                </div>
+            </div>
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
         </div>
     </section>
     

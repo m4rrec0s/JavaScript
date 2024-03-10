@@ -79,6 +79,42 @@ function previousSong() {
   playSong(previousIndex);
 }
 
+var playerNowContent = document.querySelector('.player-now');
+var angleUp = document.querySelector('.fa-angle-up');
+var angleDown = document.querySelector('.fa-angle-down');
+
+var playerNowButton = document.querySelector('#showPlayerNow');
+
+function removePlayerNow() {
+  angleUp.style.display = 'block';
+  angleDown.style.display = 'none';
+  playerNowContent.style.display = 'none';
+}
+
+function showPlayerNow() {
+  playerNowContent.style.display = 'block';
+  angleDown.style.display = 'block';
+  angleUp.style.display = 'none'
+}
+
+document.querySelector(".fa-xmark").addEventListener('click', removePlayerNow)
+angleDown.addEventListener('click', removePlayerNow);
+angleUp.addEventListener('click', showPlayerNow);
+
+function togglePlayerNow() {
+  if (playerNowContent.style.display === 'none') {
+    playerNowContent.style.display = 'block';
+    playerNowButton.style.color = 'var(--highlights)'
+    playerNowButton.style.border = '1px solid var(--highlights)'
+  } else {
+    playerNowContent.style.display = 'none';
+    playerNowButton.style.color = 'var(--font)'
+    playerNowButton.style.border = '1px solid var(--font)'
+  }
+}
+
+playerNowButton.addEventListener('click', togglePlayerNow);
+
 
 function showPopup(message, icon, right = "0%", left = "0%", top = "0%", bottom = "0%") {
     var popup = document.getElementById("popup");
@@ -115,13 +151,13 @@ function hidePopup() {
 
 function changeHeaderColor(color) {
     var header = document.getElementById("pageHeader");
-    header.classList.remove("header-red", "header-green", "header-blue"); // Remove todas as classes de cor anteriores
-    header.classList.add(`header-${color}`); // Adiciona a classe de cor correspondente
+    header.classList.remove("header-red", "header-green", "header-blue");
+    header.classList.add(`header-${color}`);
 }
 
 function resetHeaderColor() {
     var header = document.getElementById("pageHeader");
-    header.classList.remove("header-red", "header-green", "header-blue"); // Remove todas as classes de cor anteriores
+    header.classList.remove("header-red", "header-green", "header-blue");
 }
 
 var button1 = document.getElementById('plus')

@@ -11,11 +11,6 @@
           "name": "BETWEEN FRIENDS",
           "monthly_listeners": "1.913.638",
           "description": "hii its BETWEEN FRIENDS. we make music in our bedrooms for u to listen to in yours. @betweenfriends S2 S2 S2 -brandon + savannah"
-        },
-        "next_song": {
-            "title": "Jully",
-            "artist":"Noah Cyrus",
-            "image": "images/july_noah_cyrus.jpeg"
         }
       },
 
@@ -30,11 +25,6 @@
           "name": "Noah Cyrus",
           "monthly_listeners": "1.001.201",
           "description": "Noah Cuyrus it's me. <3"
-        },
-        "next_song": {
-            "title": "affection",
-            "artist":"BETWEEN FRIENDS",
-            "image": "images/afection_BETWEEN_FRIENDS.jpeg"
         }
       },
       
@@ -49,11 +39,156 @@
           "name": "Noah Cyrus",
           "monthly_listeners": "1.001.201",
           "description": "Noah Cuyrus it's me. <3"
-        },
-        "next_song": {
-            "title": "affection",
-            "artist":"BETWEEN FRIENDS",
-            "image": "images/afection_BETWEEN_FRIENDS.jpeg"
+        }
+      }, 
+
+      {
+        "title": "Shape of You",
+        "artist": "Ed Sheeran",
+        "cover_image": "https://i.scdn.co/image/ab67616d00001e02ba5db46f4b838ef6027e6f96",
+        "lyrics": "Letra da música Shape of You...",
+        "background_color": "#6dcae5",
+        "picture": "https://veja.abril.com.br/wp-content/uploads/2016/06/ed-sheeran-apontado-como-novo-affaire-de-selena-gomez-original4-e1500381338583.jpeg?quality=90&strip=info&w=720&h=440&crop=1",
+        "about_artist": {
+          "name": "Ed Sheeran",
+          "monthly_listeners": "56.700.221",
+          "description": "Ed Sheeran é um cantor e compositor britânico. Ele é conhecido por seus hits como 'Shape of You' e 'Thinking Out Loud'."
+        }
+      }, 
+
+      {
+        "title": "Despacito",
+        "artist": "Luis Fonsi ft. Daddy Yankee",
+        "cover_image": "https://i.pinimg.com/564x/05/2d/f8/052df8259ade87e3f10f08794de897bb.jpg",
+        "lyrics": "Letra da música Despacito...",
+        "background_color": "#D0A48E",
+        "picture": "https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2021/03/19/16161548467697.jpg",
+        "about_artist": {
+          "name": "Luis Fonsi",
+          "monthly_listeners": "29.600.143",
+          "description": "Luis Fonsi é um cantor e compositor porto-riquenho. Ele é conhecido pelo hit mundial 'Despacito' em colaboração com Daddy Yankee."
+        }
+      },
+
+      {
+        "title": "Someone Like You",
+        "artist": "Adele",
+        "cover_image": "https://i.scdn.co/image/ab67616d0000b273164feb363334f93b6458d2a9",
+        "lyrics": "Letra da música Someone Like You...",
+        "background_color": "#3E3F43",
+        "picture": "https://www.ibahia.com/wp-content/uploads/fileadmin/representativas/RTEmagicC_6ec3fcac2e.png.png",
+        "about_artist": {
+          "name": "Adele",
+          "monthly_listeners": "40.511.543",
+          "description": "Adele é uma cantora e compositora britânica. Ela é conhecida por suas poderosas baladas, incluindo 'Someone Like You' e 'Hello'."
+        }
+      },
+
+      {
+        "title": "Blinding Lights",
+        "artist": "The Weeknd",
+        "cover_image": "https://i.pinimg.com/564x/9a/56/03/9a560395d8cfd33f77f7bfffefe3d76c.jpg",
+        "lyrics": "Letra da música Blinding Lights...",
+        "background_color": "#1c1e13",
+        "picture": "https://i.pinimg.com/564x/d2/df/7f/d2df7f308648a0b058d012c13e319b05.jpg",
+        "about_artist": {
+          "name": "The Weeknd",
+          "monthly_listeners": "78.600.000",
+          "description": "The Weeknd é um cantor, compositor e produtor musical canadense. Ele é conhecido por hits como 'Blinding Lights' e 'Starboy'."
+        }
+      },
+      {
+        "title": "Uptown Funk",
+        "artist": "Mark Ronson ft. Bruno Mars",
+        "cover_image": "https://i.pinimg.com/564x/ca/5e/76/ca5e76e30f8ea4b3e448718d4f6316fd.jpg",
+        "lyrics": "Letra da música Uptown Funk...",
+        "background_color": "#767676",
+        "picture": "https://i.pinimg.com/564x/62/52/ed/6252ed5f5e880c95682ea83734e3633e.jpg",
+        "about_artist": {
+          "name": "Bruno Mars",
+          "monthly_listeners": "48.400.000",
+          "description": "Bruno Mars é um cantor, compositor, produtor musical e dançarino americano. Ele é conhecido por sucessos como 'Uptown Funk' e 'Just the Way You Are'."
+        }
+      },
+      {
+        "title": "Believer",
+        "artist": "Imagine Dragons",
+        "cover_image": "https://i.pinimg.com/564x/5b/4c/ed/5b4ced22923bd1c1353d28213bffad03.jpg",
+        "lyrics": "Letra da música Believer...",
+        "background_color": "#184060",
+        "picture": "https://i.pinimg.com/564x/b5/be/cd/b5becdc73b1dda9c350b0d0c3305bf73.jpg",
+        "about_artist": {
+          "name": "Imagine Dragons",
+          "monthly_listeners": "58.300.000",
+          "description": "Imagine Dragons é uma banda de rock americana originária de Las Vegas, Nevada. Eles são conhecidos por sucessos como 'Believer' e 'Radioactive'."
+        }
+      },
+
+      {
+        "title": "Rockstar",
+        "artist": "Post Malone ft. 21 Savage",
+        "cover_image": "https://i.pinimg.com/564x/04/5f/f4/045ff4e5a3d323118a2dd3160e1f636d.jpg",
+        "lyrics": "Letra da música Rockstar...",
+        "background_color": "#777777",
+        "picture": "https://i.pinimg.com/564x/04/db/df/04dbdfc760dad02c585ad86f51398047.jpg",
+        "about_artist": {
+          "name": "Post Malone",
+          "monthly_listeners": "77.800.000",
+          "description": "Post Malone é um rapper, cantor e compositor americano. Ele é conhecido por sucessos como 'Rockstar' e 'Circles'."
+        }
+      },
+      {
+        "title": "Cheap Thrills",
+        "artist": "Sia ft. Sean Paul",
+        "cover_image": "https://i.pinimg.com/564x/bd/d9/11/bdd911416dccdfe74216bb22ec296a7e.jpg",
+        "lyrics": "Letra da música Cheap Thrills...",
+        "background_color": "#303040",
+        "picture": "https://i.pinimg.com/564x/df/a2/74/dfa2740b9b425d18d5dcfec9209f0ae0.jpg",
+        "about_artist": {
+          "name": "Sia",
+          "monthly_listeners": "33100000",
+          "description": "Sia é uma cantora, compositora e diretora musical australiana. Ela é conhecida por hits como 'Cheap Thrills' e 'Chandelier'."
+        }
+      },
+
+      {
+        "title": "Dance Monkey",
+        "artist": "Tones and I",
+        "cover_image": "https://i.pinimg.com/564x/3d/c0/e4/3dc0e4d48f94351fc71dc33b2d5e3516.jpg",
+        "lyrics": "Letra da música Dance Monkey...",
+        "background_color": "#083040",
+        "picture": "https://i.pinimg.com/564x/f8/de/e9/f8dee9bc837f1081cc65e04b595bafb4.jpg",
+        "about_artist": {
+          "name": "Tones and I",
+          "monthly_listeners": "33.100.000",
+          "description": "Tones and I é uma cantora australiana. Ela é conhecida pelo sucesso 'Dance Monkey'."
+        }
+      },
+      {
+        "title": "Happier",
+        "artist": "Marshmello ft. Bastille",
+        "cover_image": "https://i.pinimg.com/564x/83/17/da/8317da40ce22b49365df92758e7e9a39.jpg",
+        "lyrics": "Letra da música Happier...",
+        "background_color": "#9D6F00",
+        "picture": "https://i.pinimg.com/736x/3a/25/fc/3a25fc9afcb33e18c5a098ffebeae9fd.jpg",
+        "about_artist": {
+          "name": "Marshmello",
+          "monthly_listeners": "337.000.000",
+          "description": "Marshmello é um DJ e produtor musical americano. Ele é conhecido por sucessos como 'Happier' e 'Alone'."
+        }
+      },
+
+      {
+        "title": "Bad Guy",
+        "artist": "Billie Eilish",
+        "cover_image": "https://i.pinimg.com/564x/bb/90/97/bb9097f3ec4f66d82c85f769bc75842e.jpg",
+        "lyrics": "Letra da música Bad Guy...",
+        "background_color": "#7C766B",
+        "picture": "https://i.pinimg.com/564x/41/72/ce/4172ced4a54f68048b750f1e7fc544ba.jpg",
+        "about_artist": {
+          "name": "Billie Eilish",
+          "monthly_listeners": "701.000.000",
+          "description": "Billie Eilish é uma cantora e compositora americana. Ela é conhecida por sucessos como 'Bad Guy' e 'Ocean Eyes'."
         }
       }
       

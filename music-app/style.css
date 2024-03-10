@@ -72,12 +72,11 @@ nav {
     display: flex;
     flex-direction: column;
     width: 100px;
-    margin-right: 10px;
     justify-items: center;
 }
 
 nav > ul {
-    width: 100%;
+    width: 75px;
     background-color: var(--menu);
     display: flex;
     flex-direction: column;
@@ -176,6 +175,8 @@ nav > ul > li > img {
     overflow-y: auto;
     overflow-x: hidden;
     padding-right: 3px;
+
+    margin: 0 10px;
 }
 
 #center::-webkit-scrollbar {
@@ -426,7 +427,6 @@ nav > ul > li > img {
 
 .player-now {
     border-radius: 10px;
-    margin-left: 10px;
     width: 100%;
     max-width: 413px;
     background-color: var(--playerNow);
@@ -694,6 +694,7 @@ nav > ul > li > img {
     background-color: var(--menu);
     border-radius: 10px;
     width: calc(100% - 25px);
+    height: 95px;
 
     display: flex;
     align-items: center;
@@ -784,8 +785,13 @@ nav > ul > li > img {
 }
 
 .controls-bar > i {
+    padding: 4px;
     font-size: 1.2em;
     color: var(--font-not-select);
+}
+
+.controls-bar > i:hover {
+    color: var(--font);
 }
 
 #pause {
@@ -807,10 +813,48 @@ nav > ul > li > img {
 .adjusts-bar {
     width: 100%;
     max-width: 500px;
+    padding-right: 10px;
 
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     gap: 20px;
+}
+
+.adjusts-bar > i.fa-play {
+    font-size: 0.6em;
+    padding: 5px 4px 5px 5px;
+    color: var(--highlights);
+    border: 1px solid var(--highlights);
+    transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.adjusts-bar > i.fa-laptop {
+    color: var(--highlights);
+}
+
+.adjusts-bar > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.adjusts-bar > div > div.volume-porcentage {
+    width: 40px;
+    height: 3px;
+    border: 3px;
+    background-color: var(--songShortcut);
+
+    position: relative;
+}
+
+.progress-inner-volume {
+    width: 50%;
+    height: 100%;
+    background-color: var(--highlights);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .progress-bar {
@@ -822,12 +866,29 @@ nav > ul > li > img {
 }
 
 .progress-inner {
-    width: 0%;
+    width: 10%;
     height: 100%;
     background-color: var(--font);
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.select-status-player-now {
+    opacity: 80%;
+    position: absolute;
+    left: 53px;
+    bottom: 48px;
+}
+
+.select-status-player-now i {
+    background-color: var(--menu);
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.select-status-player-now > i.fa-angle-up {
+    display: none;
 }
 
 @media screen and (max-width: 1840px) {
