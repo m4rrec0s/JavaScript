@@ -1,61 +1,64 @@
-// Carregar a biblioteca de músicas
-fetch('music_library.json')
-  .then(response => response.json())
-  .then(data => {
-    // Armazenar as músicas em uma variável global para acesso posterior
-    window.musicLibrary = data.songs;
-    // Inicializar a reprodução da primeira música
-    playSong(0);
-  });
+function updatePlayerNow(song) {
+  var playerNowTitles = document.getElementsByClassName('player-now-title');
+  var playerNowArtists = document.getElementsByClassName('player-now-artist');
+  var playerNowImages = document.getElementsByClassName('player-now-image');
 
-// Função para reproduzir uma música específica pelo índice
-function playSong(index) {
-    var song = window.musicLibrary[index];
-    //player-now
-        //player-bar
-    document.getElementById('player-now-title').textContent = song.title;
-    document.getElementById('player-now-artist').textContent = song.artist;
-    document.getElementById('player-now-image').src = song.cover_image;
-    document.getElementById('player-now-lyrics').textContent = song.lyrics;
-    document.getElementById('player-now-about-artist-name').textContent = song.about_artist.name;
-    document.getElementById('player-now-about-artist').textContent = song.about_artist.description;
-    document.getElementById('player-now-monthly-listeners').textContent = song.about_artist.monthly_listeners;
-    document.getElementById('player-now-next-song-name').textContent = song.next_song.title;
-    document.getElementById('player-now-next-song-artist').textContent = song.next_song.artist;
-    document.getElementById('player-now-next-song-image').src = song.next_song.image;
+  for (var i = 0; i < playerNowTitles.length; i++) {
+      playerNowTitles[i].textContent = song.title;
+  }
 
-    // Atualizar a cor de fundo e a cor do texto do player
-    document.documentElement.style.setProperty('--playerNow', song.background);
-    document.querySelector('.picture').style.backgroundImage = `url(${song.picture})`;
+  for (var i = 0; i < playerNowArtists.length; i++) {
+      playerNowArtists[i].textContent = song.artist;
+  }
+
+  for (var i = 0; i < playerNowImages.length; i++) {
+      playerNowImages[i].src = song.cover_image;
+  }
+
+  var playerNowDivs = document.getElementsByClassName('player-now');
+  for (var i = 0; i < playerNowDivs.length; i++) {
+    playerNowDivs[i].style.setProperty('--playerNow', song.background_color);
+  }
+
+  var pictureDivs = document.getElementsByClassName('picture');
+  for (var i = 0; i < pictureDivs.length; i++) {
+    pictureDivs[i].style.backgroundImage = `url(${song.picture})`;
+  }
+
+  document.getElementById('player-now-lyrics').textContent = song.lyrics;
+  document.getElementById('player-now-about-artist-name').textContent = song.about_artist.name;
+  document.getElementById('player-now-monthly-listeners').textContent = song.about_artist.monthly_listeners;
+  document.getElementById('player-now-about-artist-description').textContent = song.about_artist.description;
 }
 
-// Carregar a biblioteca de músicas
+function playSong(index) {
+  var song = window.musicLibrary[index];
+ 
+  updatePlayerNow(song);
+  
+  var nextButton = document.getElementById('nextButton');
+  nextButton.dataset.nextIndex = (index + 1) % window.musicLibrary.length;
+}
+
 fetch('music_library.json')
   .then(response => response.json())
   .then(data => {
-    // Armazenar as músicas em uma variável global para acesso posterior
     window.musicLibrary = data.songs;
-    // Inicializar a reprodução da primeira música
     playSong(0);
   });
 
-// Função para avançar para a próxima música
 function nextSong() {
-  // Obtém o índice da música atualmente tocando
-  var currentIndex = window.musicLibrary.findIndex(song => song.title === document.getElementById('player-now-title').textContent);
-  // Calcula o próximo índice
+  var currentTitle = document.querySelector('.player-now-title').textContent;
+  var currentIndex = window.musicLibrary.findIndex(song => song.title === currentTitle);
   var nextIndex = (currentIndex + 1) % window.musicLibrary.length;
-  // Reproduz a próxima música
   playSong(nextIndex);
 }
 
-// Função para voltar para a música anterior
+
 function previousSong() {
-  // Obtém o índice da música atualmente tocando
-  var currentIndex = window.musicLibrary.findIndex(song => song.title === document.getElementById('player-now-title').textContent);
-  // Calcula o índice da música anterior
+  var currentTitle = document.querySelector('.player-now-title').textContent;
+  var currentIndex = window.musicLibrary.findIndex(song => song.title === currentTitle);
   var previousIndex = (currentIndex - 1 + window.musicLibrary.length) % window.musicLibrary.length;
-  // Reproduz a música anterior
   playSong(previousIndex);
 }
 

@@ -5,7 +5,7 @@
         "artist": "BETWEEN FRIENDS",
         "cover_image": "images/afection_BETWEEN_FRIENDS.jpeg",
         "lyrics": "Letra da música affection...",
-        "background": "#1070B0",
+        "background_color": "#1070B0",
         "picture": "images/tumble_between_friends.jpg",
         "about_artist": {
           "name": "BETWEEN FRIENDS",
@@ -24,7 +24,7 @@
         "artist": "Noah Cyrus",
         "cover_image": "images/july_noah_cyrus.jpeg",
         "lyrics": "Letra da música affection...",
-        "background": "#86460D",
+        "background_color": "#86460D",
         "picture": "images/noah_cyrus.jpeg",
         "about_artist": {
           "name": "Noah Cyrus",
@@ -43,7 +43,7 @@
         "artist": "undefyned",
         "cover_image": "https://i.pinimg.com/originals/72/0a/d4/720ad43afb49cb98e82cf81794ce5c62.jpg",
         "lyrics": "Letra da música affection...",
-        "background": "#11774f",
+        "background_color": "#11774f",
         "picture": "https://i.pinimg.com/originals/7b/03/a0/7b03a0a195b36bffc6dc3b468fca6eb7.png",
         "about_artist": {
           "name": "Noah Cyrus",

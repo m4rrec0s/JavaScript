@@ -416,16 +416,16 @@
         
     </section>
     
-    <section id="player-now">
+    <section class="player-now">
         <div class="topPlayer">
             <h2>Músicas Curtidas</h2>
             <i class="fa-solid fa-xmark" onmouseover="showPopup('Fechar', this, '0%', '200%', '100%', '0%')" onmouseout="hidePopup()"></i>
         </div>
-        <img id="player-now-image" alt="...">
+        <img class="player-now-image" alt="...">
         <div class="music_status">
             <div>
-                <h3 onmouseover="showPopup('affection', this)" onmouseout="hidePopup()" id="player-now-title"></h3>
-                <p onmouseover="showPopup('affection', this)" onmouseout="hidePopup()" id="player-now-artist"></p>
+                <h3 onmouseover="showPopup('affection', this)" onmouseout="hidePopup()" class="player-now-title"></h3>
+                <p onmouseover="showPopup('affection', this)" onmouseout="hidePopup()" class="player-now-artist"></p>
             </div>
             <div class="icons">
                 <i class="fa-solid fa-circle-check" onmouseover="showPopup('Adicionar à playlist', this, '0%', '900%', '10%', '0%')" onmouseout="hidePopup()"></i>
@@ -455,7 +455,7 @@
                     </div>
                     <button type="button">Seguir</button>
                 </div>
-                <p id="player-now-about-artist">Descrição do artista...</p>
+                <p id="player-now-about-artist-description">Descrição do artista...</p>
             </div>
         </div>
         
@@ -468,10 +468,10 @@
             <div class="nextSong">
                 <i class="fa-solid fa-music"></i>
                 <i class="fa-solid fa-play"></i>
-                <img id="player-now-next-song-image" alt="...">
+                <img alt="...">
                 <div>
-                    <h5 id="player-now-next-song-name"></h5>
-                    <p id="player-now-next-song-artist"></p>
+                    <h5></h5>
+                    <p ></p>
                 </div>
             </div>
         </div>
@@ -479,10 +479,10 @@
 
     <section id="player_song">
         <div class="song_description_content">
-            <img class="" src="images/afection_BETWEEN_FRIENDS.jpeg" alt="...">
+            <img class="player-now-image" alt="...">
             <div>
-                <h3>affection</h3>
-                <p>BETWEEN FRIENDS</p>
+                <h3 class="player-now-title"></h3>
+                <p class="player-now-artist"></p>
             </div>
             <i class="fa-solid fa-plus" id="plus" onmouseover="showPopup('Adicionar à Músicas Curtidas', this, '0%', '0%', '200%', '0%')" onmouseout="hidePopup()" onclick="addInPlaylist()"></i>
             <i class="fa-solid fa-circle-check" id="check" onmouseover="showPopup('Remover da playlist', this, '0%', '0%', '200%', '0%')" onmouseout="hidePopup()" onclick="removePlaylist()"></i>

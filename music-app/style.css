@@ -424,7 +424,7 @@ nav > ul > li > img {
     text-decoration: none;
 }
 
-#player-now {
+.player-now {
     border-radius: 10px;
     margin-left: 10px;
     width: 100%;
@@ -435,13 +435,13 @@ nav > ul > li > img {
     transition: background-color 0.5s ease-in-out;
 }
 
-#player-now::-webkit-scrollbar {
+.player-now::-webkit-scrollbar {
     right: 20px;
     width: 2px;
     padding: 10px 0;
 }
 
-#player-now::-webkit-scrollbar-thumb {
+.player-now::-webkit-scrollbar-thumb {
     background-color: var(--songShortcutHover);
     border-radius: 10px;
 }
@@ -453,16 +453,16 @@ nav > ul > li > img {
     margin-bottom: 20px;
 }
 
-#player-now > .topPlayer > h2 {
+.player-now > .topPlayer > h2 {
     font-size: 1.1em;
 }
 
-#player-now > .topPlayer > i {
+.player-now > .topPlayer > i {
     padding: 10px;
     font-size: 20px;
 }
 
-#player-now > img {
+.player-now > img {
     width: 100%;
     max-width: 100%;
     border-radius: 10px;
@@ -871,7 +871,7 @@ nav > ul > li > img {
 }
 
 @media screen and (max-width: 1540px) {
-    #player-now {
+    .player-now {
         width: 100%;
         padding: 15px;
     }
@@ -931,7 +931,7 @@ nav > ul > li > img {
 
 @media screen and (max-width: 1490px) {
 
-    #player-now {
+    .player-now {
         width: 100%;
         padding: 15px;
     }
@@ -969,7 +969,7 @@ nav > ul > li > img {
 }
 
 @media screen and (max-width: 1344px) {
-    #player-now {
+    .player-now {
         width: 100%;
         max-width: 320px;
         padding: 15px;
@@ -1038,7 +1038,7 @@ nav > ul > li > img {
         box-shadow: 0 10px 10px 4px rgba(0, 0, 0, 0.541);
     }
 
-    #player-now {
+    .player-now {
         width: 100%;
         max-width: 300px;
         padding: 15px;
