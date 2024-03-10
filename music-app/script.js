@@ -31,10 +31,27 @@ function updatePlayerNow(song) {
   document.getElementById('player-now-about-artist-description').textContent = song.about_artist.description;
 }
 
+function updateNextSong() {
+  var currentTitle = document.querySelector('.player-now-title').textContent;
+  var currentIndex = window.musicLibrary.findIndex(song => song.title === currentTitle);
+  var nextIndex = (currentIndex + 1) % window.musicLibrary.length;
+  var nextSong = window.musicLibrary[nextIndex];
+
+  var nextSongTitle = document.querySelector('#title-next-song');
+  var nextSongArtist = document.querySelector('#artist-next-song');
+  var nextSongImage = document.querySelector('#img-next-song');
+
+  nextSongTitle.textContent = nextSong.title;
+  nextSongArtist.textContent = nextSong.artist;
+  nextSongImage.src = nextSong.cover_image;
+}
+
+
 function playSong(index) {
   var song = window.musicLibrary[index];
  
   updatePlayerNow(song);
+  updateNextSong();
   
   var nextButton = document.getElementById('nextButton');
   nextButton.dataset.nextIndex = (index + 1) % window.musicLibrary.length;
