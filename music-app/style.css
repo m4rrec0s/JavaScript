@@ -327,10 +327,6 @@ nav > ul > li > img {
     gap: 10px;
 }
 
-.playlistContent div:last-child {
-    display: none;
-}
-
 .playlist {
     background-color: var(--songShortcut);
     padding: 12px;

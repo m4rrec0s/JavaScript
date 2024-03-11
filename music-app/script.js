@@ -103,19 +103,33 @@ function previousSong() {
 var playerNowContent = document.querySelector('.player-now');
 var angleUp = document.querySelector('.fa-angle-up');
 var angleDown = document.querySelector('.fa-angle-down');
-
+var test = true
 var playerNowButton = document.querySelector('#showPlayerNow');
 
 function removePlayerNow() {
-  angleUp.style.display = 'block';
-  angleDown.style.display = 'none';
+  test = false
   playerNowContent.style.display = 'none';
+
+  if (test = true) {
+    angleUp.style.display = 'block';
+    angleDown.style.display = 'none';
+  } else {
+    angleDown.style.display = 'block';
+    angleUp.style.display = 'none';
+  }
 }
 
 function showPlayerNow() {
+  test = true
   playerNowContent.style.display = 'block';
-  angleDown.style.display = 'block';
-  angleUp.style.display = 'none'
+
+  if (test = false) {
+    angleUp.style.display = 'block';
+    angleDown.style.display = 'none';
+  } else {
+    angleDown.style.display = 'block';
+    angleUp.style.display = 'none';
+  }
 }
 
 document.querySelector(".fa-xmark").addEventListener('click', removePlayerNow)
