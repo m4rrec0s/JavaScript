@@ -327,6 +327,10 @@ nav > ul > li > img {
     gap: 10px;
 }
 
+.playlistContent div:last-child {
+    display: none;
+}
+
 .playlist {
     background-color: var(--songShortcut);
     padding: 12px;
@@ -888,6 +892,10 @@ nav > ul > li > img {
 }
 
 .select-status-player-now > i.fa-angle-up {
+    display: none;
+}
+
+#player {
     display: none;
 }
 

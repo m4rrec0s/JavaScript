@@ -49,13 +49,34 @@ function updateNextSong() {
 
 function playSong(index) {
   var song = window.musicLibrary[index];
+  var audioElement = document.getElementById('player');
  
   updatePlayerNow(song);
   updateNextSong();
-  
+
+  audioElement.src = song.file;
+  audioElement.play()
+
   var nextButton = document.getElementById('nextButton');
   nextButton.dataset.nextIndex = (index + 1) % window.musicLibrary.length;
+
 }
+
+var pauseButton = document.getElementById('pause');
+
+pauseButton.addEventListener('click', function() {
+    var audioElement = document.getElementById('player');
+    if (audioElement.paused) {
+        audioElement.play();
+        pauseButton.classList.remove('fa-play')
+        pauseButton.classList.add('fa-circle-pause');
+    } else {
+        audioElement.pause();
+        pauseButton.classList.remove('fa-circle-pause');
+        pauseButton.classList.add('fa-play');
+    }
+});
+
 
 fetch('music_library.json')
   .then(response => response.json())
@@ -174,11 +195,77 @@ function removePlaylist() {
 }
 
 var progressBar = document.querySelector('.progress-inner');
-var timeOfMusicStart = document.querySelector('#start')
-var timeOfMusicEnd = document.querySelector('#end')
+
+var audioElement = document.getElementById('player');
+var progressBar = document.querySelector('.progress-inner');
+
+// Adiciona evento de escuta para quando o usuário interagir com a barra de progresso
+progressBar.addEventListener('mousedown', function(event) {
+    // Obtém a posição inicial do mouse e a posição inicial da barra de progresso
+    var initialMouseX = event.pageX;
+    var initialProgressWidth = progressBar.offsetWidth;
+
+    // Adiciona evento de escuta para quando o usuário move o mouse
+    function handleMouseMove(moveEvent) {
+        // Calcula o deslocamento do mouse em relação à posição inicial
+        var offsetX = moveEvent.pageX - initialMouseX;
+
+        // Calcula a nova largura da barra de progresso
+        var newProgressWidth = Math.max(0, Math.min(initialProgressWidth + offsetX, progressBar.parentElement.offsetWidth));
+
+        // Calcula a proporção da nova posição em relação à largura total da barra de progresso
+        var progressRatio = newProgressWidth / progressBar.parentElement.offsetWidth;
+
+        // Define a nova posição da música com base na proporção calculada
+        audioElement.currentTime = progressRatio * audioElement.duration;
+    }
+
+    // Adiciona evento de escuta para quando o usuário soltar o botão do mouse
+    function handleMouseUp() {
+        // Remove os eventos de escuta de movimento e de liberação do mouse
+        document.removeEventListener('mousemove', handleMouseMove);
+        document.removeEventListener('mouseup', handleMouseUp);
+    }
+
+    // Adiciona os eventos de escuta de movimento e de liberação do mouse ao documento
+    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mouseup', handleMouseUp);
+});
+
+// Atualiza a posição da barra de progresso conforme a reprodução da música
+audioElement.addEventListener('timeupdate', function() {
+    var progressRatio = audioElement.currentTime / audioElement.duration;
+    progressBar.style.width = (progressRatio * 100) + '%';
+});
+
+audioElement.addEventListener('ended', function() {
+  nextSong();
+});
+
+
+var timeOfMusicStart = document.getElementById('start');
+var timeOfMusicEnd = document.getElementById('end');
 
 timeOfMusicStart.innerHTML = '0:00';
 timeOfMusicEnd.innerHTML = '3:00'
 
+audioElement.addEventListener('loadedmetadata', function() {
+    timeOfMusicEnd.innerHTML = formatTime(audioElement.duration);
+});
 
-progressBar.style.width = '1%';
+audioElement.addEventListener('timeupdate', function() {
+    var currentTime = audioElement.currentTime;
+    var duration = audioElement.duration;
+
+    timeOfMusicStart.innerHTML = formatTime(currentTime);
+});
+
+function formatTime(time) {
+    var minutes = Math.floor(time / 60);
+    var seconds = Math.floor(time % 60);
+    return pad(minutes) + ':' + pad(seconds);
+}
+
+function pad(number) {
+    return (number < 10 ? '0' : '') + number;
+}

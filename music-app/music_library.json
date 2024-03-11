@@ -11,7 +11,8 @@
           "name": "BETWEEN FRIENDS",
           "monthly_listeners": "1.913.638",
           "description": "hii its BETWEEN FRIENDS. we make music in our bedrooms for u to listen to in yours. @betweenfriends S2 S2 S2 -brandon + savannah"
-        }
+        },
+        "file":"musics/BETWEEN_FRIENDS-affection.mp3"
       },
 
       {
@@ -25,21 +26,23 @@
           "name": "Noah Cyrus",
           "monthly_listeners": "1.001.201",
           "description": "Noah Cuyrus it's me. <3"
-        }
+        },
+        "file":"musics/Noah_Cyrus-july.mp3"
       },
       
       {
-        "title": "Anime song",
-        "artist": "undefyned",
-        "cover_image": "https://i.pinimg.com/originals/72/0a/d4/720ad43afb49cb98e82cf81794ce5c62.jpg",
+        "title": "F*ck Love",
+        "artist": "Lund",
+        "cover_image": "https://cdns-images.dzcdn.net/images/cover/77f1eb89cbd7b72bfdf6fdb205f5693d/500x500.jpg",
         "lyrics": "Letra da música affection...",
-        "background_color": "#11774f",
-        "picture": "https://i.pinimg.com/originals/7b/03/a0/7b03a0a195b36bffc6dc3b468fca6eb7.png",
+        "background_color": "#7C7676",
+        "picture": "https://i.scdn.co/image/ab67616d00001e02e36f8ef1fb2f6553d96fbc64",
         "about_artist": {
           "name": "Noah Cyrus",
-          "monthly_listeners": "1.001.201",
-          "description": "Noah Cuyrus it's me. <3"
-        }
+          "monthly_listeners": "1.413.690",
+          "description": "❤️"
+        },
+        "file":"musics/F_ck_Love.mp3"
       }, 
 
       {
@@ -53,7 +56,8 @@
           "name": "Ed Sheeran",
           "monthly_listeners": "56.700.221",
           "description": "Ed Sheeran é um cantor e compositor britânico. Ele é conhecido por seus hits como 'Shape of You' e 'Thinking Out Loud'."
-        }
+        },
+        "file":"musics/ShapeOfYou.mp3"
       }, 
 
       {
@@ -67,7 +71,8 @@
           "name": "Luis Fonsi",
           "monthly_listeners": "29.600.143",
           "description": "Luis Fonsi é um cantor e compositor porto-riquenho. Ele é conhecido pelo hit mundial 'Despacito' em colaboração com Daddy Yankee."
-        }
+        },
+        "file":"musics/despacito.mp3"
       },
 
       {
@@ -81,7 +86,8 @@
           "name": "Adele",
           "monthly_listeners": "40.511.543",
           "description": "Adele é uma cantora e compositora britânica. Ela é conhecida por suas poderosas baladas, incluindo 'Someone Like You' e 'Hello'."
-        }
+        },
+        "file":"musics/Adele-Someone_Like_You.mp3"
       },
 
       {
@@ -95,7 +101,8 @@
           "name": "The Weeknd",
           "monthly_listeners": "78.600.000",
           "description": "The Weeknd é um cantor, compositor e produtor musical canadense. Ele é conhecido por hits como 'Blinding Lights' e 'Starboy'."
-        }
+        },
+        "file":"musics/Blinding_Lights.mp3"
       },
       {
         "title": "Uptown Funk",
@@ -108,7 +115,8 @@
           "name": "Bruno Mars",
           "monthly_listeners": "48.400.000",
           "description": "Bruno Mars é um cantor, compositor, produtor musical e dançarino americano. Ele é conhecido por sucessos como 'Uptown Funk' e 'Just the Way You Are'."
-        }
+        },
+        "file":"musics/Mark_Ronson-Uptown_Funk.mp3"
       },
       {
         "title": "Believer",
@@ -121,7 +129,8 @@
           "name": "Imagine Dragons",
           "monthly_listeners": "58.300.000",
           "description": "Imagine Dragons é uma banda de rock americana originária de Las Vegas, Nevada. Eles são conhecidos por sucessos como 'Believer' e 'Radioactive'."
-        }
+        },
+        "file":"musics/Imagine_Dragons-Believer.mp3"
       },
 
       {
@@ -135,7 +144,8 @@
           "name": "Post Malone",
           "monthly_listeners": "77.800.000",
           "description": "Post Malone é um rapper, cantor e compositor americano. Ele é conhecido por sucessos como 'Rockstar' e 'Circles'."
-        }
+        },
+        "file":"musics/rocksta.mp3"
       },
       {
         "title": "Cheap Thrills",
@@ -148,7 +158,8 @@
           "name": "Sia",
           "monthly_listeners": "33100000",
           "description": "Sia é uma cantora, compositora e diretora musical australiana. Ela é conhecida por hits como 'Cheap Thrills' e 'Chandelier'."
-        }
+        },
+        "file":"musics/Sia-Cheap_Thrills.mp3"
       },
 
       {
@@ -162,7 +173,8 @@
           "name": "Tones and I",
           "monthly_listeners": "33.100.000",
           "description": "Tones and I é uma cantora australiana. Ela é conhecida pelo sucesso 'Dance Monkey'."
-        }
+        },
+        "file":"musics/Dance_Monkey.mp3"
       },
       {
         "title": "Happier",
@@ -175,7 +187,8 @@
           "name": "Marshmello",
           "monthly_listeners": "337.000.000",
           "description": "Marshmello é um DJ e produtor musical americano. Ele é conhecido por sucessos como 'Happier' e 'Alone'."
-        }
+        },
+        "file":"musics/Marshmello-Happier.mp3"
       },
 
       {
@@ -189,7 +202,8 @@
           "name": "Billie Eilish",
           "monthly_listeners": "701.000.000",
           "description": "Billie Eilish é uma cantora e compositora americana. Ela é conhecida por sucessos como 'Bad Guy' e 'Ocean Eyes'."
-        }
+        },
+        "file":"musics/bad_guy-Billie_Eilish.mp3"
       }
       
     ]
