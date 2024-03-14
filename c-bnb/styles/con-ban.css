@@ -1,0 +1,90 @@
+.container-ban {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.container-ban>.top-container{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-ban>.top-container>a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--heigth);
+    border-radius: 10px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.9em
+}
+
+@keyframes transform-colors {
+    0% {
+        background-color: var(--heigth);
+    }
+
+    30% {
+        background-color: var(--menu);
+    }
+
+    80% {
+        background-color: var(--menu-height);
+    }
+}
+
+.container-ban>.top-container>a:hover {
+    animation: transform-colors 1.5s alternate-reverse infinite;
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabela {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-collapse: collapse;
+    width: 100%;
+    font-family: sans-serif;
+  }
+
+  /* Cabeçalho da tabela */
+  .cabecalho {
+    grid-row: 1;
+    grid-column: span 3;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 8px;
+  }
+
+  /* Células da tabela */
+  .celula {
+    padding: 8px;
+    border: 1px solid #5f5f5f;
+    text-align: left;
+  }
+
+  /* Célula de destaque */
+  .destaque {
+    background-color: #ccc;
+  }
+
+  /* Célula com lista */
+  .lista {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lista li {
+    list-style: none;
+    padding: 4px;
+  }
