@@ -1,0 +1,124 @@
+.container-about {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.container-about>.top-container{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-about>.top-container>a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--heigth);
+    border-radius: 10px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.9em
+}
+
+@keyframes transform-colors {
+    0% {
+        background-color: var(--heigth);
+    }
+
+    30% {
+        background-color: var(--menu);
+    }
+
+    80% {
+        background-color: var(--menu-height);
+    }
+}
+
+.container-about>.top-container>a:hover {
+    animation: transform-colors 1.5s alternate-reverse infinite;
+}
+
+.cronograma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabela {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+
+    background-color: #fff;
+}
+
+.tabela>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.tabela>div>p:nth-child(1) {
+    width: 80%;
+    border-right: 1px solid black;
+    padding: 5px 10px;
+}
+
+.tabela>div>p:nth-child(2) {
+    text-align: right;
+    padding: 5px 10px;
+}
+
+.container-arq {
+    margin: 20px 0;
+    display: grid;
+}
+
+.item-arq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: none;
+    transition: box-shadow 0.2s ease-in-out;
+    text-decoration: none;
+
+    width: 200px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.103);
+
+    margin-bottom: 30px;
+}
+
+.item-arq:hover {
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.24);
+}
+
+.item-arq > img {
+    padding: 10px;
+    width: 150px;
+}
+
+.item-arq span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.item-arq span>h3 {
+    font-weight: bold;
+    color: #333;
+}
+
+.item-arq span>p {
+    font-weight: normal;
+    color: #dadada;
+    width: 300px;
+}
