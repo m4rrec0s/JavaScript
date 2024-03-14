@@ -9,13 +9,16 @@
 
 :root {
     --base: #e0e0e0;
-    --heigth: #a41637;
+    --heigth: #a6193c;
+    --menu: #f3952f;
+    --menu-height: #2a66f2;
 }
 
 body {
     display: flex;
     flex-direction: column;
     background-color: var(--base);
+    overflow-y: hidden;
 }
 
 header {
@@ -40,6 +43,117 @@ header > .vertical_line {
     background-color: grey;
 }
 
-section {
-    background-color: aliceblue;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.top-menu {
+    display: grid;
+    grid-template-columns: calc(70% - 20px) 30%;
+    gap: 20px;
+}
+
+.down-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: none;
+    transition: box-shadow 0.2s ease-in-out;
+    text-decoration: none;
+
+    height: 250px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.item > .pictue_container {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    background: var(--menu);
+    border-radius: 10px 10px 0 0;
+}
+
+.item span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    height: 100px;
+}
+
+.item span > h3 {
+    font-weight: bold;
+    color: #333;
+}
+
+.item span > p {
+    font-weight: normal;
+    color: #dadada;
+    width: 300px;
+}
+
+.item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+}
+
+#about {
+    background: var(--menu-height) url('https://cdn.bb.com.br/wp-content/uploads/2023/09/Card_Banner-ContaBB-DT.png') center center no-repeat;
+    background-size: cover;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#about > span > h3 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.3em;
+    margin-left: 15px;
+}
+
+#about > span > p {
+    margin-left: 15px;
+}
+
+#bnb {
+    background:var(--heigth) url('pictures/logo-bnb.png') center center no-repeat;
+    background-size: contain;
+}
+
+#con-ban {
+    background:#729ba3 url('pictures/con-ban.png') top center no-repeat;
+    background-size: cover;
+}
+
+#aulas {
+    background: #f6f6e0 url('pictures/aulas.png') center center no-repeat;
+    background-size: 70%;
+}
+
+#provas {
+    background: #ffffff url('pictures/prova.avif') center center no-repeat;
+    background-size: contain;
+}
+
+#more {
+    background:var(--heigth);
 }
