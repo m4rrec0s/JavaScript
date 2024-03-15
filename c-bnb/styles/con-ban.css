@@ -1,3 +1,8 @@
+i {
+  font-size: 40px;
+  color: #1c4964;
+}
+
 .container-ban {
     width: 100%;
     height: 100vh;
@@ -37,54 +42,145 @@
 }
 
 .container-ban>.top-container>a:hover {
-    animation: transform-colors 1.5s alternate-reverse infinite;
+  animation: transform-colors 1.5s alternate-reverse infinite;
 }
 
 .table-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .tabela {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    border-collapse: collapse;
-    width: 100%;
-    font-family: sans-serif;
-  }
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  border-collapse: collapse;
+  width: 100%;
+  font-family: sans-serif;
+  margin-bottom: 8%;
+  border: 1px solid black;
+}
 
-  /* Cabeçalho da tabela */
-  .cabecalho {
-    grid-row: 1;
-    grid-column: span 3;
-    background-color: #f2f2f2;
-    text-align: center;
-    padding: 8px;
-  }
+.cabecalho {
+  grid-row: 1;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #5f5f5f;
+}
 
-  /* Células da tabela */
-  .celula {
-    padding: 8px;
-    border: 1px solid #5f5f5f;
-    text-align: left;
-  }
+section {
+  display: grid;
+}
 
-  /* Célula de destaque */
-  .destaque {
-    background-color: #ccc;
-  }
+#line-1 {
+  display: grid;
+  grid-template-columns: 60% 20% 20%;
+}
 
-  /* Célula com lista */
-  .lista {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-  }
+#line-1> .celula {
+  width: 100%;
+  padding: 10px;
+}
 
-  .lista li {
-    list-style: none;
-    padding: 4px;
-  }
+#line-2 {
+  display: grid;
+  grid-template-columns: 60% 20% 20%;
+}
+
+#line-2> .celula {
+  width: 100%
+}
+
+#line-3 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.cell2 {
+  grid-column: span 2;
+  width: 100%;
+}
+
+#line-4 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+#line-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+#line-6 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.celula {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  border: 1px solid #5f5f5f;
+}
+
+.destaque {
+  background-color: #ccc;
+  border: 1px solid #5f5f5f;
+  width: 200px;
+  height: 100%;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.lista p {
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+.azul {
+  background-color: azure;
+}
+
+.laranja {
+  background-color: #ffaabf96;
+}
+
+.azul-2 {
+  background-color: rgb(209, 219, 219);
+}
+
+.laranja-2 {
+  background-color: #da92a496;
+}
+
+.more-btn {
+  display: flex;
+  width: 100%;
+  margin-left: 25px
+}
+
+.more-btn > button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 5px;
+  font-weight: bold;
+  background-color: #44444469;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.more-btn > button:hover {
+  background-color: #2a66f29c;
+  color: #fff;
+}
