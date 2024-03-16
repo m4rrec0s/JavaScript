@@ -1,0 +1,154 @@
+{
+    "afairs": [
+        {
+          "title": "Conselho Monetário Nacional",
+          "picture": "../pictures/modais/cmn.jpg",
+          "description": "O que é?",
+          "subDescription": [
+            "Órgão superior do Sistema Financeiro Nacional (SFN) no Brasil.",
+            "Responsável por formular e implementar a política monetária e creditícia do país."
+          ],
+          "functions": [
+            "Manter a estabilidade da moeda.",
+            "Promover o desenvolvimento econômico e social.",
+            "Regular e supervisionar o SFN."
+          ],
+          "composition": [
+            "Ministro da Economia (Presidente do CMN).",
+            "Ministro do Planejamento e Orçamento.",
+            "Presidente do Banco Central do Brasil."
+          ],
+          "mainFunctions": [
+            "Definir a taxa Selic.",
+            "Regular a emissão de moeda.",
+            "Estabelecer metas para a inflação.",
+            "Supervisionar as instituições financeiras.",
+            "Aprovar operações de crédito.",
+            "Definir normas para o SFN."
+          ],
+          "importance": [
+            "Impacto na taxa de juros.",
+            "Influência na inflação.",
+            "Papel no crescimento econômico."
+          ],
+          "links": [
+            {
+              "title": "Site do Banco Central do Brasil",
+              "url": "https://www.bcb.gov.br/"
+            },
+            {
+              "title": "Lei nº 4.504/64",
+              "url": "https://www.planalto.gov.br/ccivil_03/leis/l4504.htm"
+            }
+          ]
+        },
+
+        {
+            "title": "Conselho Nacional de Seguros Privados",
+            "picture": "./pictures/modais/cmn.jpg",
+            "description": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país,"
+        },
+
+        {
+            "title": "Conselho Nacional de Previdência Complementar",
+            "picture": "./pictures/modais/cmn.jpg",
+            "description": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país,"
+        },
+
+        {
+            "title": "Banco Central do Brasil",
+            "picture": "./pictures/modais/cmn.jpg",
+            "description": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país,"
+        },
+
+        {
+            "title": "Comissão de Valores Mobiliários",
+            "picture": "./pictures/modais/cmn.jpg",
+            "description": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país,"
+        },
+
+        {
+            "title": "Superintendência de Seguros Privados",
+            "picture": "./pictures/modais/cmn.jpg",
+            "description": "..."
+        },
+
+        {
+            "title": "Superintendência Nacional de Previdência Complementar",
+            "picture": "./pictures/modais/cmn.jpg",
+            "description": "..."
+        },
+
+        {
+            "title": "Bancos e caixas econômicas",
+            "picture": "./pictures/modais/cmn.jpg",
+            "description": "..."
+        },
+
+        {
+            "title": "Administradoras de consórcios",
+            "picture": "./pictures/modais/cmn.jpg",
+            "description": "..."
+        },
+
+        {
+            "title": "Bolsa de valores",
+            "picture": "./pictures/modais/cmn.jpg",
+            "description": "..."
+        },
+
+        {
+            "title": "Seguradoras e Resseguradores",
+            "picture": "./pictures/modais/cmn.jpg",
+            "description": "..."
+        },
+
+        {
+            "title": "Entidades fechadas de previdência complementar (fundos de pensão)",
+            "picture": "./pictures/modais/cmn.jpg",
+            "description": "..."
+        },
+
+        {
+            "title": "Cooperativas de crédito",
+            "picture": "./pictures/modais/cmn.jpg",
+            "description": "..."
+        },
+
+        {
+            "title": "Corretoras e distribuidoras",
+            "picture": "./pictures/modais/cmn.jpg",
+            "description": "..."
+        },
+
+        {
+            "title": "Bolsa de Mercadorias e Futuros",
+            "picture": "./pictures/modais/cmn.jpg",
+            "description": "..."
+        },
+
+        {
+            "title": "Entidades abertas de previdência complementar",
+            "picture": "./pictures/modais/cmn.jpg",
+            "description": "..."
+        },
+
+        {
+            "title": "Instituições de pagamento",
+            "picture": "./pictures/modais/cmn.jpg",
+            "description": "..."
+        },
+
+        {
+            "title": "Demais instituições não bancárias",
+            "picture": "./pictures/modais/cmn.jpg",
+            "description": "..."
+        },
+
+        {
+            "title": "Sociedades de capitalização",
+            "picture": "./pictures/modais/cmn.jpg",
+            "description": "..."
+        }
+    ]
+}
