@@ -57,7 +57,7 @@ i {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   border-collapse: collapse;
-  width: 100%;
+  width: 90%;
   font-family: sans-serif;
   margin-bottom: 8%;
   border: 1px solid black;
