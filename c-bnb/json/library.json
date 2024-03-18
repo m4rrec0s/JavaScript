@@ -43,41 +43,43 @@
 
         {
             "title": "Conselho Nacional de Seguros Privados",
-            "picture": "./pictures/modais/cmn.jpg",
+            "picture": "../pictures/modais/cnsp.jpeg",
             "description": "O que é?",
-            "subDescription": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país, com o objetivo de:",
+            "subDescription": "O CNSP, criado através do Decreto-Lei nº 73 de 1966, é o órgão responsável por fixar as diretrizes e normas da política de Seguros Privados. Suas entidades são: CNPS, SUSEP, Resseguradores, Sociedades automatizadas a operar em seguros privados e corretores habilitados.",
             "functions": [
-                "Manter a estabilidade da moeda.",
-                "Promover o desenvolvimento econômico e social.",
-                "Regular e supervisionar o SFN."
+                "Fixar as diretrizes e normas da política de Seguros Privados.",
+                "Regular a constituíção, organização, funcionamento e fiscalização dos que exercem atividades subordinadas a sua competêcia, bem como a aplicação das penalidades."
             ],
             "composition": [
-                "Ministro da Economia (Presidente do CMN).",
-                "Ministro do Planejamento e Orçamento.",
-                "Presidente do Banco Central do Brasil."
+                "Ministro da Fazenda (Presidente).",
+                "Ministro da Justiça.",
+                "Ministério da Previdência e Assistência Social.",
+                "Susep - Superintendência de Seguros Privados",
+                "BACEN - Banco Central do Brasil",
+                "CVM - Comissão de Valores Mobiliários"
             ],
             "mainFunctions": [
-                "Definir a taxa Selic.",
-                "Regular a emissão de moeda.",
-                "Estabelecer metas para a inflação.",
-                "Supervisionar as instituições financeiras.",
-                "Aprovar operações de crédito.",
-                "Definir normas para o SFN."
+                "Estipular indices e demais condições técnicas sobre tarifas, investimentos, e outras relações patrimoniais a serem observadas pela Sociedade Seguradora.",
+                "Delimitar o capital das sociedades seguradoras e dps resseguradores.",
+                "Fixar as características gerais dos contratos de seguros.",
+                "Estabelecer as diretrizes gerais das operações de resseguro."
             ],
-            "importancetxt": "O CMN desempenha um papel fundamental na economia brasileira, pois suas decisões impactam diretamente:",
+            "importancetxt": "O Conselho Nacional de Seguros Privados (CNSP) desempenha um papel crucial no mercado de seguros brasileiro, assumindo diversas responsabilidades que garantem a segurança e a confiabilidade do setor para consumidores e empresas. Sua importância se destaca em vários aspectos:",
             "importance": [
-                "Impacto na taxa de juros.",
-                "Influência na inflação.",
-                "Papel no crescimento econômico."
+                "Regulação e normatização:.",
+                "Fiscalização e controle.",
+                "Promoção e desenvolvimento do setor.",
+                "Mediação de conflitos.",
+                "Fomento à pesquisa e estudos."
             ],
             "links": [
                 {
-                "title": "Site do Banco Central do Brasil",
-                "url": "https://www.bcb.gov.br/"
+                "title": "Site do Conselho Nacional de Seguros Privados",
+                "url": "https://www.gov.br/fazenda/pt-br/assuntos/politica-microeconomica/conselho-nacional-seguros-privados"
                 },
                 {
-                "title": "Lei nº 4.504/64",
-                "url": "https://www.planalto.gov.br/ccivil_03/leis/l4504.htm"
+                "title": "Wikipédia - Conselho Nacional de Seguros Privados",
+                "url": "https://pt.wikipedia.org/wiki/Conselho_Nacional_de_Seguros_Privados"
                 }
             ]
         },
