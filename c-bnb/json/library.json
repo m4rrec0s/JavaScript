@@ -1,784 +1,1060 @@
 {
-    "afairs": [
+  "afairs": [
+    {
+      "title": "Conselho Monetário Nacional",
+      "picture": "../pictures/modais/cmn.jpg",
+      "description": "O que é?",
+      "subDescription": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país, com o objetivo de:",
+      "functions": [
+        "Manter a estabilidade da moeda.",
+        "Promover o desenvolvimento econômico e social.",
+        "Regular e supervisionar o SFN."
+      ],
+      "composition": [
+        "Ministro da Economia (Presidente do CMN).",
+        "Ministro do Planejamento e Orçamento.",
+        "Presidente do Banco Central do Brasil."
+      ],
+      "mainFunctions": [
+        "Definir a taxa Selic.",
+        "Regular a emissão de moeda.",
+        "Estabelecer metas para a inflação.",
+        "Supervisionar as instituições financeiras.",
+        "Aprovar operações de crédito.",
+        "Definir normas para o SFN."
+      ],
+      "importancetxt": "O CMN desempenha um papel fundamental na economia brasileira, pois suas decisões impactam diretamente:",
+      "importance": [
+        "Impacto na taxa de juros.",
+        "Influência na inflação.",
+        "Papel no crescimento econômico."
+      ],
+      "links": [
         {
-            "title": "Conselho Monetário Nacional",
-            "picture": "../pictures/modais/cmn.jpg",
-            "description": "O que é?",
-            "subDescription": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país, com o objetivo de:",
-            "functions": [
-                "Manter a estabilidade da moeda.",
-                "Promover o desenvolvimento econômico e social.",
-                "Regular e supervisionar o SFN."
-            ],
-            "composition": [
-                "Ministro da Economia (Presidente do CMN).",
-                "Ministro do Planejamento e Orçamento.",
-                "Presidente do Banco Central do Brasil."
-            ],
-            "mainFunctions": [
-                "Definir a taxa Selic.",
-                "Regular a emissão de moeda.",
-                "Estabelecer metas para a inflação.",
-                "Supervisionar as instituições financeiras.",
-                "Aprovar operações de crédito.",
-                "Definir normas para o SFN."
-            ],
-            "importancetxt": "O CMN desempenha um papel fundamental na economia brasileira, pois suas decisões impactam diretamente:",
-            "importance": [
-                "Impacto na taxa de juros.",
-                "Influência na inflação.",
-                "Papel no crescimento econômico."
-            ],
-            "links": [
-                {
-                    "title": "Site do Banco Central do Brasil",
-                    "url": "https://www.bcb.gov.br/"
-                },
-                {
-                    "title": "Lei nº 4.504/64",
-                    "url": "https://www.planalto.gov.br/ccivil_03/leis/l4504.htm"
-                }
-            ]
+          "title": "Site do Banco Central do Brasil",
+          "url": "https://www.bcb.gov.br/"
         },
-
         {
-            "title": "Conselho Nacional de Seguros Privados",
-            "picture": "../pictures/modais/cnsp.jpeg",
-            "description": "O que é?",
-            "subDescription": "O CNSP, criado através do Decreto-Lei nº 73 de 1966, é o órgão responsável por fixar as diretrizes e normas da política de Seguros Privados. Suas entidades são: CNPS, SUSEP, Resseguradores, Sociedades automatizadas a operar em seguros privados e corretores habilitados.",
-            "functions": [
-                "Fixar as diretrizes e normas da política de Seguros Privados.",
-                "Regular a constituíção, organização, funcionamento e fiscalização dos que exercem atividades subordinadas a sua competêcia, bem como a aplicação das penalidades."
-            ],
-            "composition": [
-                "Ministro da Fazenda (Presidente).",
-                "Ministro da Justiça.",
-                "Ministério da Previdência e Assistência Social.",
-                "Susep - Superintendência de Seguros Privados",
-                "BACEN - Banco Central do Brasil",
-                "CVM - Comissão de Valores Mobiliários"
-            ],
-            "mainFunctions": [
-                "Estipular indices e demais condições técnicas sobre tarifas, investimentos, e outras relações patrimoniais a serem observadas pela Sociedade Seguradora.",
-                "Delimitar o capital das sociedades seguradoras e dps resseguradores.",
-                "Fixar as características gerais dos contratos de seguros.",
-                "Estabelecer as diretrizes gerais das operações de resseguro."
-            ],
-            "importancetxt": "O Conselho Nacional de Seguros Privados (CNSP) desempenha um papel crucial no mercado de seguros brasileiro, assumindo diversas responsabilidades que garantem a segurança e a confiabilidade do setor para consumidores e empresas. Sua importância se destaca em vários aspectos:",
-            "importance": [
-                "Regulação e normatização:.",
-                "Fiscalização e controle.",
-                "Promoção e desenvolvimento do setor.",
-                "Mediação de conflitos.",
-                "Fomento à pesquisa e estudos."
-            ],
-            "links": [
-                {
-                "title": "Site do Conselho Nacional de Seguros Privados",
-                "url": "https://www.gov.br/fazenda/pt-br/assuntos/politica-microeconomica/conselho-nacional-seguros-privados"
-                },
-                {
-                "title": "Wikipédia - Conselho Nacional de Seguros Privados",
-                "url": "https://pt.wikipedia.org/wiki/Conselho_Nacional_de_Seguros_Privados"
-                }
-            ]
+          "title": "Lei nº 4.504/64",
+          "url": "https://www.planalto.gov.br/ccivil_03/leis/l4504.htm"
+        }
+      ]
+    },
+    {
+      "title": "Conselho Nacional de Seguros Privados",
+      "picture": "../pictures/modais/cnsp.jpeg",
+      "description": "O que é?",
+      "subDescription": "O CNSP, criado através do Decreto-Lei nº 73 de 1966, é o órgão responsável por fixar as diretrizes e normas da política de Seguros Privados. Suas entidades são: CNPS, SUSEP, Resseguradores, Sociedades automatizadas a operar em seguros privados e corretores habilitados.",
+      "functions": [
+        "Fixar as diretrizes e normas da política de Seguros Privados.",
+        "Regular a constituíção, organização, funcionamento e fiscalização dos que exercem atividades subordinadas a sua competêcia, bem como a aplicação das penalidades."
+      ],
+      "composition": [
+        "Ministro da Fazenda (Presidente).",
+        "Ministro da Justiça.",
+        "Ministério da Previdência e Assistência Social.",
+        "Susep - Superintendência de Seguros Privados",
+        "BACEN - Banco Central do Brasil",
+        "CVM - Comissão de Valores Mobiliários"
+      ],
+      "mainFunctions": [
+        "Estipular indices e demais condições técnicas sobre tarifas, investimentos, e outras relações patrimoniais a serem observadas pela Sociedade Seguradora.",
+        "Delimitar o capital das sociedades seguradoras e dps resseguradores.",
+        "Fixar as características gerais dos contratos de seguros.",
+        "Estabelecer as diretrizes gerais das operações de resseguro."
+      ],
+      "importancetxt": "O Conselho Nacional de Seguros Privados (CNSP) desempenha um papel crucial no mercado de seguros brasileiro, assumindo diversas responsabilidades que garantem a segurança e a confiabilidade do setor para consumidores e empresas. Sua importância se destaca em vários aspectos:",
+      "importance": [
+        "Regulação e normatização:.",
+        "Fiscalização e controle.",
+        "Promoção e desenvolvimento do setor.",
+        "Mediação de conflitos.",
+        "Fomento à pesquisa e estudos."
+      ],
+      "links": [
+        {
+          "title": "Site do Conselho Nacional de Seguros Privados",
+          "url": "https://www.gov.br/fazenda/pt-br/assuntos/politica-microeconomica/conselho-nacional-seguros-privados"
         },
-
         {
-            "title": "Conselho Nacional de Previdência Complementar",
-            "picture": "./pictures/modais/cmn.jpg",
-            "description": "O que é?",
-            "subDescription": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país, com o objetivo de:",
-            "functions": [
-              "Manter a estabilidade da moeda.",
-              "Promover o desenvolvimento econômico e social.",
-              "Regular e supervisionar o SFN."
-            ],
-            "composition": [
-              "Ministro da Economia (Presidente do CMN).",
-              "Ministro do Planejamento e Orçamento.",
-              "Presidente do Banco Central do Brasil."
-            ],
-            "mainFunctions": [
-              "Definir a taxa Selic.",
-              "Regular a emissão de moeda.",
-              "Estabelecer metas para a inflação.",
-              "Supervisionar as instituições financeiras.",
-              "Aprovar operações de crédito.",
-              "Definir normas para o SFN."
-            ],
-            "importancetxt": "O CMN desempenha um papel fundamental na economia brasileira, pois suas decisões impactam diretamente:",
-            "importance": [
-              "Impacto na taxa de juros.",
-              "Influência na inflação.",
-              "Papel no crescimento econômico."
-            ],
-            "links": [
-              {
-                "title": "Site do Banco Central do Brasil",
-                "url": "https://www.bcb.gov.br/"
-              },
-              {
-                "title": "Lei nº 4.504/64",
-                "url": "https://www.planalto.gov.br/ccivil_03/leis/l4504.htm"
-              }
-            ]
+          "title": "Wikipédia - Conselho Nacional de Seguros Privados",
+          "url": "https://pt.wikipedia.org/wiki/Conselho_Nacional_de_Seguros_Privados"
+        }
+      ]
+    },
+    {
+      "title": "Conselho Nacional de Previdência Complementar",
+      "picture": "../pictures/modais/cnpc.jpg",
+      "description": "O que é?",
+      "subDescription": "O Conselho Nacional de Previdência Complementar (CNPC) é o órgão colegiado responsável por regular e fiscalizar o sistema de previdência complementar no Brasil. É composto por representantes do governo, dos participantes dos planos de previdência complementar, das entidades de previdência complementar e de outros setores da sociedade civil.",
+      "functions": [
+        "Normatizar e regular o sistema de previdência complementar",
+        "Fiscalizar as entidades de previdência complementar",
+        "Proteger os direitos dos participantes dos planos de previdência complementar",
+        "Promover a educação previdenciária"
+      ],
+      "composition": [
+        "Ministério da Economia: 3 representantes",
+        "Superintendência Nacional de Previdência Complementar (Previc): 2 representantes",
+        "Secretaria de Políticas de Previdência Complementar: 1 representante",
+        "Entidades de previdência complementar: 6 representantes",
+        "Patrocinadores e instituidores de planos de benefícios: 6 representantes",
+        "Participantes e assistidos de planos de benefícios: 6 representantes"
+      ],
+      "mainFunctions": [
+        "Definir regras para criação e funcionamento das entidades",
+        "Estabelecer critérios para aprovação de planos de benefícios",
+        "Regular a gestão dos recursos dos planos",
+        "Verificar se as entidades cumprem as normas",
+        "Acompanhar a saúde financeira das entidades",
+        "Investigar e punir irregularidades",
+        "Garantir acesso à informação sobre os planos",
+        "Assegurar a portabilidade dos planos",
+        "Defender os interesses dos participantes",
+        "Informar os cidadãos sobre a previdência complementar",
+        "Orientar os participantes sobre seus direitos",
+        "Estimular a participação na previdência complementar"
+      ],
+      "importancetxt": "O CNPC é fundamental para garantir a segurança, a transparência e a sustentabilidade do sistema de previdência complementar no Brasil.",
+      "importance": [
+        "Proteger os direitos dos participantes",
+        "Promover a estabilidade do sistema",
+        "Estimular a participação na previdência complementar"
+      ],
+      "links": [
+        {
+          "title": "Site do CNPC",
+          "url": "https://www.cnpc.com.cn/en/2014enbvfgr/201907/c9318a5301b1471dba8122de3a63f6d9/files/124e79a378e44857a392ccdee63af9c6.pdf"
         },
-
         {
-            "title": "Banco Central do Brasil",
-            "picture": "./pictures/modais/cmn.jpg",
-            "description": "O que é?",
-            "subDescription": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país, com o objetivo de:",
-            "functions": [
-              "Manter a estabilidade da moeda.",
-              "Promover o desenvolvimento econômico e social.",
-              "Regular e supervisionar o SFN."
-            ],
-            "composition": [
-              "Ministro da Economia (Presidente do CMN).",
-              "Ministro do Planejamento e Orçamento.",
-              "Presidente do Banco Central do Brasil."
-            ],
-            "mainFunctions": [
-              "Definir a taxa Selic.",
-              "Regular a emissão de moeda.",
-              "Estabelecer metas para a inflação.",
-              "Supervisionar as instituições financeiras.",
-              "Aprovar operações de crédito.",
-              "Definir normas para o SFN."
-            ],
-            "importancetxt": "O CMN desempenha um papel fundamental na economia brasileira, pois suas decisões impactam diretamente:",
-            "importance": [
-              "Impacto na taxa de juros.",
-              "Influência na inflação.",
-              "Papel no crescimento econômico."
-            ],
-            "links": [
-              {
-                "title": "Site do Banco Central do Brasil",
-                "url": "https://www.bcb.gov.br/"
-              },
-              {
-                "title": "Lei nº 4.504/64",
-                "url": "https://www.planalto.gov.br/ccivil_03/leis/l4504.htm"
-              }
-            ]
+          "title": "Previc",
+          "url": "https://www.gov.br/previc/pt-br"
         },
-
         {
-            "title": "Comissão de Valores Mobiliários",
-            "picture": "./pictures/modais/cmn.jpg",
-            "description": "O que é?",
-            "subDescription": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país, com o objetivo de:",
-            "functions": [
-              "Manter a estabilidade da moeda.",
-              "Promover o desenvolvimento econômico e social.",
-              "Regular e supervisionar o SFN."
-            ],
-            "composition": [
-              "Ministro da Economia (Presidente do CMN).",
-              "Ministro do Planejamento e Orçamento.",
-              "Presidente do Banco Central do Brasil."
-            ],
-            "mainFunctions": [
-              "Definir a taxa Selic.",
-              "Regular a emissão de moeda.",
-              "Estabelecer metas para a inflação.",
-              "Supervisionar as instituições financeiras.",
-              "Aprovar operações de crédito.",
-              "Definir normas para o SFN."
-            ],
-            "importancetxt": "O CMN desempenha um papel fundamental na economia brasileira, pois suas decisões impactam diretamente:",
-            "importance": [
-              "Impacto na taxa de juros.",
-              "Influência na inflação.",
-              "Papel no crescimento econômico."
-            ],
-            "links": [
-              {
-                "title": "Site do Banco Central do Brasil",
-                "url": "https://www.bcb.gov.br/"
-              },
-              {
-                "title": "Lei nº 4.504/64",
-                "url": "https://www.planalto.gov.br/ccivil_03/leis/l4504.htm"
-              }
-            ]
+          "title": "Ministério da Economia",
+          "url": "[https://www.gov.br/economia/pt-br]"
+        }
+      ]
+    },
+    {
+      "title": "Banco Central do Brasil",
+      "picture": "../pictures/modais/bcb.png",
+      "description": "O que é?",
+      "subDescription": "O Banco Central do Brasil (BCB) é a autoridade monetária nacional, responsável por diversas funções essenciais para a economia brasileira, como:",
+      "functions": [
+        "Emissão da moeda nacional (Real)",
+        "Controle da inflação",
+        "Manutenção da estabilidade do sistema financeiro",
+        "Regulação e supervisão do sistema bancário",
+        "Gerenciamento das reservas internacionais",
+        "Implementação da política cambial",
+        "Prestação de serviços bancários ao governo federal"
+      ],
+      "composition": [
+        "Presidente: nome do presidente do BCB",
+        "Diretor de Política Monetária: nome do diretor",
+        "Diretor de Regulação e Fiscalização: nome do diretor",
+        "Diretor de Administração: nome do diretor",
+        "Diretor de Assuntos Internacionais: nome do diretor",
+        "Conselho Monetário: composto por 12 membros"
+      ],
+      "mainFunctions": [
+        "Definir a taxa básica de juros (Selic)",
+        "Controlar a quantidade de moeda em circulação",
+        "Supervisionar as instituições financeiras",
+        "Assegurar a estabilidade do sistema de pagamentos",
+        "Gerenciar a dívida pública interna",
+        "Emitir e gerenciar a moeda digital brasileira",
+        "Representar o Brasil em fóruns internacionais",
+        "Promover a educação financeira da população"
+      ],
+      "importancetxt": "O Banco Central do Brasil desempenha um papel fundamental na economia brasileira, garantindo a estabilidade monetária, a solidez do sistema financeiro e o desenvolvimento sustentável do país.",
+      "importance": [
+        "Estabilidade monetária",
+        "Solidez do sistema financeiro",
+        "Desenvolvimento sustentável",
+        "Confiança dos investidores",
+        "Crescimento econômico",
+        "Bem-estar social"
+      ],
+      "links": [
+        {
+          "title": "Site do Banco Central do Brasil",
+          "url": "https://www.bcb.gov.br/"
         },
-
         {
-            "title": "Superintendência de Seguros Privados",
-            "picture": "./pictures/modais/cmn.jpg",
-            "description": "O que é?",
-            "subDescription": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país, com o objetivo de:",
-            "functions": [
-              "Manter a estabilidade da moeda.",
-              "Promover o desenvolvimento econômico e social.",
-              "Regular e supervisionar o SFN."
-            ],
-            "composition": [
-              "Ministro da Economia (Presidente do CMN).",
-              "Ministro do Planejamento e Orçamento.",
-              "Presidente do Banco Central do Brasil."
-            ],
-            "mainFunctions": [
-              "Definir a taxa Selic.",
-              "Regular a emissão de moeda.",
-              "Estabelecer metas para a inflação.",
-              "Supervisionar as instituições financeiras.",
-              "Aprovar operações de crédito.",
-              "Definir normas para o SFN."
-            ],
-            "importancetxt": "O CMN desempenha um papel fundamental na economia brasileira, pois suas decisões impactam diretamente:",
-            "importance": [
-              "Impacto na taxa de juros.",
-              "Influência na inflação.",
-              "Papel no crescimento econômico."
-            ],
-            "links": [
-              {
-                "title": "Site do Banco Central do Brasil",
-                "url": "https://www.bcb.gov.br/"
-              },
-              {
-                "title": "Lei nº 4.504/64",
-                "url": "https://www.planalto.gov.br/ccivil_03/leis/l4504.htm"
-              }
-            ]
-          },
-
-        {
-            "title": "Superintendência Nacional de Previdência Complementar",
-            "picture": "./pictures/modais/cmn.jpg",
-            "description": "O que é?",
-            "subDescription": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país, com o objetivo de:",
-            "functions": [
-              "Manter a estabilidade da moeda.",
-              "Promover o desenvolvimento econômico e social.",
-              "Regular e supervisionar o SFN."
-            ],
-            "composition": [
-              "Ministro da Economia (Presidente do CMN).",
-              "Ministro do Planejamento e Orçamento.",
-              "Presidente do Banco Central do Brasil."
-            ],
-            "mainFunctions": [
-              "Definir a taxa Selic.",
-              "Regular a emissão de moeda.",
-              "Estabelecer metas para a inflação.",
-              "Supervisionar as instituições financeiras.",
-              "Aprovar operações de crédito.",
-              "Definir normas para o SFN."
-            ],
-            "importancetxt": "O CMN desempenha um papel fundamental na economia brasileira, pois suas decisões impactam diretamente:",
-            "importance": [
-              "Impacto na taxa de juros.",
-              "Influência na inflação.",
-              "Papel no crescimento econômico."
-            ],
-            "links": [
-              {
-                "title": "Site do Banco Central do Brasil",
-                "url": "https://www.bcb.gov.br/"
-              },
-              {
-                "title": "Lei nº 4.504/64",
-                "url": "https://www.planalto.gov.br/ccivil_03/leis/l4504.htm"
-              }
-            ]
-          },
-
-        {
-            "title": "Bancos e caixas econômicas",
-            "picture": "./pictures/modais/cmn.jpg",
-            "description": "O que é?",
-            "subDescription": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país, com o objetivo de:",
-            "functions": [
-              "Manter a estabilidade da moeda.",
-              "Promover o desenvolvimento econômico e social.",
-              "Regular e supervisionar o SFN."
-            ],
-            "composition": [
-              "Ministro da Economia (Presidente do CMN).",
-              "Ministro do Planejamento e Orçamento.",
-              "Presidente do Banco Central do Brasil."
-            ],
-            "mainFunctions": [
-              "Definir a taxa Selic.",
-              "Regular a emissão de moeda.",
-              "Estabelecer metas para a inflação.",
-              "Supervisionar as instituições financeiras.",
-              "Aprovar operações de crédito.",
-              "Definir normas para o SFN."
-            ],
-            "importancetxt": "O CMN desempenha um papel fundamental na economia brasileira, pois suas decisões impactam diretamente:",
-            "importance": [
-              "Impacto na taxa de juros.",
-              "Influência na inflação.",
-              "Papel no crescimento econômico."
-            ],
-            "links": [
-              {
-                "title": "Site do Banco Central do Brasil",
-                "url": "https://www.bcb.gov.br/"
-              },
-              {
-                "title": "Lei nº 4.504/64",
-                "url": "https://www.planalto.gov.br/ccivil_03/leis/l4504.htm"
-              }
-            ]
+          "title": "Lei de criação do Banco Central",
+          "url": "https://www.planalto.gov.br/ccivil_03/leis/l4728.htm"
         },
-
         {
-            "title": "Administradoras de consórcios",
-            "picture": "./pictures/modais/cmn.jpg",
-            "description": "O que é?",
-            "subDescription": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país, com o objetivo de:",
-            "functions": [
-              "Manter a estabilidade da moeda.",
-              "Promover o desenvolvimento econômico e social.",
-              "Regular e supervisionar o SFN."
-            ],
-            "composition": [
-              "Ministro da Economia (Presidente do CMN).",
-              "Ministro do Planejamento e Orçamento.",
-              "Presidente do Banco Central do Brasil."
-            ],
-            "mainFunctions": [
-              "Definir a taxa Selic.",
-              "Regular a emissão de moeda.",
-              "Estabelecer metas para a inflação.",
-              "Supervisionar as instituições financeiras.",
-              "Aprovar operações de crédito.",
-              "Definir normas para o SFN."
-            ],
-            "importancetxt": "O CMN desempenha um papel fundamental na economia brasileira, pois suas decisões impactam diretamente:",
-            "importance": [
-              "Impacto na taxa de juros.",
-              "Influência na inflação.",
-              "Papel no crescimento econômico."
-            ],
-            "links": [
-              {
-                "title": "Site do Banco Central do Brasil",
-                "url": "https://www.bcb.gov.br/"
-              },
-              {
-                "title": "Lei nº 4.504/64",
-                "url": "https://www.planalto.gov.br/ccivil_03/leis/l4504.htm"
-              }
-            ]
+          "title": "Relatório Anual do Banco Central",
+          "url": "https://www.bcb.gov.br/estatisticas/relatorios/ranual"
+        }
+      ]
+    },
+    {
+      "title": "Comissão de Valores Mobiliários",
+      "picture": "../pictures/modais/cvm.jpg",
+      "description": "O que é?",
+      "subDescription": "A Comissão de Valores Mobiliários (CVM) é a autarquia federal responsável por regular e fiscalizar o mercado de capitais no Brasil. Sua missão é proteger os investidores, garantir a transparência das informações e promover o desenvolvimento sustentável do mercado.",
+      "functions": [
+        "Regular e supervisionar a emissão e negociação de valores mobiliários",
+        "Proteger os investidores contra fraudes e práticas abusivas",
+        "Garantir a transparência das informações sobre as empresas e os investimentos",
+        "Combater a lavagem de dinheiro e o financiamento do terrorismo",
+        "Promover a educação financeira dos investidores",
+        "Representar o Brasil em organismos internacionais",
+        "Cooperar com outras autoridades nacionais e internacionais",
+        "Estudar e acompanhar o desenvolvimento do mercado de capitais"
+      ],
+      "composition": [
+        "Conselho Diretor: composto por 5 membros",
+        "Superintendência de Regulação e Fiscalização",
+        "Superintendência de Relações com o Mercado",
+        "Superintendência de Gestão de Riscos",
+        "Procuradoria Federal da CVM",
+        "Ouvidoria"
+      ],
+      "mainFunctions": [
+        "Aprovar a emissão de valores mobiliários",
+        "Fiscalizar as atividades dos intermediários de valores mobiliários",
+        "Investigar e punir irregularidades no mercado",
+        "Determinar a suspensão ou a cassação de registro de empresas e profissionais",
+        "Divulgar informações sobre o mercado de capitais",
+        "Educar e orientar os investidores",
+        "Promover estudos e pesquisas sobre o mercado de capitais"
+      ],
+      "importancetxt": "A CVM desempenha um papel fundamental na proteção dos investidores e no desenvolvimento do mercado de capitais brasileiro, contribuindo para a estabilidade da economia e o crescimento do país.",
+      "importance": [
+        "Proteção dos investidores",
+        "Estabilidade do mercado de capitais",
+        "Transparência das informações",
+        "Eficiência do mercado",
+        "Competitividade do mercado",
+        "Crescimento econômico"
+      ],
+      "links": [
+        {
+          "title": "Site da CVM",
+          "url": "https://www.cvm.gov.br/"
         },
-
         {
-            "title": "Bolsa de valores",
-            "picture": "./pictures/modais/cmn.jpg",
-            "description": "O que é?",
-            "subDescription": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país, com o objetivo de:",
-            "functions": [
-              "Manter a estabilidade da moeda.",
-              "Promover o desenvolvimento econômico e social.",
-              "Regular e supervisionar o SFN."
-            ],
-            "composition": [
-              "Ministro da Economia (Presidente do CMN).",
-              "Ministro do Planejamento e Orçamento.",
-              "Presidente do Banco Central do Brasil."
-            ],
-            "mainFunctions": [
-              "Definir a taxa Selic.",
-              "Regular a emissão de moeda.",
-              "Estabelecer metas para a inflação.",
-              "Supervisionar as instituições financeiras.",
-              "Aprovar operações de crédito.",
-              "Definir normas para o SFN."
-            ],
-            "importancetxt": "O CMN desempenha um papel fundamental na economia brasileira, pois suas decisões impactam diretamente:",
-            "importance": [
-              "Impacto na taxa de juros.",
-              "Influência na inflação.",
-              "Papel no crescimento econômico."
-            ],
-            "links": [
-              {
-                "title": "Site do Banco Central do Brasil",
-                "url": "https://www.bcb.gov.br/"
-              },
-              {
-                "title": "Lei nº 4.504/64",
-                "url": "https://www.planalto.gov.br/ccivil_03/leis/l4504.htm"
-              }
-            ]
+          "title": "Lei de criação da CVM",
+          "url": "https://www.planalto.gov.br/ccivil_03/leis/l7494.htm"
         },
-
         {
-            "title": "Seguradoras e Resseguradores",
-            "picture": "./pictures/modais/cmn.jpg",
-            "description": "O que é?",
-            "subDescription": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país, com o objetivo de:",
-            "functions": [
-              "Manter a estabilidade da moeda.",
-              "Promover o desenvolvimento econômico e social.",
-              "Regular e supervisionar o SFN."
-            ],
-            "composition": [
-              "Ministro da Economia (Presidente do CMN).",
-              "Ministro do Planejamento e Orçamento.",
-              "Presidente do Banco Central do Brasil."
-            ],
-            "mainFunctions": [
-              "Definir a taxa Selic.",
-              "Regular a emissão de moeda.",
-              "Estabelecer metas para a inflação.",
-              "Supervisionar as instituições financeiras.",
-              "Aprovar operações de crédito.",
-              "Definir normas para o SFN."
-            ],
-            "importancetxt": "O CMN desempenha um papel fundamental na economia brasileira, pois suas decisões impactam diretamente:",
-            "importance": [
-              "Impacto na taxa de juros.",
-              "Influência na inflação.",
-              "Papel no crescimento econômico."
-            ],
-            "links": [
-              {
-                "title": "Site do Banco Central do Brasil",
-                "url": "https://www.bcb.gov.br/"
-              },
-              {
-                "title": "Lei nº 4.504/64",
-                "url": "https://www.planalto.gov.br/ccivil_03/leis/l4504.htm"
-              }
-            ]
+          "title": "Investidor CVM",
+          "url": "https://www.cvm.gov.br/educacao/investidor-cvm/"
+        }
+      ]
+    },
+    {
+      "title": "Superintendência de Seguros Privados",
+      "picture": "../pictures/modais/susep.png",
+      "description": "O que é?",
+      "subDescription": "A Superintendência de Seguros Privados (SUSEP) é a autarquia federal responsável por regular e fiscalizar o mercado de seguros, previdência privada e capitalização no Brasil. Sua missão é proteger os consumidores, garantir a solvência das empresas e promover o desenvolvimento sustentável do mercado.",
+      "functions": [
+        "Regular e supervisionar a operação das empresas de seguros, previdência privada e capitalização",
+        "Proteger os consumidores contra fraudes e práticas abusivas",
+        "Garantir a solvência das empresas e a segurança dos recursos dos consumidores",
+        "Promover a educação previdenciária e securitária",
+        "Representar o Brasil em organismos internacionais",
+        "Cooperar com outras autoridades nacionais e internacionais",
+        "Estudar e acompanhar o desenvolvimento do mercado de seguros, previdência privada e capitalização"
+      ],
+      "composition": [
+        "Superintendente: nome do Superintendente da SUSEP",
+        "Diretoria de Normas e Regulação",
+        "Diretoria de Fiscalização",
+        "Diretoria de Autuação e Sanção",
+        "Diretoria de Administração e Finanças",
+        "Procuradoria Federal da SUSEP",
+        "Ouvidoria"
+      ],
+      "mainFunctions": [
+        "Aprovar os planos de seguros, previdência privada e capitalização",
+        "Fiscalizar as atividades das empresas do mercado",
+        "Investigar e punir irregularidades",
+        "Determinar a liquidação de empresas insolventes",
+        "Divulgar informações sobre o mercado",
+        "Educar e orientar os consumidores",
+        "Promover estudos e pesquisas sobre o mercado"
+      ],
+      "importancetxt": "A SUSEP desempenha um papel fundamental na proteção dos consumidores e no desenvolvimento do mercado de seguros, previdência privada e capitalização brasileiro, contribuindo para a segurança e a estabilidade do sistema financeiro.",
+      "importance": [
+        "Proteção dos consumidores",
+        "Solvência das empresas",
+        "Estabilidade do mercado",
+        "Transparência das informações",
+        "Eficiência do mercado",
+        "Confiança dos consumidores",
+        "Crescimento do mercado"
+      ],
+      "links": [
+        {
+          "title": "Site da SUSEP",
+          "url": "https://www.susep.gov.br/"
         },
-
         {
-            "title": "Entidades fechadas de previdência complementar (fundos de pensão)",
-            "picture": "./pictures/modais/cmn.jpg",
-            "description": "O que é?",
-            "subDescription": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país, com o objetivo de:",
-            "functions": [
-              "Manter a estabilidade da moeda.",
-              "Promover o desenvolvimento econômico e social.",
-              "Regular e supervisionar o SFN."
-            ],
-            "composition": [
-              "Ministro da Economia (Presidente do CMN).",
-              "Ministro do Planejamento e Orçamento.",
-              "Presidente do Banco Central do Brasil."
-            ],
-            "mainFunctions": [
-              "Definir a taxa Selic.",
-              "Regular a emissão de moeda.",
-              "Estabelecer metas para a inflação.",
-              "Supervisionar as instituições financeiras.",
-              "Aprovar operações de crédito.",
-              "Definir normas para o SFN."
-            ],
-            "importancetxt": "O CMN desempenha um papel fundamental na economia brasileira, pois suas decisões impactam diretamente:",
-            "importance": [
-              "Impacto na taxa de juros.",
-              "Influência na inflação.",
-              "Papel no crescimento econômico."
-            ],
-            "links": [
-              {
-                "title": "Site do Banco Central do Brasil",
-                "url": "https://www.bcb.gov.br/"
-              },
-              {
-                "title": "Lei nº 4.504/64",
-                "url": "https://www.planalto.gov.br/ccivil_03/leis/l4504.htm"
-              }
-            ]
+          "title": "Lei de criação da SUSEP",
+          "url": "https://www.planalto.gov.br/ccivil_03/leis/l6038.htm"
         },
-
         {
-            "title": "Cooperativas de crédito",
-            "picture": "./pictures/modais/cmn.jpg",
-            "description": "O que é?",
-            "subDescription": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país, com o objetivo de:",
-            "functions": [
-              "Manter a estabilidade da moeda.",
-              "Promover o desenvolvimento econômico e social.",
-              "Regular e supervisionar o SFN."
-            ],
-            "composition": [
-              "Ministro da Economia (Presidente do CMN).",
-              "Ministro do Planejamento e Orçamento.",
-              "Presidente do Banco Central do Brasil."
-            ],
-            "mainFunctions": [
-              "Definir a taxa Selic.",
-              "Regular a emissão de moeda.",
-              "Estabelecer metas para a inflação.",
-              "Supervisionar as instituições financeiras.",
-              "Aprovar operações de crédito.",
-              "Definir normas para o SFN."
-            ],
-            "importancetxt": "O CMN desempenha um papel fundamental na economia brasileira, pois suas decisões impactam diretamente:",
-            "importance": [
-              "Impacto na taxa de juros.",
-              "Influência na inflação.",
-              "Papel no crescimento econômico."
-            ],
-            "links": [
-              {
-                "title": "Site do Banco Central do Brasil",
-                "url": "https://www.bcb.gov.br/"
-              },
-              {
-                "title": "Lei nº 4.504/64",
-                "url": "https://www.planalto.gov.br/ccivil_03/leis/l4504.htm"
-              }
-            ]
+          "title": "Consumidor SUSEP",
+          "url": "https://www.susep.gov.br/consumidor/"
+        }
+      ]
+    },
+    {
+      "title": "Superintendência Nacional de Previdência Complementar",
+      "picture": "../pictures/modais/previc.png",
+      "description": "O que é?",
+      "subDescription": "A Superintendência Nacional de Previdência Complementar (PREVIC) é o órgão regulador e fiscalizador do sistema de previdência complementar no Brasil. Sua missão é garantir a segurança, a transparência e a sustentabilidade dos planos de previdência complementar.",
+      "functions": [
+        "Regular e fiscalizar as entidades de previdência complementar",
+        "Proteger os direitos dos participantes dos planos",
+        "Promover a educação previdenciária",
+        "Assegurar a portabilidade dos planos",
+        "Garantir a solvência das entidades",
+        "Combater fraudes e irregularidades",
+        "Representar o setor de previdência complementar em fóruns nacionais e internacionais",
+        "Cooperar com outros órgãos públicos e privados",
+        "Estudar e acompanhar o desenvolvimento do mercado de previdência complementar"
+      ],
+      "composition": [
+        "Superintendente: nome do Superintendente da PREVIC",
+        "Diretoria de Regulação e Fiscalização",
+        "Diretoria de Orientação e Atendimento ao Participante",
+        "Diretoria de Administração e Finanças",
+        "Procuradoria Federal da PREVIC",
+        "Ouvidoria"
+      ],
+      "mainFunctions": [
+        "Aprovar os planos de previdência complementar",
+        "Fiscalizar as atividades das entidades",
+        "Investigar e punir irregularidades",
+        "Determinar a liquidação de entidades insolventes",
+        "Divulgar informações sobre os planos",
+        "Educar e orientar os participantes",
+        "Promover estudos e pesquisas sobre o mercado"
+      ],
+      "importancetxt": "A PREVIC desempenha um papel fundamental na proteção dos direitos dos participantes e na promoção da sustentabilidade do sistema de previdência complementar brasileiro, contribuindo para a segurança previdenciária da população.",
+      "importance": [
+        "Proteção dos direitos dos participantes",
+        "Sustentabilidade dos planos",
+        "Segurança previdenciária",
+        "Transparência das informações",
+        "Eficiência do mercado",
+        "Confiança dos participantes",
+        "Crescimento do mercado"
+      ],
+      "links": [
+        {
+          "title": "Site da PREVIC",
+          "url": "https://www.previc.gov.br/"
         },
-
         {
-            "title": "Corretoras e distribuidoras",
-            "picture": "./pictures/modais/cmn.jpg",
-            "description": "O que é?",
-            "subDescription": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país, com o objetivo de:",
-            "functions": [
-              "Manter a estabilidade da moeda.",
-              "Promover o desenvolvimento econômico e social.",
-              "Regular e supervisionar o SFN."
-            ],
-            "composition": [
-              "Ministro da Economia (Presidente do CMN).",
-              "Ministro do Planejamento e Orçamento.",
-              "Presidente do Banco Central do Brasil."
-            ],
-            "mainFunctions": [
-              "Definir a taxa Selic.",
-              "Regular a emissão de moeda.",
-              "Estabelecer metas para a inflação.",
-              "Supervisionar as instituições financeiras.",
-              "Aprovar operações de crédito.",
-              "Definir normas para o SFN."
-            ],
-            "importancetxt": "O CMN desempenha um papel fundamental na economia brasileira, pois suas decisões impactam diretamente:",
-            "importance": [
-              "Impacto na taxa de juros.",
-              "Influência na inflação.",
-              "Papel no crescimento econômico."
-            ],
-            "links": [
-              {
-                "title": "Site do Banco Central do Brasil",
-                "url": "https://www.bcb.gov.br/"
-              },
-              {
-                "title": "Lei nº 4.504/64",
-                "url": "https://www.planalto.gov.br/ccivil_03/leis/l4504.htm"
-              }
-            ]
+          "title": "Lei de criação da PREVIC",
+          "url": "https://www.planalto.gov.br/ccivil_03/leis/l8.219.htm"
         },
-
         {
-            "title": "Bolsa de Mercadorias e Futuros",
-            "picture": "./pictures/modais/cmn.jpg",
-            "description": "O que é?",
-            "subDescription": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país, com o objetivo de:",
-            "functions": [
-              "Manter a estabilidade da moeda.",
-              "Promover o desenvolvimento econômico e social.",
-              "Regular e supervisionar o SFN."
-            ],
-            "composition": [
-              "Ministro da Economia (Presidente do CMN).",
-              "Ministro do Planejamento e Orçamento.",
-              "Presidente do Banco Central do Brasil."
-            ],
-            "mainFunctions": [
-              "Definir a taxa Selic.",
-              "Regular a emissão de moeda.",
-              "Estabelecer metas para a inflação.",
-              "Supervisionar as instituições financeiras.",
-              "Aprovar operações de crédito.",
-              "Definir normas para o SFN."
-            ],
-            "importancetxt": "O CMN desempenha um papel fundamental na economia brasileira, pois suas decisões impactam diretamente:",
-            "importance": [
-              "Impacto na taxa de juros.",
-              "Influência na inflação.",
-              "Papel no crescimento econômico."
-            ],
-            "links": [
-              {
-                "title": "Site do Banco Central do Brasil",
-                "url": "https://www.bcb.gov.br/"
-              },
-              {
-                "title": "Lei nº 4.504/64",
-                "url": "https://www.planalto.gov.br/ccivil_03/leis/l4504.htm"
-              }
-            ]
+          "title": "Guia do Participante de Previdência Complementar",
+          "url": "https://www.previc.gov.br/educacao-previdenciaria/publicacoes/guia-do-participante-de-previdencia-complementar/"
+        }
+      ]
+    },
+    {
+      "title": "Bancos e Caixas Econômicas",
+      "picture": "../pictures/modais/banco.jpg",
+      "description": "O que são?",
+      "subDescription": "Bancos e caixas econômicas são instituições financeiras que oferecem diversos serviços à população, como:",
+      "functions": [
+        "Abertura de contas correntes e poupança",
+        "Concessão de empréstimos e financiamentos",
+        "Pagamento de contas e boletos",
+        "Aplicação em investimentos",
+        "Transferências de dinheiro",
+        "Cobrança de tributos",
+        "Empréstimos consignados",
+        "Cartões de crédito e débito",
+        "Serviços de previdência privada",
+        "Câmbio de moedas",
+        "Seguros",
+        "Investimentos em renda fixa e variável"
+      ],
+      "composition": [
+        "Diretoria Executiva",
+        "Conselho de Administração",
+        "Áreas de negócio (varejo, corporativo, investimentos, etc.)",
+        "Agências bancárias",
+        "Canais de atendimento online e mobile"
+      ],
+      "mainFunctions": [
+        "Intermediar operações de crédito e débito",
+        "Guardar e custodiar recursos dos clientes",
+        "Emitir instrumentos de pagamento (cheques, cartões)",
+        "Conceder empréstimos e financiamentos",
+        "Investir recursos dos clientes",
+        "Oferecer serviços de assessoria financeira",
+        "Promover a educação financeira da população"
+      ],
+      "importancetxt": "Bancos e caixas econômicas desempenham um papel fundamental na economia, facilitando o acesso da população a serviços financeiros e contribuindo para o desenvolvimento do país.",
+      "importance": [
+        "Inclusão financeira",
+        "Estímulo ao consumo",
+        "Crescimento econômico",
+        "Desenvolvimento social",
+        "Geração de empregos",
+        "Modernização da economia",
+        "Bancarização da população"
+      ],
+      "links": [
+        {
+          "title": "Associação Brasileira de Bancos (ABRADEM)",
+          "url": "https://www.abradem.org.br/"
         },
-
         {
-            "title": "Entidades abertas de previdência complementar",
-            "picture": "./pictures/modais/cmn.jpg",
-            "description": "O que é?",
-            "subDescription": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país, com o objetivo de:",
-            "functions": [
-              "Manter a estabilidade da moeda.",
-              "Promover o desenvolvimento econômico e social.",
-              "Regular e supervisionar o SFN."
-            ],
-            "composition": [
-              "Ministro da Economia (Presidente do CMN).",
-              "Ministro do Planejamento e Orçamento.",
-              "Presidente do Banco Central do Brasil."
-            ],
-            "mainFunctions": [
-              "Definir a taxa Selic.",
-              "Regular a emissão de moeda.",
-              "Estabelecer metas para a inflação.",
-              "Supervisionar as instituições financeiras.",
-              "Aprovar operações de crédito.",
-              "Definir normas para o SFN."
-            ],
-            "importancetxt": "O CMN desempenha um papel fundamental na economia brasileira, pois suas decisões impactam diretamente:",
-            "importance": [
-              "Impacto na taxa de juros.",
-              "Influência na inflação.",
-              "Papel no crescimento econômico."
-            ],
-            "links": [
-              {
-                "title": "Site do Banco Central do Brasil",
-                "url": "https://www.bcb.gov.br/"
-              },
-              {
-                "title": "Lei nº 4.504/64",
-                "url": "https://www.planalto.gov.br/ccivil_03/leis/l4504.htm"
-              }
-            ]
+          "title": "Caixa Econômica Federal",
+          "url": "https://www.caixa.gov.br/"
         },
-
         {
-            "title": "Instituições de pagamento",
-            "picture": "./pictures/modais/cmn.jpg",
-            "description": "O que é?",
-            "subDescription": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país, com o objetivo de:",
-            "functions": [
-              "Manter a estabilidade da moeda.",
-              "Promover o desenvolvimento econômico e social.",
-              "Regular e supervisionar o SFN."
-            ],
-            "composition": [
-              "Ministro da Economia (Presidente do CMN).",
-              "Ministro do Planejamento e Orçamento.",
-              "Presidente do Banco Central do Brasil."
-            ],
-            "mainFunctions": [
-              "Definir a taxa Selic.",
-              "Regular a emissão de moeda.",
-              "Estabelecer metas para a inflação.",
-              "Supervisionar as instituições financeiras.",
-              "Aprovar operações de crédito.",
-              "Definir normas para o SFN."
-            ],
-            "importancetxt": "O CMN desempenha um papel fundamental na economia brasileira, pois suas decisões impactam diretamente:",
-            "importance": [
-              "Impacto na taxa de juros.",
-              "Influência na inflação.",
-              "Papel no crescimento econômico."
-            ],
-            "links": [
-              {
-                "title": "Site do Banco Central do Brasil",
-                "url": "https://www.bcb.gov.br/"
-              },
-              {
-                "title": "Lei nº 4.504/64",
-                "url": "https://www.planalto.gov.br/ccivil_03/leis/l4504.htm"
-              }
-            ]
-          },
-
-        {
-            "title": "Demais instituições não bancárias",
-            "picture": "./pictures/modais/cmn.jpg",
-            "description": "O que é?",
-            "subDescription": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país, com o objetivo de:",
-            "functions": [
-                "Manter a estabilidade da moeda.",
-                "Promover o desenvolvimento econômico e social.",
-                "Regular e supervisionar o SFN."
-            ],
-            "composition": [
-                "Ministro da Economia (Presidente do CMN).",
-                "Ministro do Planejamento e Orçamento.",
-                "Presidente do Banco Central do Brasil."
-            ],
-            "mainFunctions": [
-                "Definir a taxa Selic.",
-                "Regular a emissão de moeda.",
-                "Estabelecer metas para a inflação.",
-                "Supervisionar as instituições financeiras.",
-                "Aprovar operações de crédito.",
-                "Definir normas para o SFN."
-            ],
-            "importancetxt": "O CMN desempenha um papel fundamental na economia brasileira, pois suas decisões impactam diretamente:",
-            "importance": [
-                "Impacto na taxa de juros.",
-                "Influência na inflação.",
-                "Papel no crescimento econômico."
-            ],
-            "links": [
-                {
-                "title": "Site do Banco Central do Brasil",
-                "url": "https://www.bcb.gov.br/"
-                },
-                {
-                "title": "Lei nº 4.504/64",
-                "url": "https://www.planalto.gov.br/ccivil_03/leis/l4504.htm"
-                }
-            ]
+          "title": "Banco do Brasil",
+          "url": "https://www.bb.com.br/"
         },
-
         {
-            "title": "Sociedades de capitalização",
-            "picture": "./pictures/modais/cmn.jpg",
-            "description": "O que é?",
-            "subDescription": "O Conselho Monetário Nacional (CMN) é o órgão superior do Sistema Financeiro Nacional (SFN) no Brasil. É responsável por formular e implementar a política monetária e creditícia do país, com o objetivo de:",
-            "functions": [
-              "Manter a estabilidade da moeda.",
-              "Promover o desenvolvimento econômico e social.",
-              "Regular e supervisionar o SFN."
-            ],
-            "composition": [
-              "Ministro da Economia (Presidente do CMN).",
-              "Ministro do Planejamento e Orçamento.",
-              "Presidente do Banco Central do Brasil."
-            ],
-            "mainFunctions": [
-              "Definir a taxa Selic.",
-              "Regular a emissão de moeda.",
-              "Estabelecer metas para a inflação.",
-              "Supervisionar as instituições financeiras.",
-              "Aprovar operações de crédito.",
-              "Definir normas para o SFN."
-            ],
-            "importancetxt": "O CMN desempenha um papel fundamental na economia brasileira, pois suas decisões impactam diretamente:",
-            "importance": [
-              "Impacto na taxa de juros.",
-              "Influência na inflação.",
-              "Papel no crescimento econômico."
-            ],
-            "links": [
-              {
-                "title": "Site do Banco Central do Brasil",
-                "url": "https://www.bcb.gov.br/"
-              },
-              {
-                "title": "Lei nº 4.504/64",
-                "url": "https://www.planalto.gov.br/ccivil_03/leis/l4504.htm"
-              }
-            ]
-          }
-    ]
+          "title": "Febraban",
+          "url": "https://www.febraban.org.br/"
+        }
+      ]
+    },
+    {
+      "title": "Administradoras de Consórcios",
+      "picture": "../pictures/modais/consorcio.png",
+      "description": "O que são?",
+      "subDescription": "Administradoras de consórcios são empresas responsáveis por organizar e gerenciar grupos de pessoas que desejam adquirir bens ou serviços através de pagamentos mensais.",
+      "functions": [
+        "Formação e administração de grupos de consórcio",
+        "Gestão dos recursos financeiros dos consorciados",
+        "Organização de assembleias e sorteios",
+        "Negociação com fornecedores de bens e serviços",
+        "Prestação de assessoria jurídica e administrativa",
+        "Atendimento aos consorciados",
+        "Gestão de riscos e inadimplência",
+        "Cumprimento da legislação vigente",
+        "Promoção de campanhas de consórcio"
+      ],
+      "composition": [
+        "Diretoria Executiva",
+        "Conselho de Administração",
+        "Áreas de negócio (administração de consórcios, vendas, etc.)",
+        "Equipe de atendimento ao cliente",
+        "Equipe jurídica e administrativa"
+      ],
+      "mainFunctions": [
+        "Elaborar e registrar o contrato de consórcio",
+        "Receber e administrar as contribuições dos consorciados",
+        "Realizar os sorteios das contemplações",
+        "Entregar os bens ou serviços aos consorciados contemplados",
+        "Gerenciar o saldo devedor dos consorciados",
+        "Oferecer opções de investimento para as reservas",
+        "Assegurar a transparência do processo",
+        "Proteger os direitos dos consorciados"
+      ],
+      "importancetxt": "As administradoras de consórcio desempenham um papel fundamental na democratização do acesso a bens e serviços, possibilitando que pessoas realizem seus sonhos de forma planejada e acessível.",
+      "importance": [
+        "Acesso a bens e serviços",
+        "Planejamento financeiro",
+        "Pagamento sem juros",
+        "Diversificação de investimentos",
+        "Proteção contra inadimplência",
+        "Segurança jurídica",
+        "Transparência do processo"
+      ],
+      "links": [
+        {
+          "title": "Associação Brasileira das Administradoras de Consórcios (ABAC)",
+          "url": "https://www.abac.org.br/"
+        },
+        {
+          "title": "Guia do Consórcio",
+          "url": "https://www.gov.br/economia/pt-br/composicao/secretarias/senet/publicacoes/guia-do-consorcio"
+        },
+        {
+          "title": "Código de Defesa do Consumidor",
+          "url": "https://www.planalto.gov.br/ccivil_03/leis/l8.245.htm"
+        }
+      ]
+    },
+    {
+      "title": "Bolsa de Valores",
+      "picture": "../pictures/modais/bolsa.jpg",
+      "description": "O que é?",
+      "subDescription": "A bolsa de valores é um mercado financeiro organizado onde ocorre a negociação de ativos financeiros, como ações de empresas, derivativos, títulos de renda fixa e cambiais.  A bolsa funciona como um intermediário entre investidores que desejam comprar e vender esses ativos.",
+      "functions": [
+        "Proporcionar um ambiente seguro e transparente para negociação de ativos",
+        "Definir as regras de negociação",
+        "Garantir a liquidez do mercado",
+        "Fornecer informações sobre os ativos e as negociações",
+        "Promover a educação financeira dos investidores",
+        "Contribuir para o desenvolvimento do mercado de capitais"
+      ],
+      "composition": [
+        "Bolsa de Valores: instituição responsável pela gestão e operação do mercado",
+        "Corretoras de Valores: empresas credenciadas para intermediar a negociação de ativos para investidores",
+        "Depositária Central de Valores (DTVM): instituição responsável pela custódia e registro dos ativos negociados",
+        "Clearing House: instituição responsável pela compensação e liquidação das operações"
+      ],
+      "mainFunctions": [
+        "Listagem de empresas na bolsa",
+        "Negociação de ações, derivativos, títulos de renda fixa e cambiais",
+        "Cálculo de índices de mercado (como o Ibovespa)",
+        "Disseminação de informações sobre as empresas listadas e as negociações",
+        "Fiscalização das corretoras e dos demais participantes do mercado"
+      ],
+      "importancetxt": "A bolsa de valores desempenha um papel fundamental na captação de recursos para as empresas e no desenvolvimento da economia. Ao facilitar a negociação de ativos financeiros, a bolsa contribui para a alocação eficiente de recursos e o crescimento econômico.",
+      "importance": [
+        "Captação de recursos pelas empresas",
+        "Alocação eficiente de recursos",
+        "Crescimento econômico",
+        "Transparência do mercado",
+        "Liquidez do mercado",
+        "Rentabilidade para os investidores",
+        "Modernização do mercado financeiro"
+      ],
+      "links": [
+        {
+          "title": "B3 - Brasil Bolsa Balcão",
+          "url": "https://www.b3.com.br/"
+        },
+        {
+          "title": "Comissão de Valores Mobiliários (CVM)",
+          "url": "https://www.cvm.gov.br/"
+        },
+        {
+          "title": "Investing.com - Bolsa de Valores",
+          "url": "https://www.investing.com/equities/indices"
+        }
+      ]
+    },
+    {
+      "title": "Seguradoras e Resseguradoras",
+      "picture": "../pictures/modais/seguro.jpg",
+      "description": "O que são?",
+      "subDescription": "Seguradoras e resseguradoras são empresas que oferecem proteção contra riscos financeiros através de contratos de seguro e resseguro.",
+      "functions": [
+        "Seguradoras:",
+        "  - Vender apólices de seguro para pessoas físicas e jurídicas",
+        "  - Assumir os riscos dos segurados em caso de sinistro",
+        "  - Indenizar os segurados pelos prejuízos sofridos",
+        "  - Oferecer diversos tipos de seguros (auto, saúde, vida, etc.)",
+        "Resseguradoras:",
+        "  - Assumir parte dos riscos das seguradoras",
+        "  - Fornecer proteção contra grandes sinistros",
+        "  - Distribuir os riscos entre várias empresas",
+        "  - Oferecer serviços de consultoria e assessoria às seguradoras"
+      ],
+      "composition": [
+        "Seguradoras:",
+        "  - Diretoria Executiva",
+        "  - Conselho de Administração",
+        "  - Áreas de negócio (subscrição, sinistros, etc.)",
+        "  - Rede de atendimento (agencias, corretores)",
+        "Resseguradoras:",
+        "  - Diretoria Executiva",
+        "  - Conselho de Administração",
+        "  - Áreas de negócio (subscrição, sinistros, etc.)",
+        "  - Equipe de subscrição e sinistros"
+      ],
+      "mainFunctions": [
+        "Seguradoras:",
+        "  - Analisar e aceitar riscos",
+        "  - Emitir apólices de seguro",
+        "  - Cobrar prêmios de seguro",
+        "  - Investigar e liquidar sinistros",
+        "  - Indenizar os segurados",
+        "Resseguradoras:",
+        "  - Aceitar riscos das seguradoras",
+        "  - Emitir apólices de resseguro",
+        "  - Cobrar prêmios de resseguro",
+        "  - Indemnizar as seguradoras em caso de sinistro"
+      ],
+      "importancetxt": "Seguradoras e resseguradoras desempenham um papel fundamental na proteção de pessoas e empresas contra riscos financeiros, contribuindo para a estabilidade econômica e o bem-estar da sociedade.",
+      "importance": [
+        "Proteção contra riscos financeiros",
+        "Estabilidade econômica",
+        "Bem-estar da sociedade",
+        "Desenvolvimento de negócios",
+        "Crescimento do mercado financeiro",
+        "Geração de empregos",
+        "Inclusão social"
+      ],
+      "links": [
+        {
+          "title": "Confederação Nacional das Empresas de Seguros (CNSeg)",
+          "url": "https://www.cnseg.org.br/"
+        },
+        {
+          "title": "Superintendência de Seguros Privados (SUSEP)",
+          "url": "https://www.susep.gov.br/"
+        },
+        {
+          "title": "Guia do Seguro",
+          "url": "https://www.gov.br/economia/pt-br/composicao/secretarias/senet/publicacoes/guia-do-seguro"
+        }
+      ]
+    },
+    {
+      "title": "Entidades Fechadas de Previdência Complementar (Fundos de Pensão)",
+      "picture": "../pictures/modais/fundo-pensao.jpeg",
+      "description": "O que são?",
+      "subDescription": "Entidades Fechadas de Previdência Complementar (Fundos de Pensão) são instituições financeiras que oferecem planos de previdência complementar a seus participantes, visando garantir renda futura após a aposentadoria.",
+      "functions": [
+        "Administrar planos de previdência complementar",
+        "Aplicar os recursos dos participantes em investimentos",
+        "Garantir a rentabilidade dos planos",
+        "Pagar os benefícios aos participantes",
+        "Oferecer diversos tipos de planos (definido, contribuição variável, etc.)",
+        "Prestar assessoria e orientação aos participantes",
+        "Zelar pela segurança e solidez dos planos"
+      ],
+      "composition": [
+        "Diretoria Executiva",
+        "Conselho de Administração",
+        "Conselho Deliberativo",
+        "Comitês (auditoria, investimento, etc.)",
+        "Entidades patrocinadoras (empresas, órgãos públicos)",
+        "Participantes dos planos"
+      ],
+      "mainFunctions": [
+        "Elaborar e registrar os planos de previdência complementar",
+        "Receber e administrar as contribuições dos participantes",
+        "Investir os recursos dos planos",
+        "Conceder os benefícios previdenciários (aposentadoria, pensão, etc.)",
+        "Gerenciar os riscos dos planos",
+        "Prestar contas aos participantes e órgãos reguladores",
+        "Promover a educação previdenciária"
+      ],
+      "importancetxt": "Os fundos de pensão desempenham um papel fundamental na complementação da renda na aposentadoria, contribuindo para a segurança previdenciária e o bem-estar da população.",
+      "importance": [
+        "Complementação da renda na aposentadoria",
+        "Segurança previdenciária",
+        "Bem-estar da população",
+        "Estímulo à poupança",
+        "Desenvolvimento do mercado de capitais",
+        "Geração de empregos",
+        "Estabilidade econômica"
+      ],
+      "links": [
+        {
+          "title": "Associação Brasileira das Entidades Fechadas de Previdência Complementar (ABRAPP)",
+          "url": "https://www.abrapp.org.br/"
+        },
+        {
+          "title": "Superintendência Nacional de Previdência Complementar (PREVIC)",
+          "url": "https://www.previc.gov.br/"
+        },
+        {
+          "title": "Guia do Participante de Previdência Complementar",
+          "url": "https://www.previc.gov.br/educacao-previdenciaria/publicacoes/guia-do-participante-de-previdencia-complementar/"
+        }
+      ]
+    },
+    {
+      "title": "Cooperativas de Crédito",
+      "picture": "../pictures/modais/cooperativa.jpg",
+      "description": "O que são?",
+      "subDescription": "Cooperativas de crédito são instituições financeiras cooperativas sem fins lucrativos que oferecem serviços financeiros a seus associados, como depósitos, empréstimos, pagamentos e investimentos.",
+      "functions": [
+        "Oferecer serviços financeiros a seus associados",
+        "Promover o desenvolvimento social e econômico dos seus membros",
+        "Praticar taxas de juros justas e transparentes",
+        "Garantir a segurança dos recursos dos associados",
+        "Promover a educação financeira dos associados",
+        "Participar do desenvolvimento da comunidade",
+        "Zelar pelos princípios cooperativistas (livre iniciativa, associação voluntária, gestão democrática, responsabilidade social e solidariedade)"
+      ],
+      "composition": [
+        "Assembleia Geral",
+        "Conselho de Administração",
+        "Diretoria Executiva",
+        "Comitês (auditoria, crédito, etc.)",
+        "Gerentes e colaboradores",
+        "Associados"
+      ],
+      "mainFunctions": [
+        "Abrir contas correntes e poupança",
+        "Conceder empréstimos e financiamentos",
+        "Realizar investimentos para os associados",
+        "Oferecer serviços de pagamento e transferência de recursos",
+        "Aplicar taxas de juros justas e transparentes",
+        "Garantir a segurança dos recursos dos associados",
+        "Promover a educação financeira e a inclusão social"
+      ],
+      "importancetxt": "As cooperativas de crédito desempenham um papel fundamental na promoção da inclusão financeira e no desenvolvimento social e econômico, oferecendo serviços financeiros acessíveis e com taxas justas à população.",
+      "importance": [
+        "Inclusão financeira",
+        "Desenvolvimento social e econômico",
+        "Acesso a serviços financeiros com taxas justas",
+        "Fortalecimento da comunidade",
+        "Estímulo à poupança",
+        "Geração de empregos",
+        "Promoção dos valores cooperativistas"
+      ],
+      "links": [
+        {
+          "title": "Confederação Brasileira de Cooperativas de Crédito (CBC)",
+          "url": "https://www.cbccredito.org.br/"
+        },
+        {
+          "title": "Banco Central do Brasil (BCB)",
+          "url": "https://www.bcb.gov.br/"
+        },
+        {
+          "title": "Guia de Cooperativas de Crédito",
+          "url": "https://www.gov.br/economia/pt-br/composicao/secretarias/senet/publicacoes/guia-de-cooperativas-de-credito"
+        }
+      ]
+    },
+    {
+      "title": "Corretoras e Distribuidoras",
+      "picture": "../pictures/modais/corretora.webp",
+      "description": "O que são?",
+      "subDescription": "Corretoras e distribuidoras são empresas que intermediam a negociação de ativos financeiros, como ações, fundos de investimento e títulos de renda fixa, entre investidores e instituições financeiras.",
+      "functions": [
+        "Corretoras:",
+        "  - Assessorar os clientes na escolha de investimentos",
+        "  - Executar ordens de compra e venda de ativos",
+        "  - Cobrar taxas de corretagem",
+        "  - Oferecer serviços de custódia de ativos",
+        "  - Manter os clientes informados sobre o mercado financeiro",
+        "Distribuidoras:",
+        "  - Captar recursos de investidores para a aplicação em fundos de investimento",
+        "  - Gerenciar e administrar os fundos de investimento",
+        "  - Vender cotas dos fundos de investimento para os investidores",
+        "  - Remunerar os investidores de acordo com a performance dos fundos"
+      ],
+      "composition": [
+        "Corretoras:",
+        "  - Diretoria Executiva",
+        "  - Conselho de Administração",
+        "  - Área de investimentos",
+        "  - Área de operações",
+        "  - Área de atendimento ao cliente",
+        "Distribuidoras:",
+        "  - Diretoria Executiva",
+        "  - Conselho de Administração",
+        "  - Área de gestão de fundos",
+        "  - Área de vendas",
+        "  - Área de compliance"
+      ],
+      "mainFunctions": [
+        "Corretoras:",
+        "  - Fornecer acesso ao mercado financeiro para os investidores",
+        "  - Executar ordens de forma eficiente e segura",
+        "  - Oferecer assessoria personalizada aos clientes",
+        "  - Manter os clientes informados sobre os riscos dos investimentos",
+        "Distribuidoras:",
+        "  - Oferecer diversos tipos de fundos de investimento para atender às diferentes necessidades dos investidores",
+        "  - Gerir os fundos de investimento de forma profissional e transparente",
+        "  - Remunerar os investidores de forma justa e competitiva"
+      ],
+      "importancetxt": "Corretoras e distribuidoras desempenham um papel fundamental na democratização do acesso a investimentos e no desenvolvimento do mercado financeiro, conectando investidores e instituições financeiras de forma eficiente e segura.",
+      "importance": [
+        "Democratização do acesso a investimentos",
+        "Desenvolvimento do mercado financeiro",
+        "Liquidez do mercado",
+        "Diversificação de investimentos",
+        "Profissionalização da gestão de investimentos",
+        "Proteção dos investidores",
+        "Educação financeira"
+      ],
+      "links": [
+        {
+          "title": "Anbima - Associação Brasileira das Entidades dos Mercados Financeiros e de Capitais",
+          "url": "https://www.anbima.org.br/"
+        },
+        {
+          "title": "CVM - Comissão de Valores Mobiliários",
+          "url": "https://www.cvm.gov.br/"
+        },
+        {
+          "title": "Guia do Investidor",
+          "url": "https://www.gov.br/economia/pt-br/composicao/secretarias/senet/publicacoes/guia-do-investidor"
+        }
+      ]
+    },
+    {
+      "title": "Bolsa de Mercadorias e Futuros",
+      "picture": "../pictures/modais/bolsa-mercadorias.jpg",
+      "description": "O que é?",
+      "subDescription": "A Bolsa de Mercadorias e Futuros (BM&F) é um mercado organizado onde são negociados contratos futuros e opções sobre commodities agrícolas, energéticas e financeiras.",
+      "functions": [
+        "Proporcionar um ambiente seguro e transparente para negociação de contratos",
+        "Definir as regras de negociação",
+        "Garantir a liquidez do mercado",
+        "Fornecer informações sobre os contratos e as negociações",
+        "Promover a educação sobre o mercado de futuros",
+        "Contribuir para o desenvolvimento do agronegócio e do setor energético"
+      ],
+      "composition": [
+        "Diretoria Executiva",
+        "Conselho de Administração",
+        "Câmara de Negociação",
+        "Câmara de Compensação",
+        "Membros da Bolsa (corretoras, empresas de trading)",
+        "Agentes de Custódia"
+      ],
+      "mainActivities": [
+        "Listar commodities para negociação",
+        "Negociação de contratos futuros e opções",
+        "Liquidação e entrega das commodities",
+        "Cálculo de índices de preços",
+        "Disseminação de informações sobre o mercado",
+        "Fiscalização dos participantes do mercado"
+      ],
+      "importancetxt": "A BM&F desempenha um papel fundamental na precificação de commodities, na gestão de riscos e na alocação eficiente de recursos no agronegócio e no setor energético.",
+      "importance": [
+        "Precificação de commodities",
+        "Gestão de riscos",
+        "Alocação eficiente de recursos",
+        "Desenvolvimento do agronegócio e do setor energético",
+        "Modernização do mercado de commodities",
+        "Transparência do mercado",
+        "Liquidez do mercado"
+      ],
+      "links": [
+        {
+          "title": "B3 - Brasil, Bolsa, Balcão",
+          "url": "https://www.b3.com.br/"
+        },
+        {
+          "title": "Anbima - Associação Brasileira das Entidades dos Mercados Financeiros e de Capitais",
+          "url": "https://www.anbima.org.br/"
+        },
+        {
+          "title": "Guia do Mercador de Futuros",
+          "url": "https://www.gov.br/economia/pt-br/composicao/secretarias/senet/publicacoes/guia-do-mercado-de-futuros"
+        }
+      ]
+    },
+    {
+      "title": "Entidades Abertas de Previdência Complementar",
+      "picture": "../pictures/modais/fundo-previdencia.jpeg",
+      "description": "O que são?",
+      "subDescription": "Entidades Abertas de Previdência Complementar são instituições financeiras que oferecem planos de previdência complementar a seus participantes, visando garantir renda futura após a aposentadoria.",
+      "functions": [
+        "Administrar planos de previdência complementar",
+        "Aplicar os recursos dos participantes em investimentos",
+        "Garantir a rentabilidade dos planos",
+        "Pagar os benefícios previdenciários (aposentadoria, pensão, etc.)",
+        "Oferecer diversos tipos de planos (definido, contribuição variável, etc.)",
+        "Prestar assessoria e orientação aos participantes",
+        "Zelar pela segurança e solidez dos planos"
+      ],
+      "composition": [
+        "Diretoria Executiva",
+        "Conselho de Administração",
+        "Assembleia Geral",
+        "Comitês (auditoria, investimento, etc.)",
+        "Entidades patrocinadoras (empresas, órgãos públicos)",
+        "Participantes dos planos"
+      ],
+      "mainActivities": [
+        "Elaborar e registrar os planos de previdência complementar",
+        "Receber e administrar as contribuições dos participantes",
+        "Investir os recursos dos planos",
+        "Conceder os benefícios previdenciários (aposentadoria, pensão, etc.)",
+        "Gerenciar os riscos dos planos",
+        "Prestar contas aos participantes e órgãos reguladores",
+        "Promover a educação previdenciária"
+      ],
+      "importancetxt": "As entidades abertas de previdência complementar desempenham um papel fundamental na complementação da renda na aposentadoria, contribuindo para a segurança previdenciária e o bem-estar da população.",
+      "importance": [
+        "Complementação da renda na aposentadoria",
+        "Segurança previdenciária",
+        "Bem-estar da população",
+        "Estímulo à poupança",
+        "Desenvolvimento do mercado de capitais",
+        "Geração de empregos",
+        "Estabilidade econômica"
+      ],
+      "links": [
+        {
+          "title": "Associação Brasileira das Entidades Abertas de Previdência Complementar (ABRAPP)",
+          "url": "https://www.abrapp.org.br/"
+        },
+        {
+          "title": "Superintendência Nacional de Previdência Complementar (PREVIC)",
+          "url": "https://www.previc.gov.br/"
+        },
+        {
+          "title": "Guia do Participante de Previdência Complementar",
+          "url": "https://www.previc.gov.br/educacao-previdenciaria/publicacoes/guia-do-participante-de-previdencia-complementar/"
+        }
+      ]
+    },
+    {
+      "title": "Instituições de Pagamento",
+      "picture": "../pictures/modais/pagamento.png",
+      "description": "O que são?",
+      "subDescription": "Instituições de Pagamento são empresas autorizadas pelo Banco Central do Brasil a realizar operações de pagamento, como transferências, transações com cartão e recebimentos.",
+      "functions": [
+        "- Oferecer serviços de pagamento a pessoas físicas e jurídicas",
+        "- Realizar transferências de recursos entre contas",
+        "- Processar transações com cartão de débito e crédito",
+        "- Fornecer soluções de pagamento para empresas",
+        "- Emitir instrumentos de pagamento (cartões, boletos, etc.)",
+        "- Garantir a segurança das transações",
+        "- Promover a inclusão financeira da população"
+      ],
+      "composition": [
+        "- Diretoria Executiva",
+        "- Conselho de Administração",
+        "- Área de tecnologia",
+        "- Área de operações",
+        "- Área de atendimento ao cliente",
+        "- Área de compliance"
+      ],
+      "mainActivities": [
+        "- Realizar transações financeiras de forma rápida, segura e eficiente",
+        "- Oferecer soluções inovadoras de pagamento",
+        "- Desenvolver novas tecnologias para o mercado financeiro",
+        "- Promover a educação financeira da população",
+        "- Contribuir para a inclusão bancária",
+        "- Zelar pela segurança e confiabilidade dos serviços de pagamento"
+      ],
+      "importancetxt": "As instituições de pagamento desempenham um papel fundamental na modernização do sistema de pagamentos brasileiro, democratizando o acesso a serviços financeiros e impulsionando a inclusão social e econômica.",
+      "importance": [
+        "- Modernização do sistema de pagamentos",
+        "- Democratização do acesso a serviços financeiros",
+        "- Inclusão social e econômica",
+        "- Redução do uso de dinheiro em espécie",
+        "- Estímulo à inovação no mercado financeiro",
+        "- Geração de empregos",
+        "- Eficiência e competitividade do sistema financeiro"
+      ],
+      "links": [
+        {
+          "title": "Banco Central do Brasil (BCB)",
+          "url": "https://www.bcb.gov.br/"
+        },
+        {
+          "title": "Associação Brasileira das Empresas de Serviços de Pagamento (ABESP)",
+          "url": "https://www.abesp.org.br/"
+        },
+        {
+          "title": "Guia de Serviços de Pagamento",
+          "url": "https://www.bcb.gov.br/estatisticas/publi/pagamentos/guia-servicos-pagamento.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Demais instituições não bancárias",
+      "picture": "../pictures/modais/instituicao-nao-bancaria.jpeg",
+      "description": "O que são?",
+      "subDescription": "Demais instituições não bancárias são empresas que atuam no mercado financeiro, mas não são bancos ou instituições de pagamento. Elas oferecem diversos serviços financeiros específicos, como:",
+      "functions": [
+        "Sociedades de Crédito Direto: Empréstimos e financiamentos para pessoas físicas e jurídicas.",
+        "Sociedades de Empréstimo e Financiamento: Empréstimos e financiamentos para fins específicos (imóveis, veículos, etc.).",
+        "Cooperativas de Crédito: Serviços financeiros a seus associados (depósitos, empréstimos, pagamentos, etc.).",
+        "Empresas de Investimento: Administração de recursos de investidores em aplicações financeiras.",
+        "Fundo de Garantia: Garantia de operações de crédito.",
+        "Entidades de Previdência Complementar: Planos de previdência privada para garantir renda futura.",
+        "Securitizadoras: Emissão de títulos lastreados por ativos.",
+        "Empresas de Arrendamento Mercantil: Locação de bens com opção de compra.",
+        "Outras: Empresas de câmbio, companhias de seguro, etc."
+      ],
+      "composition": [
+        "Diretoria Executiva",
+        "Conselho de Administração",
+        "Área de compliance",
+        "Área de risco",
+        "Área de operações",
+        "Área de atendimento ao cliente",
+        "Outros departamentos (dependendo da instituição)"
+      ],
+      "mainActivities": [
+        "Oferecer serviços financeiros específicos para atender às necessidades de diferentes públicos",
+        "Diversificar o mercado financeiro e promover a concorrência",
+        "Estimular o crédito e o investimento na economia",
+        "Contribuir para a inclusão financeira da população",
+        "Zelar pela segurança e confiabilidade dos serviços prestados"
+      ],
+      "importancetxt": "As demais instituições não bancárias desempenham um papel crucial no desenvolvimento do mercado financeiro brasileiro, complementando os serviços oferecidos pelos bancos e instituições de pagamento e contribuindo para a oferta de soluções financeiras mais diversificadas e acessíveis à população.",
+      "importance": [
+        " Diversificação do mercado financeiro",
+        "Oferta de serviços financeiros especializados",
+        "Acesso ao crédito e ao investimento para diferentes públicos",
+        "Inclusão financeira da população",
+        "Desenvolvimento da economia",
+        "Geração de empregos",
+        "Inovação no mercado financeiro"
+      ],
+      "links": [
+        {
+          "title": "Banco Central do Brasil (BCB)",
+          "url": "https://www.bcb.gov.br/"
+        },
+        {
+          "title": "Comissão de Valores Mobiliários (CVM)",
+          "url": "https://www.cvm.gov.br/"
+        },
+        {
+          "title": "Superintendência Nacional de Previdência Complementar (PREVIC)",
+          "url": "https://www.previc.gov.br/"
+        }
+      ]
+    },
+    {
+      "title": "Sociedades de capitalização",
+      "picture": "../pictures/modais/sociedades.jpeg",
+      "description": "O que são?",
+      "subDescription": "Sociedades de capitalização são empresas autorizadas pela Superintendência de Seguros Privados (SUSEP) a operar planos de capitalização. Esses planos visam a formação de um capital financeiro através de pagamentos periódicos, com a possibilidade de sorteio e resgate.",
+      "functions": [
+        "Os participantes realizam pagamentos periódicos para a sociedade de capitalização.",
+        "Os recursos são investidos em diversos ativos financeiros.",
+        "O capital é formado ao longo do tempo, com rendimentos dos investimentos.",
+        "Ao final do contrato, o participante pode receber o capital acumulado, um prêmio em dinheiro ou ambos.",
+        "Durante o contrato, o participante pode ter direito a sorteios."
+      ],
+      "composition": [
+        "Planos de capitalização com cobertura de risco (seguro de vida ou invalidez).",
+        "Planos de capitalização sem cobertura de risco.",
+        "Planos de capitalização com renda mensal.",
+        "Planos de capitalização com opções de resgate antecipado."
+      ],
+      "mainFunctions": [
+        "Formação de capital financeiro a longo prazo.",
+        "Diversificação de investimentos.",
+        "Proteção contra imprevistos (planos com cobertura de risco).",
+        "Possibilidade de receber um prêmio em dinheiro.",
+        "Benefícios fiscais (em alguns casos).",
+        "Flexibilidade para resgate antecipado (em alguns planos)."
+      ],
+      "importancetxt": "É importante ler atentamente as condições gerais do plano de capitalização antes de contratá-lo, verificando:",
+      "importance": [
+        "Prazo do contrato.",
+        "Valor das contribuições.",
+        "Formas de resgate.",
+        "Cobertura de risco (se houver).",
+        "Taxas e encargos.",
+        "Rentabilidade dos investimentos.",
+        "Reputação da sociedade de capitalização."
+      ],
+      "links": [
+        {
+          "title": "Site da SUSEP",
+          "url": "https://www.susep.gov.br/"
+        },
+        {
+          "title": "Guia de Planos de Capitalização",
+          "url": "https://www.susep.gov.br/consumidor/educacao-financeira/planos-de-capitalizacao/"
+        },
+        {
+          "title": "Associação Brasileira das Empresas de Capitalização (ABECAP)",
+          "url": "https://www.abecap.org.br/"
+        }
+      ]
+    }
+  ]
 }
