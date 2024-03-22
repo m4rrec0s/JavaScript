@@ -1,0 +1,74 @@
+.container-aulas {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+   overflow-y: auto;
+}
+
+.container-aulas>.top-container{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-aulas>.top-container>a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--heigth);
+    border-radius: 10px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.9em
+}
+
+@keyframes transform-colors {
+    0% {
+        background-color: var(--heigth);
+    }
+
+    30% {
+        background-color: var(--menu);
+    }
+
+    80% {
+        background-color: var(--menu-height);
+    }
+}
+
+.container-aulas>.top-container>a:hover {
+  animation: transform-colors 1.5s alternate-reverse infinite;
+}
+
+
+.grid-aulas-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+}
+
+.line {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 150px;
+    max-height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.315)
+}
