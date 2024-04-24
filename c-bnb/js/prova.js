@@ -1,58 +1,61 @@
-const questoes = [
-    {
-      id: 1,
-      texto: "No segundo parágrafo, o texto defende a necessidade de discutir questões relativas à mobilidade urbana.",
-      alternativas: [
-        {
-          texto: "ampliação da população urbana mundial",
-          correta: false,
-        },
-        {
-          texto: "diminuição da distância entre casa e trabalho",
-          correta: false,
-        },
-        {
-          texto: "imobilidade urbana causada pelo automóvel",
-          correta: true,
-        },
-        {
-          texto: "importância do investimento em infraestrutura",
-          correta: false,
-        },
-        {
-          texto: "paralisação do trânsito das grandes cidades",
-          correta: false,
-        },
-      ],
-    },
-    // ... outras questões
-];
+var resolved_questions = document.getElementById("resolved");
+var remaining_questions = document.getElementById("remaining");
 
-const botaoFinalizar = document.querySelector(".btn-success");
 
-botaoFinalizar.addEventListener("click", () => {
-  // Obter respostas do usuário
-  const respostasUsuario = getRespostasUsuario();
+// Função para criar os containers das questões
+const criarContainers = (questoes) => {
+  // Container principal onde todas as questões serão inseridas
+  const provaContainer = document.querySelector('.prova-container');
 
-  // Loop pelas questões
-  questoes.forEach((questao) => {
-    const respostaUsuario = respostasUsuario[questao.id];
-    const alternativaCorreta = questao.alternativas.find((a) => a.correta);
+  // Iterar sobre cada questão no arquivo JSON
+  questoes.forEach((questao, index) => {
+    // Criar um container para cada questão
+    var questionos = 60;
+    var resolved = 0;
+    resolved_questions.innerText = `${resolved} questões resolvidas`;
+    remaining_questions.innerText = `Restão ${questionos} questões`;
 
-    // Verificar se a resposta do usuário está correta
-    if (respostaUsuario === alternativaCorreta.texto) {
-      // Marcar como correta
-      const elementoAlternativa = document.querySelector(`#questao-${questao.id} input[value="${respostaUsuario}"]`).parentNode;
-      elementoAlternativa.classList.add("correta");
-      document.querySelector(`#questao-${questao.id}`).classList.add("correta");
-    } else {
-      // Marcar como incorreta
-      const elementoAlternativaUsuario = document.querySelector(`#questao-${questao.id} input[value="${respostaUsuario}"]`).parentNode;
-      elementoAlternativaUsuario.classList.add("incorreta");
+    const questionContainer = document.createElement('div');
+    questionContainer.classList.add('question-container');
 
-      // Marcar a alternativa correta
-      const elementoAlternativaCorreta = document.querySelector(`#questao-${questao.id} input[value="${alternativaCorreta.texto}"]`).parentNode;
-      elementoAlternativaCorreta.classList.add("correta");
-    }
+    // Número da questão
+    const numeroQuestao = document.createElement('h2');
+    numeroQuestao.textContent = `Questão ${index + 1}`;
+
+    // Texto da questão
+    const textoQuestao = document.createElement('p');
+    textoQuestao.textContent = questao.texto;
+
+    // Alternativas
+    const formAlternativas = document.createElement('form');
+    questao.alternativas.forEach((alternativa, idx) => {
+      const label = document.createElement('label');
+      const input = document.createElement('input');
+      input.type = 'radio';
+      input.name = `opcao${index}`;
+      input.value = alternativa.texto;
+      label.appendChild(input);
+      label.appendChild(document.createTextNode(alternativa.texto));
+      formAlternativas.appendChild(label);
+    });
+
+    // Adicionar todos os elementos ao container da questão
+    questionContainer.appendChild(numeroQuestao);
+    questionContainer.appendChild(textoQuestao);
+    questionContainer.appendChild(formAlternativas);
+
+    // Adicionar o container da questão ao container principal
+    provaContainer.appendChild(questionContainer);
   });
-});
+};
+
+// Carregar o arquivo JSON usando Fetch
+fetch('../json/simulado.json')
+  .then(response => response.json())
+  .then(data => {
+    // Chamar a função para criar os containers das questões com os dados do JSON
+    criarContainers(data);
+  })
+  .catch(error => {
+    console.error('Erro ao carregar o arquivo JSON:', error);
+  });

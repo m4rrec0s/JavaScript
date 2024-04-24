@@ -1,0 +1,419 @@
+[
+    {
+      "id": 1,
+      "texto" : "No segundo parágrafo, o texto defende a necessidade de discutir questões relativas à mobilidade urbana.",
+      "alternativas": [
+        {
+          "texto": "ampliação da população urbana mundial",
+          "correta": false
+        },
+        {
+          "texto": "diminuição da distância entre casa e trabalho",
+          "correta": false
+        },
+        {
+          "texto": "imobilidade urbana causada pelo automóvel",
+          "correta": true
+        },
+        {
+          "texto": "importância do investimento em infraestrutura",
+          "correta": false
+        },
+        {
+          "texto": "paralisação do trânsito das grandes cidades",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "texto" : "No segundo parágrafo, o texto defende a necessidade de discutir questões relativas à mobilidade urbana.",
+      "alternativas": [
+        {
+          "texto": "ampliação da população urbana mundial",
+          "correta": false
+        },
+        {
+          "texto": "diminuição da distância entre casa e trabalho",
+          "correta": false
+        },
+        {
+          "texto": "imobilidade urbana causada pelo automóvel",
+          "correta": true
+        },
+        {
+          "texto": "importância do investimento em infraestrutura",
+          "correta": false
+        },
+        {
+          "texto": "paralisação do trânsito das grandes cidades",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "texto" : "No segundo parágrafo, o texto defende a necessidade de discutir questões relativas à mobilidade urbana.",
+      "alternativas": [
+        {
+          "texto": "ampliação da população urbana mundial",
+          "correta": false
+        },
+        {
+          "texto": "diminuição da distância entre casa e trabalho",
+          "correta": false
+        },
+        {
+          "texto": "imobilidade urbana causada pelo automóvel",
+          "correta": true
+        },
+        {
+          "texto": "importância do investimento em infraestrutura",
+          "correta": false
+        },
+        {
+          "texto": "paralisação do trânsito das grandes cidades",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "texto" : "No segundo parágrafo, o texto defende a necessidade de discutir questões relativas à mobilidade urbana.",
+      "alternativas": [
+        {
+          "texto": "ampliação da população urbana mundial",
+          "correta": false
+        },
+        {
+          "texto": "diminuição da distância entre casa e trabalho",
+          "correta": false
+        },
+        {
+          "texto": "imobilidade urbana causada pelo automóvel",
+          "correta": true
+        },
+        {
+          "texto": "importância do investimento em infraestrutura",
+          "correta": false
+        },
+        {
+          "texto": "paralisação do trânsito das grandes cidades",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "texto" : "No segundo parágrafo, o texto defende a necessidade de discutir questões relativas à mobilidade urbana.",
+      "alternativas": [
+        {
+          "texto": "ampliação da população urbana mundial",
+          "correta": false
+        },
+        {
+          "texto": "diminuição da distância entre casa e trabalho",
+          "correta": false
+        },
+        {
+          "texto": "imobilidade urbana causada pelo automóvel",
+          "correta": true
+        },
+        {
+          "texto": "importância do investimento em infraestrutura",
+          "correta": false
+        },
+        {
+          "texto": "paralisação do trânsito das grandes cidades",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "texto" : "No segundo parágrafo, o texto defende a necessidade de discutir questões relativas à mobilidade urbana.",
+      "alternativas": [
+        {
+          "texto": "ampliação da população urbana mundial",
+          "correta": false
+        },
+        {
+          "texto": "diminuição da distância entre casa e trabalho",
+          "correta": false
+        },
+        {
+          "texto": "imobilidade urbana causada pelo automóvel",
+          "correta": true
+        },
+        {
+          "texto": "importância do investimento em infraestrutura",
+          "correta": false
+        },
+        {
+          "texto": "paralisação do trânsito das grandes cidades",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "texto" : "No segundo parágrafo, o texto defende a necessidade de discutir questões relativas à mobilidade urbana.",
+      "alternativas": [
+        {
+          "texto": "ampliação da população urbana mundial",
+          "correta": false
+        },
+        {
+          "texto": "diminuição da distância entre casa e trabalho",
+          "correta": false
+        },
+        {
+          "texto": "imobilidade urbana causada pelo automóvel",
+          "correta": true
+        },
+        {
+          "texto": "importância do investimento em infraestrutura",
+          "correta": false
+        },
+        {
+          "texto": "paralisação do trânsito das grandes cidades",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "texto" : "No segundo parágrafo, o texto defende a necessidade de discutir questões relativas à mobilidade urbana.",
+      "alternativas": [
+        {
+          "texto": "ampliação da população urbana mundial",
+          "correta": false
+        },
+        {
+          "texto": "diminuição da distância entre casa e trabalho",
+          "correta": false
+        },
+        {
+          "texto": "imobilidade urbana causada pelo automóvel",
+          "correta": true
+        },
+        {
+          "texto": "importância do investimento em infraestrutura",
+          "correta": false
+        },
+        {
+          "texto": "paralisação do trânsito das grandes cidades",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "texto" : "No segundo parágrafo, o texto defende a necessidade de discutir questões relativas à mobilidade urbana.",
+      "alternativas": [
+        {
+          "texto": "ampliação da população urbana mundial",
+          "correta": false
+        },
+        {
+          "texto": "diminuição da distância entre casa e trabalho",
+          "correta": false
+        },
+        {
+          "texto": "imobilidade urbana causada pelo automóvel",
+          "correta": true
+        },
+        {
+          "texto": "importância do investimento em infraestrutura",
+          "correta": false
+        },
+        {
+          "texto": "paralisação do trânsito das grandes cidades",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "texto" : "No segundo parágrafo, o texto defende a necessidade de discutir questões relativas à mobilidade urbana.",
+      "alternativas": [
+        {
+          "texto": "ampliação da população urbana mundial",
+          "correta": false
+        },
+        {
+          "texto": "diminuição da distância entre casa e trabalho",
+          "correta": false
+        },
+        {
+          "texto": "imobilidade urbana causada pelo automóvel",
+          "correta": true
+        },
+        {
+          "texto": "importância do investimento em infraestrutura",
+          "correta": false
+        },
+        {
+          "texto": "paralisação do trânsito das grandes cidades",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "texto" : "No segundo parágrafo, o texto defende a necessidade de discutir questões relativas à mobilidade urbana.",
+      "alternativas": [
+        {
+          "texto": "ampliação da população urbana mundial",
+          "correta": false
+        },
+        {
+          "texto": "diminuição da distância entre casa e trabalho",
+          "correta": false
+        },
+        {
+          "texto": "imobilidade urbana causada pelo automóvel",
+          "correta": true
+        },
+        {
+          "texto": "importância do investimento em infraestrutura",
+          "correta": false
+        },
+        {
+          "texto": "paralisação do trânsito das grandes cidades",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "texto" : "No segundo parágrafo, o texto defende a necessidade de discutir questões relativas à mobilidade urbana.",
+      "alternativas": [
+        {
+          "texto": "ampliação da população urbana mundial",
+          "correta": false
+        },
+        {
+          "texto": "diminuição da distância entre casa e trabalho",
+          "correta": false
+        },
+        {
+          "texto": "imobilidade urbana causada pelo automóvel",
+          "correta": true
+        },
+        {
+          "texto": "importância do investimento em infraestrutura",
+          "correta": false
+        },
+        {
+          "texto": "paralisação do trânsito das grandes cidades",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "texto" : "No segundo parágrafo, o texto defende a necessidade de discutir questões relativas à mobilidade urbana.",
+      "alternativas": [
+        {
+          "texto": "ampliação da população urbana mundial",
+          "correta": false
+        },
+        {
+          "texto": "diminuição da distância entre casa e trabalho",
+          "correta": false
+        },
+        {
+          "texto": "imobilidade urbana causada pelo automóvel",
+          "correta": true
+        },
+        {
+          "texto": "importância do investimento em infraestrutura",
+          "correta": false
+        },
+        {
+          "texto": "paralisação do trânsito das grandes cidades",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "texto" : "No segundo parágrafo, o texto defende a necessidade de discutir questões relativas à mobilidade urbana.",
+      "alternativas": [
+        {
+          "texto": "ampliação da população urbana mundial",
+          "correta": false
+        },
+        {
+          "texto": "diminuição da distância entre casa e trabalho",
+          "correta": false
+        },
+        {
+          "texto": "imobilidade urbana causada pelo automóvel",
+          "correta": true
+        },
+        {
+          "texto": "importância do investimento em infraestrutura",
+          "correta": false
+        },
+        {
+          "texto": "paralisação do trânsito das grandes cidades",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "texto" : "No segundo parágrafo, o texto defende a necessidade de discutir questões relativas à mobilidade urbana.",
+      "alternativas": [
+        {
+          "texto": "ampliação da população urbana mundial",
+          "correta": false
+        },
+        {
+          "texto": "diminuição da distância entre casa e trabalho",
+          "correta": false
+        },
+        {
+          "texto": "imobilidade urbana causada pelo automóvel",
+          "correta": true
+        },
+        {
+          "texto": "importância do investimento em infraestrutura",
+          "correta": false
+        },
+        {
+          "texto": "paralisação do trânsito das grandes cidades",
+          "correta": false
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "texto" : "No segundo parágrafo, o texto defende a necessidade de discutir questões relativas à mobilidade urbana.",
+      "alternativas": [
+        {
+          "texto": "ampliação da população urbana mundial",
+          "correta": false
+        },
+        {
+          "texto": "diminuição da distância entre casa e trabalho",
+          "correta": false
+        },
+        {
+          "texto": "imobilidade urbana causada pelo automóvel",
+          "correta": true
+        },
+        {
+          "texto": "importância do investimento em infraestrutura",
+          "correta": false
+        },
+        {
+          "texto": "paralisação do trânsito das grandes cidades",
+          "correta": false
+        }
+      ]
+    }
+
+]
